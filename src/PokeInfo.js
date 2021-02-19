@@ -28,10 +28,10 @@ if (loaded === "loaded"){return(
     <div className="PokeInfo">
         <div className="row">
             <div className="column">
-        <img src={pokePicture} alt="pokemon" />
+        <img src={pokePicture} alt={pokeName} className="officialImg" />
        <h1 className="pokeName">{pokeName} </h1> 
         </div>
-        <div className="column">
+        <div className="column" className="weightColumn">
     <h1>Weight: {roundedFormattedWeight}lbs / {metricWeight}kg </h1>
     <h1>Height: {roundedFormattedHeight}ft / {metricHeight}m</h1>
         </div>

@@ -1,7 +1,53 @@
+form {margin-bottom: 3%;}
+
+
 .App {
   text-align: center;
+  width: 100vw;
+  margin: 0;
 }
 
+.column {margin-left: 2%;}
+.container {  margin: 0;}
+
+.header {min-height: 100px;
+font-size: 24pt;
+margin-bottom: 2%;}
+
+.header h1 {margin: 0;}
+
+.officialImg {width: 80%;}
 .pokeName {text-transform: capitalize;}
 
+.PokeInfo {width: 83%;
+margin-left: auto;}
 .row {display: flex;}
+
+.searchBar {width: 20%;
+font-size: 16pt;}
+
+.submitButton {width: 5.5%;
+font-size: 16pt;}
+
+.weightColumn {margin-top: 10%;}
+
+
+/** Mobile Sized**/
+@media only screen and (max-width: 500px){
+
+  .column {margin-left: 0;}
+
+  .header {
+    font-size: 18pt;
+    margin-bottom: 12%;}
+    
+
+    .searchBar {width: 65%;
+      font-size: 14pt;}
+      
+      .submitButton {width: 20.5%;
+        font-size: 14pt;}
+
+        .PokeInfo {width: 100%;}
+
+}
