@@ -38,7 +38,7 @@ axios.get(APIurl).then(setInfo);}
 if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
     <form onSubmit={handleSubmit}>
-    <input type="text" onChange={setPokemon} placeholder="Type a Pokémon Name / ID #" 
+    <input type="text" onChange={setPokemon} placeholder="Enter Pokemon name / number" 
     className="searchBar" />
     <input type="submit" placeholder="Submit" className="submitButton" />
     </form>

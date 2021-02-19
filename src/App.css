@@ -33,11 +33,14 @@ margin-left: auto;}
   border: 1.5px solid rgb(126, 230, 105);
   background-color: #252730;
   color: #ffff;
+  outline: none;
 font-size: 16pt;}
+
 
 .submitButton {width: 110px;
   background-color: #252730;
   color: #ffff;
+  outline: none;
   border: 1.5px solid rgb(126, 230, 105);
 font-size: 16pt;}
 
