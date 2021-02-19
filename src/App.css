@@ -1,3 +1,6 @@
+body {background-color: #20212b;
+color: #8be9fd;}
+
 form {margin-bottom: 3%;}
 
 
@@ -7,30 +10,43 @@ form {margin-bottom: 3%;}
   margin: 0;
 }
 
-.column {margin-left: 2%;}
+.column {margin-left: 9%;
+text-align: center;}
 .container {  margin: 0;}
 
 .header {min-height: 100px;
-font-size: 24pt;
+font-size: 23pt;
 margin-bottom: 2%;}
 
 .header h1 {margin: 0;}
 
 .officialImg {width: 80%;}
-.pokeName {text-transform: capitalize;}
+.pokeName {text-transform: capitalize;
+color: #f840e6;
+font-size: 29pt;}
 
-.PokeInfo {width: 83%;
+.PokeInfo {width: 90%;
 margin-left: auto;}
 .row {display: flex;}
 
 .searchBar {width: 20%;
+  border: 1.5px solid rgb(126, 230, 105);
+  background-color: #252730;
+  color: #ffff;
 font-size: 16pt;}
 
-.submitButton {width: 5.5%;
+.submitButton {width: 110px;
+  background-color: #252730;
+  color: #ffff;
+  border: 1.5px solid rgb(126, 230, 105);
 font-size: 16pt;}
 
+.submitButton:active {background-color: #ffff;
+ color: #373a49;}
 .weightColumn {margin-top: 10%;}
 
+.height {color:   #ad65ff}
+.weight {color: #3ffa7b;}
 
 /** Mobile Sized**/
 @media only screen and (max-width: 500px){

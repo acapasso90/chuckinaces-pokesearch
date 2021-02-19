@@ -32,8 +32,8 @@ if (loaded === "loaded"){return(
        <h1 className="pokeName">{pokeName} </h1> 
         </div>
         <div className="column" className="weightColumn">
-    <h1>Weight: {roundedFormattedWeight}lbs / {metricWeight}kg </h1>
-    <h1>Height: {roundedFormattedHeight}ft / {metricHeight}m</h1>
+    <h1 className="weight"> Weight: {roundedFormattedWeight}lbs / {metricWeight}kg </h1>
+    <h1 className="height">Height: {roundedFormattedHeight}ft / {metricHeight}m</h1>
         </div>
         </div>
     </div>
