@@ -1,4 +1,5 @@
 import React from "react";
+import pokeball from "./pokeball.png";
 
 export default function PokeInfo(props){
     const official = "official-artwork";
@@ -32,8 +33,10 @@ if (loaded === "loaded"){return(
        <h1 className="pokeName">{pokeName} </h1> 
         </div>
         <div className="column" className="weightColumn">
-    <h1 className="weight"> Weight: {roundedFormattedWeight} lbs / {metricWeight} kg </h1>
-    <h1 className="height">Height: {roundedFormattedHeight} ft / {metricHeight} m</h1>
+            <div className="weightRow">
+        <img src={pokeball} className="bullet" alt="pokeball-bullet" /><h1 className="weight">  Weight: <span className="weightDetails"> {roundedFormattedWeight} lbs / {metricWeight} kg  </span> </h1> </div>
+        <div className="heightRow">
+        <img src={pokeball} className="bullet" alt="pokeball-bullet" /> <h1 className="height">Height:  <span className="heightDetails"> {roundedFormattedHeight} ft / {metricHeight} m  </span></h1> </div>
         </div>
         </div>
     </div>

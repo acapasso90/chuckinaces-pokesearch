@@ -10,6 +10,12 @@ form {margin-bottom: 3%;}
   margin: 0;
 }
 
+.bullet {width: 7%;
+  height: 45px;
+  float: left;
+  margin-top: 3.5%;
+}
+
 .column {margin-left: 9%;
 text-align: center;}
 .container {  margin: 0;}
@@ -20,7 +26,10 @@ margin-bottom: 2%;}
 
 .header h1 {margin: 0;}
 
-.officialImg {width: 80%;}
+.officialImg {width: 80%;
+  border-radius: 2px;
+border: 2px solid #ee77e2;}
+
 .pokeName {text-transform: capitalize;
 color: #f840e6;
 font-size: 29pt;}
@@ -34,6 +43,8 @@ margin-left: auto;}
   background-color: #252730;
   color: #ffff;
   outline: none;
+  margin-right: 5px;
+  border-radius: 2px;
 font-size: 16pt;}
 
 
@@ -41,16 +52,29 @@ font-size: 16pt;}
   background-color: #252730;
   color: #ffff;
   outline: none;
+  border-radius: 2px;
   border: 1.5px solid rgb(126, 230, 105);
 font-size: 16pt;}
 
 .submitButton:active {background-color: #ffff;
  color: #373a49;}
-.weightColumn {margin-top: 10%;}
+.weightColumn {margin-top: 5%;}
 
-.height {color:   #ad65ff}
-.weight {color: #3ffa7b;}
+.height {  color: #b737df;
+  margin-left: 1%;
+  white-space: nowrap;
+  font-style:italic;}
+.weight {color: #60eb44;
+  margin-left: 1%;
+  white-space: nowrap;
+  font-style:italic;
+}
 
+.weightDetails {margin-left: 3%;   font-style: normal;}
+.heightDetails {margin-left: 3%;
+  font-style: normal; }
+.weightRow, .heightRow {display: flex;
+flex-direction: row;}
 /** Mobile Sized**/
 @media only screen and (max-width: 500px){
 
