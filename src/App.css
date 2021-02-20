@@ -16,11 +16,11 @@ form {margin-bottom: 4.7%;}
   margin: 0;
 }
 
-.bullet {width: 7%;
-  height: 38px;
+.bullet {width: 7.5%;
+  height: 35px;
   float: left;
   user-select: none;
-  margin-top: 4%;
+  margin-top: 3.4%;
   margin-right: 1%;
 }
 
@@ -104,6 +104,12 @@ flex-direction: row;}
 /** Mobile Sized**/
 @media only screen and (max-width: 500px){
 
+  .bullet {width: 7.5%;
+    height: 30px;
+    margin: 4% 1% 0% 2%;
+  }
+
+
   .column {margin-left: 0;}
 
   .header {
@@ -128,8 +134,8 @@ flex-direction: row;}
             font-size: 21pt;
           }
 
-          .officialImg {
+          .officialImg {width: 354px;
           margin-left: 6.5%;}
 
-          .pokeName {margin-left: 5%;}
+          .pokeName {margin-left: 6%;}
 }
