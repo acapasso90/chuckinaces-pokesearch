@@ -7,6 +7,8 @@ font-family: 'Montserrat', sans-serif;}
 
 form {margin-bottom: 4.7%;}
 
+::selection {background-color: #e60dc1;
+  color: #8be9fd;}
 
 .App {
   text-align: center;
@@ -17,6 +19,7 @@ form {margin-bottom: 4.7%;}
 .bullet {width: 7%;
   height: 38px;
   float: left;
+  user-select: none;
   margin-top: 4%;
   margin-right: 1%;
 }
@@ -30,8 +33,10 @@ text-align: center;}
 .header {min-height: 100px;
 font-size: 30px;
 text-shadow: -4px 0 #f133de, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
+background-image: url(./wall.jpg);
 font-weight: lighter;
-margin-bottom: 2%;}
+margin-bottom: 2%;
+user-select: none;}
 
 .header h1 {margin: 0;
 font-family: 'Shrikhand', cursive;}
@@ -39,7 +44,7 @@ font-family: 'Shrikhand', cursive;}
 .officialImg {
  width: 340px;
   border-radius: 2px;
-border: 2px solid #ee77e2;}
+border: 3px solid #ee77e2;}
 
 .pokeName {text-transform: capitalize;
 color: #f840e6;
