@@ -5,7 +5,7 @@ import CardInfo from "./CardInfo.js";
 
 
 export default function CardSearch(){
-    const [pokemon, Setpokemon] = useState("charizard");
+    const [pokemon, Setpokemon] = useState("alcremie");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
