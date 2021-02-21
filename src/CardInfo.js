@@ -6,33 +6,41 @@ export default function CardInfo(props){
     let id = props.data.id;
     let name = props.data.name;
     let rarity = props.data.rarity;
-    let image = props.data.images.large;
     let set = props.data.set.name;
     let release =  props.data.set.releaseDate;
     let series = props.data.set.series;
+    let image = props.data.images.large;
     let pricetypes = props.data.tcgplayer;
-    let pricesUpdated = props.data.tcgplayer.updatedAt;
-    let pricesUpdatedUrl = props.data.tcgplayer.url;
+    let pricesUpdated = null;
+    let pricesUpdatedUrl = null;
+    let newPricelist =  null;
+    let newPriceOneType = null;
 
+        useEffect(() => {
+            if (pricetypes){let priceListLength = Object.values(pricetypes).length;
+                if (priceListLength >= 3 ) { newPricelist = Object.values(pricetypes)[2];}
+                 pricesUpdated = props.data.tcgplayer.updatedAt;
+      newPriceOneType = Object.values(newPricelist)[0];
+                 pricesUpdatedUrl = props.data.tcgplayer.url;
+            setPriceData({priceLow: newPriceOneType.low,
+                priceMid: newPriceOneType.mid,
+                priceHigh: newPriceOneType.high, 
+                pricemarket: newPriceOneType.market,
+           pricesUpdated,
+           pricesUpdatedUrl})}
+        }, [id]);
+        
+    
     const [priceData, setPriceData] = useState("");
 //turns object response from API into array
-  const newPricelist = Object.values(pricetypes)[2];
- const newPricetypes = Object.values(newPricelist);
+
+
  //
- const newPriceOneType = Object.values(newPricelist)[0];
+
       // searches priceTypes for normal pricing and sets values if present
 
 
-      useEffect(() => {
-        setPriceData({priceLow: newPriceOneType.low,
-            priceMid: newPriceOneType.mid,
-            priceHigh: newPriceOneType.high,
-            pricemarket: newPriceOneType.market,
-       pricesUpdated,
-       pricesUpdatedUrl}
-            )
-    }, [id]);
-    
+
 
 
     if (loaded === "loaded"){
@@ -40,7 +48,7 @@ export default function CardInfo(props){
          <div className="row">
              <div className="cardColumn">
              <h1>{name}</h1> 
-<img src={image} alt="name" className="cardImage" />
+             <img src={image} alt="name" className="cardImage" />
 </div>
 <div className="cardColumn">
 <ul>
@@ -51,6 +59,7 @@ export default function CardInfo(props){
     <li>released on: {release}</li>
 </ul>
     </div>
+    
     <CardPrices data={priceData} />
     </div>
 </div>)}
