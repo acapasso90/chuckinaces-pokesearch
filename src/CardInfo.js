@@ -11,6 +11,9 @@ export default function CardInfo(props){
     let release =  props.data.set.releaseDate;
     let series = props.data.set.series;
     let pricetypes = props.data.tcgplayer;
+    let pricesUpdated = props.data.tcgplayer.updatedAt;
+    let pricesUpdatedUrl = props.data.tcgplayer.url;
+
     const [priceData, setPriceData] = useState("");
 //turns object response from API into array
   const newPricelist = Object.values(pricetypes)[2];
@@ -24,7 +27,10 @@ export default function CardInfo(props){
         setPriceData({priceLow: newPriceOneType.low,
             priceMid: newPriceOneType.mid,
             priceHigh: newPriceOneType.high,
-            pricemarket: newPriceOneType.market})
+            pricemarket: newPriceOneType.market,
+       pricesUpdated,
+       pricesUpdatedUrl}
+            )
     }, [id]);
     
 

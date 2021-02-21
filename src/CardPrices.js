@@ -5,7 +5,11 @@ console.log(props.data);
 let priceLow = props.data.priceLow;
 let priceMid = props.data.priceMid;
 let priceHigh = props.data.priceHigh;
-let pricemarket = props.data.priceMarket;
+let pricemarket = props.data.pricemarket;
+let pricesUpdated = props.data.pricesUpdated;
+let pricesUpdatedUrl = props.data.pricesUpdatedUrl;
+console.log(pricesUpdatedUrl);
+
     return(
     <div className="CardPrices">
  <div className="cardColumn">
@@ -24,6 +28,7 @@ let pricemarket = props.data.priceMarket;
        <p> ${priceHigh}</p>
     </div>
 </div>
+Prices last updated on {pricesUpdated} using prices from <a href={pricesUpdatedUrl} target= "_blank">TCGPlayer</a>
 </div>
 </div>)
 }

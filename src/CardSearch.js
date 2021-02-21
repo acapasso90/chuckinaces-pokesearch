@@ -54,7 +54,8 @@ if(loaded){return(
 className="searchBar" />
 <input type="submit" placeholder="Submit" className="submitButton" />
 </form>
-<CardInfo data={pokeinfo[0]} loading={loadedStatus} />
+{pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
+            return(<CardInfo data={pokemonNumber} loading={loadedStatus}/>)})}
     </div>)}
 //  searches default pokemon and shows loading pokeball gif
 else{
