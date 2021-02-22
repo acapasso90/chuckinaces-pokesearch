@@ -4,14 +4,17 @@ import HoloPrices from "./HoloPrices.js";
 
 export default function CardInfo(props){
     let loaded = props.loading;
+    let data = props.data
     let id = props.data.id;
     let name = props.data.name;
     let rarity = props.data.rarity;
     let set = props.data.set.name;
     let release =  props.data.set.releaseDate;
     let series = props.data.set.series;
-    let image = props.data.images.large;
+    let imageUrl = props.data.images.large;
+    const [image, setImage] = useState(imageUrl)
     let pricetypes = props.data.tcgplayer;
+    let artist = props.data.artist;
     let pricesUpdated = null;
     let pricesUpdatedUrl = null;
     let newPricelist =  null;
@@ -24,6 +27,7 @@ export default function CardInfo(props){
     const [firstEditionPriceData, setFirstEditionPriceData] = useState("");
 
         useEffect(() => {
+            setImage(data.images.large)
             if (pricetypes){let priceListLength = Object.values(pricetypes).length;
                 if (priceListLength >= 3 ) { newPricelist = Object.values(pricetypes)[2];}
           pricesUpdated = props.data.tcgplayer.updatedAt;
@@ -112,7 +116,7 @@ pricesUpdatedUrl})}}}
          <div className="row">
              <div className="cardColumn">
              <h1>{name}</h1> 
-             <img src={image} alt="name" className="cardImage" />
+             <img src={image} alt={name} className="cardImage" />
 </div>
 <div className="cardColumn">
 <ul>
@@ -121,6 +125,7 @@ pricesUpdatedUrl})}}}
     <li>set: {set}</li>
     <li>series: {series}</li>
     <li>released on: {release}</li>
+    <li>Art by {artist}</li>
 </ul>
     </div>
     

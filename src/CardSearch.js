@@ -48,7 +48,7 @@ useEffect(() => {
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
     <div className="CardSearch" >
-        <p>Search by pokemon name. Can put * after incomplete name to pull up many (Char* pulls up Charmander, Charmeleon, Charizard) </p>
+        <p>Search by pokemon name. Can put * after incomplete name to pull up many (Char* pulls up Charmander, Charmeleon, Charizard). Can search "V" for all vmax. Use one word from two-worded search items ("Guy" for Ball Guy. "Fini" for Tapu Fini etc) </p>
 <form onSubmit={handleSubmit}>
 <input type="text" onChange={setPokemon} placeholder="Enter Pokemon name" 
 className="searchBar" />
