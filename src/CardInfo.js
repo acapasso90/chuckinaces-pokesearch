@@ -21,11 +21,15 @@ export default function CardInfo(props){
     const [priceData, setPriceData] = useState("");
     const [holoPriceData, setHoloPriceData] = useState("");
     const [reverseholoPriceData, setReverseHoloPriceData] = useState("");
+    const [firstEditionPriceData, setFirstEditionPriceData] = useState("");
 
         useEffect(() => {
             if (pricetypes){let priceListLength = Object.values(pricetypes).length;
                 if (priceListLength >= 3 ) { newPricelist = Object.values(pricetypes)[2];}
           pricesUpdated = props.data.tcgplayer.updatedAt;
+          pricesUpdatedUrl = props.data.tcgplayer.url;
+
+          console.log(pricesUpdated)
           //Grabs the first value in the array of prices. If there's multiple the first is typically normal
           newPriceOneType = Object.values(newPricelist)[0];
        // if prices includes HoloFoil and Normal types sets Normal to first object in array and holo prices to second.
@@ -61,15 +65,34 @@ else {setHoloPriceData("null");}
     pricesUpdated,
     pricesUpdatedUrl})
     } 
-    else {setReverseHoloPriceData("null");} 
-                 pricesUpdatedUrl = props.data.tcgplayer.url;
-            setPriceData({priceLow: newPriceOneType.low,
-                priceMid: newPriceOneType.mid,
-                priceHigh: newPriceOneType.high, 
-                pricemarket: newPriceOneType.market,
-           pricesUpdated,
-           pricesUpdatedUrl})}
-        }, [id]);
+      // if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
+      if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
+        newPriceTwoType = Object.values(newPricelist)[1];   
+        setPriceData({priceLow: newPriceOneType.low,
+        priceMid: newPriceOneType.mid,
+        priceHigh: newPriceOneType.high, 
+        pricemarket: newPriceOneType.market,
+   pricesUpdated,
+   pricesUpdatedUrl})
+   setFirstEditionPriceData({priceLow: newPriceTwoType.low,
+    priceMid: newPriceTwoType.mid,
+    priceHigh: newPriceTwoType.high, 
+    pricemarket: newPriceTwoType.market,
+pricesUpdated,
+pricesUpdatedUrl})
+} 
+ } 
+
+ else {setReverseHoloPriceData("null");} 
+ if (pricesUpdatedUrl === null){pricesUpdatedUrl = "URL Unavailable"}
+ if ( newPriceOneType != undefined){
+setPriceData({priceLow: newPriceOneType.low,
+priceMid: newPriceOneType.mid,
+priceHigh: newPriceOneType.high, 
+pricemarket: newPriceOneType.market,
+pricesUpdated,
+pricesUpdatedUrl})}}
+, [id]);
         
 
 //turns object response from API into array

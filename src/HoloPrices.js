@@ -1,8 +1,14 @@
 import React from "react";
 
 export default function HoloPrices(props){
-
-    
+    let holoMarket = null;
+    let holoHigh = null;
+    let holoLow = null;
+    let holoMid = null;
+    let reverseMarket = null;
+    let reverseHigh = null;
+    let reverseLow = null;
+    let reverseMid = null;
 if (props.data != "null" && props.data != ""){ const holoMarket = props.data.pricemarket;
 const holoHigh = props.data.priceHigh;
 const holoLow = props.data.priceLow;

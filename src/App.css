@@ -26,6 +26,8 @@ font-size: 16pt;}
   margin-right: 1%;
 }
 
+.CardSearch form {margin-top: 6.5%;}
+
 .priceColumn{margin-left: 5%;
   margin-right: npm 5%;}
 .cardImage {min-width: 23%;
@@ -42,6 +44,10 @@ font-size: 30px;
 text-shadow: -4px 0 #f133de, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
 background-image: url(./wall.jpg);
 font-weight: lighter;
+position: fixed;
+top: 0;
+right: 0;
+left: -40px;
 margin-bottom: 2%;
 user-select: none;}
 
@@ -63,6 +69,7 @@ margin-left: auto;}
 
 .PokeSearch p {font-size: 18pt;
 width: 90%;
+margin-top: 8%;
 margin-left: auto;
 margin-right: auto;}
 
