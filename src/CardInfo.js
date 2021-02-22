@@ -84,7 +84,7 @@ pricesUpdatedUrl})
  } 
 
  else {setReverseHoloPriceData("null");} 
- if (pricesUpdatedUrl === null){pricesUpdatedUrl = "URL Unavailable"}
+ if (pricesUpdatedUrl === null || pricesUpdatedUrl === undefined){pricesUpdatedUrl = "URL Unavailable"}
  if ( newPriceOneType != undefined){
 setPriceData({priceLow: newPriceOneType.low,
 priceMid: newPriceOneType.mid,

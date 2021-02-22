@@ -6,7 +6,8 @@ export default function PokeInfo(props){
     let loaded = props.loading;
     let pokePicture = props.data.sprites.other.[official].front_default;
     let pokeName = props.data.name;
-
+    
+if (pokeName === "mimikyu-disguised"){pokeName = `Scary Pikachu`}
 // Gets weight in hectograms from API
 let unformattedWeight = props.data.weight;
 // Converts to lbs by dividing by 4.536

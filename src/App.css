@@ -26,8 +26,9 @@ font-size: 16pt;}
   margin-right: 1%;
 }
 
-.CardSearch p {margin-top: 8%;}
+.PokeSearch, .CardSearch {margin-top: 8%;}
 
+.loading {margin-top: 12%;}
 .priceColumn{margin-left: 5%;
   margin-right: npm 5%;}
 .cardImage {min-width: 23%;
