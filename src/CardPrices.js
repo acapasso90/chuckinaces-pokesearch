@@ -15,22 +15,22 @@ if (pricemarket != null){pricemarket = props.data.pricemarket.toFixed(2); pricem
 else if (pricemarket === null || pricemarket === undefined){pricemarket = "n/a";}
 let pricesUpdated = props.data.pricesUpdated;
 let pricesUpdatedUrl = props.data.pricesUpdatedUrl;
-console.log(pricemarket.length);
+
 
 if (pricesUpdatedUrl === null){  return(
     <div className="CardPrices">
  <div className="cardColumn">
     <h2>Market Price: {pricemarket}</h2>
 <div className="row">
-    <div className="priceColumn">
+    <div className="lowColumn">
         <h3>Low</h3>
        <p> {priceLow}</p>
     </div>
-    <div className="priceColumn">
+    <div className="midColumn">
         <h3>Mid</h3>
        <p> {priceMid}</p>
     </div>
-    <div className="priceColumn">
+    <div className="highColumn">
         <h3>High</h3>
        <p> {priceHigh}</p>
     </div>
@@ -43,15 +43,15 @@ Prices last updated on {pricesUpdated} using prices from <a href={pricesUpdatedU
  <div className="cardColumn">
     <h2>Market Price: {pricemarket}</h2>
 <div className="row">
-    <div className="priceColumn">
+    <div className="lowColumn">
         <h3>Low</h3>
        <p> {priceLow}</p>
     </div>
-    <div className="priceColumn">
+    <div className="midColumn">
         <h3>Mid</h3>
        <p> {priceMid}</p>
     </div>
-    <div className="priceColumn">
+    <div className="highColumn">
         <h3>High</h3>
        <p> {priceHigh}</p>
     </div>

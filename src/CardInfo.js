@@ -29,44 +29,29 @@ export default function CardInfo(props){
           pricesUpdated = props.data.tcgplayer.updatedAt;
           pricesUpdatedUrl = props.data.tcgplayer.url;
 
-          console.log(pricesUpdated)
           //Grabs the first value in the array of prices. If there's multiple the first is typically normal
           newPriceOneType = Object.values(newPricelist)[0];
-       // if prices includes HoloFoil and Normal types sets Normal to first object in array and holo prices to second.
-       if (Object.getOwnPropertyNames(newPricelist).includes("holofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
-        newPriceTwoType = Object.values(newPricelist)[1];   
-        setPriceData({priceLow: newPriceOneType.low,
-        priceMid: newPriceOneType.mid,
-        priceHigh: newPriceOneType.high, 
-        pricemarket: newPriceOneType.market,
-   pricesUpdated,
-   pricesUpdatedUrl})
-   setHoloPriceData({priceLow: newPriceTwoType.low,
-    priceMid: newPriceTwoType.mid,
-    priceHigh: newPriceTwoType.high, 
-    pricemarket: newPriceTwoType.market,
+          newPriceTwoType = Object.values(newPricelist)[1];   
+          if ( newPriceOneType != undefined && newPricelist){
+ // if prices includes HoloFoil and Normal types sets Normal to first object in array and holo prices to second.
+ if (Object.getOwnPropertyNames(newPricelist).includes("holofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
+    newPriceTwoType = Object.values(newPricelist)[1];   
+    setPriceData({priceLow: newPriceOneType.low,
+    priceMid: newPriceOneType.mid,
+    priceHigh: newPriceOneType.high, 
+    pricemarket: newPriceOneType.market,
+pricesUpdated,
+pricesUpdatedUrl})
+setHoloPriceData({priceLow: newPriceTwoType.low,
+priceMid: newPriceTwoType.mid,
+priceHigh: newPriceTwoType.high, 
+pricemarket: newPriceTwoType.market,
 pricesUpdated,
 pricesUpdatedUrl})
 } 
 else {setHoloPriceData("null");}
-       // if prices includes reverseHoloFoil and Normal types sets Normal to first object in array and holo prices to second.
-       if (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
-            newPriceTwoType = Object.values(newPricelist)[1];   
-            setPriceData({priceLow: newPriceOneType.low,
-            priceMid: newPriceOneType.mid,
-            priceHigh: newPriceOneType.high, 
-            pricemarket: newPriceOneType.market,
-       pricesUpdated,
-       pricesUpdatedUrl})
-       setReverseHoloPriceData({priceLow: newPriceTwoType.low,
-        priceMid: newPriceTwoType.mid,
-        priceHigh: newPriceTwoType.high, 
-        pricemarket: newPriceTwoType.market,
-    pricesUpdated,
-    pricesUpdatedUrl})
-    } 
-      // if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
-      if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
+   // if prices includes reverseHoloFoil and Normal types sets Normal to first object in array and holo prices to second.
+   if (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
         newPriceTwoType = Object.values(newPricelist)[1];   
         setPriceData({priceLow: newPriceOneType.low,
         priceMid: newPriceOneType.mid,
@@ -74,24 +59,40 @@ else {setHoloPriceData("null");}
         pricemarket: newPriceOneType.market,
    pricesUpdated,
    pricesUpdatedUrl})
-   setFirstEditionPriceData({priceLow: newPriceTwoType.low,
+   setReverseHoloPriceData({priceLow: newPriceTwoType.low,
     priceMid: newPriceTwoType.mid,
     priceHigh: newPriceTwoType.high, 
     pricemarket: newPriceTwoType.market,
 pricesUpdated,
 pricesUpdatedUrl})
 } 
- } 
+  // if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
+  if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
+    newPriceTwoType = Object.values(newPricelist)[1];   
+    setPriceData({priceLow: newPriceOneType.low,
+    priceMid: newPriceOneType.mid,
+    priceHigh: newPriceOneType.high, 
+    pricemarket: newPriceOneType.market,
+pricesUpdated,
+pricesUpdatedUrl})
+setFirstEditionPriceData({priceLow: newPriceTwoType.low,
+priceMid: newPriceTwoType.mid,
+priceHigh: newPriceTwoType.high, 
+pricemarket: newPriceTwoType.market,
+pricesUpdated,
+pricesUpdatedUrl})
+} 
+} 
 
- else {setReverseHoloPriceData("null");} 
- if (pricesUpdatedUrl === null || pricesUpdatedUrl === undefined){pricesUpdatedUrl = "URL Unavailable"}
- if ( newPriceOneType != undefined){
+else {setReverseHoloPriceData("null");} 
+if (pricesUpdatedUrl === null || pricesUpdatedUrl === undefined){pricesUpdatedUrl = "URL Unavailable"}
+if ( newPriceOneType != undefined){
 setPriceData({priceLow: newPriceOneType.low,
 priceMid: newPriceOneType.mid,
 priceHigh: newPriceOneType.high, 
 pricemarket: newPriceOneType.market,
 pricesUpdated,
-pricesUpdatedUrl})}}
+pricesUpdatedUrl})}}}
 , [id]);
         
 

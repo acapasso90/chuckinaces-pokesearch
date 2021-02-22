@@ -29,6 +29,10 @@ font-size: 16pt;}
 .PokeSearch, .CardSearch {margin-top: 8%;}
 
 .loading {margin-top: 12%;}
+
+.lowColumn {color: #60eb44; }
+.midColumn {color: #ebd244; }
+.highColumn {color: #f85a5a; }
 .priceColumn{margin-left: 5%;
   margin-right: npm 5%;}
 .cardImage {min-width: 23%;
