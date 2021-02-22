@@ -1,10 +1,14 @@
 import React from "react";
 
 export default function CardPrices(props){
-let priceLow = props.data.priceLow.toFixed(2);
-let priceMid = props.data.priceMid.toFixed(2);
-let priceHigh = props.data.priceHigh.toFixed(2);
-let pricemarket = props.data.pricemarket.toFixed(2);
+let priceLow = props.data.priceLow;
+if (priceLow != null) {priceLow = props.data.priceLow.toFixed(2);}
+let priceMid = props.data.priceMid;
+if (priceMid != null) {priceLow = props.data.priceMid.toFixed(2);}
+let priceHigh = props.data.priceHigh;
+if (priceHigh != null) {priceLow = props.data.priceHigh.toFixed(2);}
+let pricemarket = props.data.pricemarket;
+if (pricemarket != null){pricemarket = props.data.pricemarket.toFixed(2); }
 if (pricemarket === null){pricemarket = "n/a";}
 else {pricemarket = `$${pricemarket}`;}
 let pricesUpdated = props.data.pricesUpdated;
