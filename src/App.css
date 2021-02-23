@@ -122,7 +122,7 @@ font-size: 18pt;}
   background-color: #252730;
   color:  #e9fbff;
   position: relative;
-  z-index: -1;
+
   top: -1px;
   font-weight: bold;
   outline: none;
@@ -131,6 +131,8 @@ font-size: 18pt;}
 font-size: 16pt;}
 
 .submitButton:active {animation: 1s buttonActive normal;
+position: relative;
+top: 1px;
 }
 .weightColumn {margin-top: 5%;}
 
