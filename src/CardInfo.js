@@ -14,7 +14,6 @@ export default function CardInfo(props){
     let imageUrl = props.data.images.large;
     const [image, setImage] = useState(imageUrl)
     let pricetypes = props.data.tcgplayer;
-    let artist = props.data.artist;
     let pricesUpdated = null;
     let pricesUpdatedUrl = null;
     let newPricelist =  null;
@@ -113,23 +112,28 @@ pricesUpdatedUrl})}}}
     if (loaded === "loaded"){
      return(<div className="CardInfo">
          <div className="row">
-             <div className="cardColumn">
+             <div className="cardimageColumn">
              <h1>{name}</h1> 
              <img src={image} alt={name} className="cardImage" />
 </div>
 <div className="cardColumn">
 <ul>
-    <li>id: {id}</li>
-    <li>rarity: {rarity}</li>
-    <li>set: {set}</li>
-    <li>series: {series}</li>
-    <li>released on: {release}</li>
-    <li>Art by {artist}</li>
+    <li className="id" id="liHeader">ID#</li>
+    <li>{id}</li>
+    <li className="rarity" id="liHeader">Rarity</li>
+    <li>{rarity}</li>
+    <li className="set" id="liHeader">Set</li>
+    <li>{set}</li>
+    <li className="series" id="liHeader">Series</li>
+    <li>{series}</li>
+    <li className="released" id="liHeader">Released on</li>
+    <li>{release}</li>
 </ul>
     </div>
-    
-    <CardPrices data={priceData} />
+<div className="column">
+    <CardPrices data={priceData} /> <br />
     <HoloPrices data={holoPriceData} reverse={reverseholoPriceData} />
+    </div>
     </div>
 </div>)}
 

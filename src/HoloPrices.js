@@ -12,15 +12,15 @@ return(<div className="HoloPrices">
     <h2>Holo Market Price: {holoMarket}</h2>
 <div className="row">
     <div className="lowColumn">
-        <h3>Holo Low</h3>
+        <h3>Low</h3>
        <p> ${holoLow}</p>
     </div>
     <div className="midColumn">
-        <h3>Holo Mid</h3>
+        <h3>Mid</h3>
        <p> ${holoMid}</p>
     </div>
     <div className="highColumn">
-        <h3>Holo High</h3>
+        <h3>High</h3>
        <p> ${holoHigh}</p>
     </div>
 </div>
@@ -38,15 +38,15 @@ if (props.reverse != "null" && props.reverse != "") {
        <h2>Reverse Holo Market Price: {reverseMarket}</h2>
    <div className="row">
        <div className="lowColumn">
-           <h3>Reverse Holo Low</h3>
+           <h3>Low</h3>
           <p> ${reverseLow}</p>
        </div>
        <div className="midColumn">
-           <h3>Reverse Holo Mid</h3>
+           <h3>Mid</h3>
           <p> ${reverseMid}</p>
        </div>
        <div className="highColumn">
-           <h3>Reverse Holo High</h3>
+           <h3>High</h3>
           <p> ${reverseHigh}</p>
        </div>
    </div>
