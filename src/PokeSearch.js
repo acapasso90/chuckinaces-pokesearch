@@ -38,14 +38,13 @@ axios.get(APIurl).then(setInfo);}
 if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
             <p>
-            Search by pokemon number or name.
+            Search by pokemon number or name.</p>
                 <ul>
                     <li> Zamazenta and Zacian need -hero (Ex: Zamazenta-Hero) </li>
                     <li>  Pokemon with different forms may require "-standard" (Ex: Darmanitan-Standard) </li>
                     <li>   Mimikyu needs -disguised (Ex: Mimikyu-Disguised) </li>
                     <li>       Add "-alola" or "-galar" to pokename to get Galarian forms  (Ex: dugtrio-alola / corsola-galar)  </li>
                     </ul>
-</p>
     <form onSubmit={handleSubmit}>
     <input type="text" onChange={setPokemon} placeholder="Enter Pokemon name / number" 
     className="searchBar" />

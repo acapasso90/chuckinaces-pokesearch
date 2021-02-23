@@ -31,13 +31,17 @@ font-size: 16pt;}
 .loading {margin-top: 12%;}
 
 .lowColumn {color: #60eb44; }
-.midColumn {color: #ebd244; }
-.highColumn {color: #f85a5a; }
+.midColumn {color: #ebd244; margin-left: 7%;}
+.highColumn {color: #f85a5a; margin-left: 7%;}
 .priceColumn{margin-left: 5%;
   margin-right: npm 5%;}
+
 .cardImage {min-width: 23%;
   max-width: 306px;}
 
+.cardColumn ul {margin-top: 30%;}
+
+.cardColumn ul li {margin-top: 4%; margin-bottom: 4%;}
 .column {margin-left: 15%;
   margin-right: 5%;
 text-align: center;}

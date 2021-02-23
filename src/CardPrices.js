@@ -2,22 +2,22 @@ import React from "react";
 
 export default function CardPrices(props){
 let priceLow = props.data.priceLow;
-if (priceLow != null) {priceLow = props.data.priceLow.toFixed(2);  priceLow = `$${priceLow}`;}
+if (priceLow) {priceLow = props.data.priceLow.toFixed(2);  priceLow = `$${priceLow}`;}
 else if (priceLow === null || priceLow === undefined) {priceLow = "n/a"}
 let priceMid = props.data.priceMid;
-if (priceMid != null) {priceMid = props.data.priceMid.toFixed(2);  priceMid = `$${priceMid}`;}
+if (priceMid) {priceMid = props.data.priceMid.toFixed(2);  priceMid = `$${priceMid}`;}
 else if (priceMid === null || priceMid === undefined) {priceMid = "n/a";}
 let priceHigh = props.data.priceHigh;
-if (priceHigh != null) {priceHigh = props.data.priceHigh.toFixed(2); priceHigh = `$${priceHigh}`;}
+if (priceHigh) {priceHigh = props.data.priceHigh.toFixed(2); priceHigh = `$${priceHigh}`;}
 else if (priceHigh === null || priceHigh === undefined) {priceHigh = "n/a"; }
 let pricemarket = props.data.pricemarket;
-if (pricemarket != null){pricemarket = props.data.pricemarket.toFixed(2); pricemarket = `$ ${pricemarket}`; }
+if (pricemarket){pricemarket = props.data.pricemarket.toFixed(2); pricemarket = `$ ${pricemarket}`; }
 else if (pricemarket === null || pricemarket === undefined){pricemarket = "n/a";}
 let pricesUpdated = props.data.pricesUpdated;
 let pricesUpdatedUrl = props.data.pricesUpdatedUrl;
 
 
-if (pricesUpdatedUrl === null){  return(
+if (pricesUpdatedUrl === "URL Unavailable"){  return(
     <div className="CardPrices">
  <div className="cardColumn">
     <h2>Market Price: {pricemarket}</h2>

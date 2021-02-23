@@ -28,8 +28,7 @@ export default function CardInfo(props){
 
         useEffect(() => {
             setImage(data.images.large)
-            if (pricetypes){let priceListLength = Object.values(pricetypes).length;
-                if (priceListLength >= 3 ) { newPricelist = Object.values(pricetypes)[2];}
+            if (pricetypes){newPricelist = Object.values(pricetypes)[2];
           pricesUpdated = props.data.tcgplayer.updatedAt;
           pricesUpdatedUrl = props.data.tcgplayer.url;
 
