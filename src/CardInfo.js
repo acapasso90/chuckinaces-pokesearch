@@ -4,9 +4,11 @@ import HoloPrices from "./HoloPrices.js";
 
 export default function CardInfo(props){
     let loaded = props.loading;
+    console.log(props.data)
     let data = props.data
     let id = props.data.id;
     let name = props.data.name;
+    if (name === "Hop"){name = "f*ing Hop";}
     let rarity = props.data.rarity;
     let set = props.data.set.name;
     let release =  props.data.set.releaseDate;
@@ -19,7 +21,6 @@ export default function CardInfo(props){
     let newPricelist =  null;
     let newPriceOneType = null;
     let newPriceTwoType = null;
-    
     const [priceData, setPriceData] = useState("");
     const [holoPriceData, setHoloPriceData] = useState("");
     const [reverseholoPriceData, setReverseHoloPriceData] = useState("");
@@ -42,6 +43,7 @@ export default function CardInfo(props){
     priceMid: newPriceOneType.mid,
     priceHigh: newPriceOneType.high, 
     pricemarket: newPriceOneType.market,
+    loaded: loaded,
 pricesUpdated,
 pricesUpdatedUrl})
 setHoloPriceData({priceLow: newPriceTwoType.low,
@@ -49,6 +51,7 @@ priceMid: newPriceTwoType.mid,
 priceHigh: newPriceTwoType.high, 
 pricemarket: newPriceTwoType.market,
 pricesUpdated,
+loaded: loaded,
 pricesUpdatedUrl})
 } 
 else {setHoloPriceData("null");}
@@ -60,12 +63,14 @@ else {setHoloPriceData("null");}
         priceHigh: newPriceOneType.high, 
         pricemarket: newPriceOneType.market,
    pricesUpdated,
+   loaded: loaded,
    pricesUpdatedUrl})
    setReverseHoloPriceData({priceLow: newPriceTwoType.low,
     priceMid: newPriceTwoType.mid,
     priceHigh: newPriceTwoType.high, 
     pricemarket: newPriceTwoType.market,
 pricesUpdated,
+loaded: loaded,
 pricesUpdatedUrl})
 } 
   // if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
@@ -76,12 +81,14 @@ pricesUpdatedUrl})
     priceHigh: newPriceOneType.high, 
     pricemarket: newPriceOneType.market,
 pricesUpdated,
+loaded: loaded,
 pricesUpdatedUrl})
 setFirstEditionPriceData({priceLow: newPriceTwoType.low,
 priceMid: newPriceTwoType.mid,
 priceHigh: newPriceTwoType.high, 
 pricemarket: newPriceTwoType.market,
 pricesUpdated,
+loaded: loaded,
 pricesUpdatedUrl})
 } 
 } 
@@ -94,6 +101,7 @@ priceMid: newPriceOneType.mid,
 priceHigh: newPriceOneType.high, 
 pricemarket: newPriceOneType.market,
 pricesUpdated,
+loaded: loaded,
 pricesUpdatedUrl})}}}
 , [id]);
         
@@ -136,5 +144,4 @@ pricesUpdatedUrl})}}}
     </div>
     </div>
 </div>)}
-
 else{return("loading");}}

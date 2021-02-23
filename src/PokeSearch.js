@@ -8,6 +8,7 @@ const [pokemon, Setpokemon] = useState("spoink");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
+const searchIcon = <i class="fas fa-search"></i>;
 
 // sets Pokemon info and sets loaded status for PokeInfo.js
 function setInfo(response){
@@ -39,17 +40,16 @@ if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
             <p>
             Search by pokemon number or name.</p>
-                <ul>
-                    <li> Zamazenta and Zacian need -hero (Ex: Zamazenta-Hero) </li>
-                    <li>  Pokemon with different forms may require "-standard" (Ex: Darmanitan-Standard) </li>
-                    <li>   Mimikyu needs -disguised (Ex: Mimikyu-Disguised) </li>
-                    <li>       Add "-alola" or "-galar" to pokename to get Galarian forms  (Ex: dugtrio-alola / corsola-galar)  </li>
-                    </ul>
     <form onSubmit={handleSubmit}>
     <input type="text" onChange={setPokemon} placeholder="Enter Pokemon name / number" 
     className="searchBar" />
-    <input type="submit" placeholder="Submit" className="submitButton" />
+    <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
     </form>
+    <ul>
+                    <li> Zamazenta and Zacian need -hero <span className="pink">(ex: Zamazenta-Hero)</span> </li>
+                    <li>  Darmanitan needs "-standard" <span className="pink">(ex: Darmanitan-Standard / Darmanitan-Standard-Galar)</span> </li>
+                    <li>   Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>. </li>
+                    </ul>
     <PokeInfo data={pokeinfo} loading={loadedStatus} />
         </div>)}
 //  searches default pokemon and shows loading pokeball gif

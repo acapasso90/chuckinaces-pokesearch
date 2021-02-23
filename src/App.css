@@ -1,11 +1,13 @@
+
 a, a:active {color:#ee65a9!important;
 text-decoration: none;}
+a:hover { color: #60eb44!important;}
 
 body {background-color: #20212b;
 color: #8be9fd;
 font-family: 'Montserrat', sans-serif;}
 
-form {margin-bottom: 4.7%;}
+form {margin-bottom: 1%;}
 
 ul {list-style: none; 
 font-size: 16pt;}
@@ -17,6 +19,8 @@ font-size: 16pt;}
   margin-top: 5%;
   margin-bottom: 7%;
 }
+
+.PokeSearch, .CardSearch {margin-top: 130px;}
 .App {
   text-align: center;
   width: 98.8vw;
@@ -31,7 +35,6 @@ font-size: 16pt;}
   margin-right: 1%;
 }
 
-.PokeSearch, .CardSearch {margin-top: 8%;}
 
 .loading {margin-top: 12%;}
 
@@ -62,9 +65,12 @@ margin-bottom: 1%;}
 text-align: center;}
 .container {  margin: 0;}
 
+.pink {color: #f15de3;}
 
 .header {min-height: 100px;
-font-size: 30px;
+  white-space: nowrap;
+  z-index: 1;
+font-size: 33px;
 text-shadow: -4px 0 #f133de, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
 background-image: url(./wall.jpg);
 font-weight: lighter;
@@ -72,7 +78,6 @@ position: fixed;
 top: 0;
 right: 0;
 left: -40px;
-margin-bottom: 2%;
 user-select: none;}
 
 .header h1 {margin: 0;
@@ -89,11 +94,12 @@ color: #f840e6;
 font-size: 29pt;}
 
 .PokeInfo {width: 90%;
+  margin-top: 3.5%;
 margin-left: auto;}
 
 .PokeSearch p {font-size: 18pt;
 width: 90%;
-margin-top: 8%;
+margin-bottom: 0.4%;
 margin-left: auto;
 margin-right: auto;}
 
@@ -101,25 +107,31 @@ margin-right: auto;}
 .row {display: flex;}
 
 .searchBar {width: 20%;
+  height: 40px;
   border: 2.5px solid #b737df;
   background-color: #252730;
   color:  #e9fbff;
   outline: none;
-  margin-right: 5px;
+  margin-right: 11px;
   border-radius: 2px;
-font-size: 16pt;}
+font-size: 18pt;}
 
 
-.submitButton {width: 110px;
+.submitButton {width: 60px;
+  height: 47px;
   background-color: #252730;
   color:  #e9fbff;
+  position: relative;
+  z-index: -1;
+  top: -1px;
   font-weight: bold;
   outline: none;
   border-radius: 2px;
   border: 2.5px solid #b737df;
 font-size: 16pt;}
 
-.submitButton:active {animation: 1s buttonActive normal;}
+.submitButton:active {animation: 1s buttonActive normal;
+}
 .weightColumn {margin-top: 5%;}
 
 .height {  color: #cf65f0;
