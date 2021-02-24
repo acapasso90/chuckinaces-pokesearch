@@ -16,6 +16,7 @@ font-size: 16pt;}
 
 #liHeader {font-size: 19pt; 
   color: #cf65f0;
+  font-weight: bold;
   margin-top: 5%;
   margin-bottom: 7%;
 }
@@ -49,9 +50,10 @@ font-size: 16pt;}
 
   .cardimageColumn {margin-left: 2%;}
 
-.cardColumn ul {margin-top: 8%;}
+.cardColumn {margin-left: 150px; margin-right: 80px; text-align: left;}
+.cardColumn ul {margin-top: 14px;}
 
-.cardColumn ul li {margin-top: 9%; margin-bottom: 9%;}
+.cardColumn ul li {margin-top: 25px; margin-bottom: 25px;}
 
 .CardInfo {border: 3px solid #f133de;
   padding-bottom: 0.8%;
@@ -60,7 +62,7 @@ width: 95%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 1%;}
-.column {margin-left: 18%;
+.column {margin-left: 13%;
   margin-right: 5%;
 text-align: center;}
 .container {  margin: 0;}
@@ -93,9 +95,13 @@ border: 3px solid #ee77e2;}
 color: #f840e6;
 font-size: 29pt;}
 
-.PokeInfo {width: 90%;
-  margin-top: 3.5%;
-margin-left: auto;}
+.pokeName2 {font-size: 25pt;}
+
+.PokeInfo {width: 60%;
+  margin-top: 1.5%;
+  padding-top: 2%;
+margin-left: auto;
+margin-right: auto;}
 
 .PokeSearch p {font-size: 18pt;
 width: 90%;

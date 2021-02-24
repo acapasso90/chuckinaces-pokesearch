@@ -9,6 +9,7 @@ export default function CardInfo(props){
     let name = props.data.name;
     if (name === "Hop"){name = "f*ing Hop";}
     let rarity = props.data.rarity;
+    if (!rarity){rarity = "n/a"}
     let set = props.data.set.name;
     let release =  props.data.set.releaseDate;
     let series = props.data.set.series;
@@ -107,7 +108,6 @@ loaded: loaded,
 pricesUpdatedUrl})
 } 
 } 
-console.log(Object.getOwnPropertyNames(newPricelist))
 if (pricesUpdatedUrl === null || pricesUpdatedUrl === undefined){pricesUpdatedUrl = "URL Unavailable"}
 // if there is one price available and it is holo set holo pricing
 if (newPriceOneType != undefined && (Object.getOwnPropertyNames(newPricelist).includes("holofoil")))
@@ -129,23 +129,11 @@ loaded: loaded,
 pricesUpdatedUrl})}}}
 , [id]);
 
-
-//turns object response from API into array
-
-
- //
-
-      // searches priceTypes for normal pricing and sets values if present
-
-
-
-
-
     if (loaded === "loaded"){
      return(<div className="CardInfo">
          <div className="row">
              <div className="cardimageColumn">
-             <h1>{name}</h1> 
+             <h1 className="pokeName" id="pokeName">{name}</h1> 
              <img src={image} alt={name} className="cardImage" />
 </div>
 <div className="cardColumn">
