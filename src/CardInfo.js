@@ -77,6 +77,16 @@ pricesUpdated,
 loaded: loaded,
 pricesUpdatedUrl})
 } 
+    // if there is one price available and it is reverse holo set reverse holo pricing
+else if ( newPriceOneType != undefined  && (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil"))){
+        setReverseHoloPriceData({priceLow: reverseHoloPriceList.low,
+            priceMid: reverseHoloPriceList.mid,
+            priceHigh: reverseHoloPriceList.high, 
+            pricemarket: reverseHoloPriceList.market,
+        pricesUpdated,
+        loaded: loaded,
+        pricesUpdatedUrl})}
+        else {setReverseHoloPriceData("null");}
 
   // if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
   if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
@@ -106,15 +116,6 @@ if (newPriceOneType != undefined && (Object.getOwnPropertyNames(newPricelist).in
     priceHigh: holoPriceList.high, 
     pricemarket: holoPriceList.market,
     pricesUpdated,
-    pricesUpdatedUrl})}
-    // if there is one price available and it is reverse holo set reverse holo pricing
-if ( newPriceOneType != undefined  && (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil"))){
-    setReverseHoloPriceData({priceLow: reverseHoloPriceList.low,
-        priceMid: reverseHoloPriceList.mid,
-        priceHigh: reverseHoloPriceList.high, 
-        pricemarket: reverseHoloPriceList.market,
-    pricesUpdated,
-    loaded: loaded,
     pricesUpdatedUrl})}
 
 // if there is one price available and it is normal set normal pricing

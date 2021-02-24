@@ -3,6 +3,8 @@ import React, {useEffect} from "react";
 export default function HoloPrices(props){
     useEffect(() => {
         if (props.data){
+            let mounted = true;
+            if(mounted){
             let loaded = props.data.loaded;
             let holoMarket = props.data.pricemarket;
             if (holoMarket  > 0){holoMarket = holoMarket.toFixed(2);}
@@ -14,7 +16,7 @@ export default function HoloPrices(props){
         let holoLow = props.data.priceLow;
         if (holoLow  > 0 ){ holoLow = holoLow.toFixed(2);}
         let holoMid = props.data.priceMid;
-        if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}
+        if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}}
       }}, [props.data]);
 
 if (props.data != "null" && props.data != ""){
