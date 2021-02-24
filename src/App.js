@@ -9,7 +9,7 @@ function App() {
     <div className="App">
    <div className="container">
      <Header />
-    <CardSearch />
+    <PokeSearch />
      <Footer />
    </div>
     </div>
