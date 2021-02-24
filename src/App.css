@@ -21,6 +21,8 @@ font-size: 16pt;}
   margin-bottom: 7%;
 }
 
+#priceRow {margin-left: 23%;}
+
 .PokeSearch, .CardSearch {margin-top: 130px;}
 .App {
   text-align: center;
@@ -48,12 +50,15 @@ font-size: 16pt;}
 .cardImage {min-width: 23%;
   max-width: 306px;}
 
-  .cardimageColumn {margin-left: 2%;}
+  .cardimageColumn {margin-left: 2%;
+}
 
-.cardColumn {margin-left: 20px; margin-right: 80px;}
-.cardColumn ul {margin-top: 14px;}
+.cardInfoColumn {position: absolute;
+  text-align: left;
+left: 450px;}
+.cardInfoColumn ul {margin-top: 14px;}
 
-.cardColumn ul li {margin-top: 25px; margin-bottom: 25px;}
+.cardInfoColumn ul li {margin-top: 25px; margin-bottom: 25px;}
 
 .CardInfo {border: 3px solid #f133de;
   padding-bottom: 0.8%;
@@ -62,6 +67,8 @@ width: 95%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 1%;}
+
+.cardPriceColumn {margin-left: 450px;}
 .column {margin-left: 9.2%;
   margin-right: 5%;
 text-align: center;}

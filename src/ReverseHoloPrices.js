@@ -34,7 +34,7 @@ export default function ReverseHoloPrices(props){
     return(<div className="HoloPrices">
      <div className="cardColumn">
         <h2>Reverse Holo Market Price: {holoMarket}</h2>
-    <div className="row">
+    <div className="row" id="priceRow">
         <div className="lowColumn">
             <h3>Low</h3>
            <p> ${holoLow}</p>

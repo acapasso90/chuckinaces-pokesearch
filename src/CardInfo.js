@@ -136,7 +136,7 @@ pricesUpdatedUrl})}}}
              <h1 className="pokeName" id="pokeName">{name}</h1> 
              <img src={image} alt={name} className="cardImage" />
 </div>
-<div className="cardColumn">
+<div className="cardInfoColumn">
 <ul>
     <li className="id" id="liHeader">ID#</li>
     <li>{id}</li>
@@ -150,7 +150,7 @@ pricesUpdatedUrl})}}}
     <li>{release}</li>
 </ul>
     </div>
-<div className="column">
+<div className="cardPriceColumn">
     <CardPrices data={priceData} /> <br />
     <HoloPrices data={holoPriceData}/>
     <ReverseHoloPrices data={reverseholoPriceData}/>

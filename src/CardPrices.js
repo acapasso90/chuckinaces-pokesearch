@@ -61,7 +61,7 @@ else if (pricemarket === "n/a"){return(null)}
     <div className="CardPrices">
  <div className="cardColumn">
     <h2>Normal Market Price: {pricemarket}</h2>
-<div className="row">
+<div className="row" id="priceRow">
     <div className="lowColumn">
         <h3>Low</h3>
        <p> {priceLow}</p>
