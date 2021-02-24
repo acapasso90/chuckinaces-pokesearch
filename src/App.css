@@ -50,7 +50,7 @@ font-size: 16pt;}
 
   .cardimageColumn {margin-left: 2%;}
 
-.cardColumn {margin-left: 150px; margin-right: 80px; text-align: left;}
+.cardColumn {margin-left: 20px; margin-right: 80px;}
 .cardColumn ul {margin-top: 14px;}
 
 .cardColumn ul li {margin-top: 25px; margin-bottom: 25px;}
@@ -62,7 +62,7 @@ width: 95%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 1%;}
-.column {margin-left: 13%;
+.column {margin-left: 9.2%;
   margin-right: 5%;
 text-align: center;}
 .container {  margin: 0;}
@@ -72,7 +72,7 @@ text-align: center;}
 .header {min-height: 100px;
   white-space: nowrap;
   z-index: 1;
-font-size: 33px;
+font-size: 31px;
 text-shadow: -4px 0 #f133de, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
 background-image: url(./wall.jpg);
 font-weight: lighter;
