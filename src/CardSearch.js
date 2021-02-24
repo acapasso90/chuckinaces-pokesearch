@@ -12,7 +12,7 @@ const [loadedStatus, setLoadedStatus] = useState(" ");
 const [arrayLength, setArrayLength] = useState("");
 const [pokemonLowercase, setPokemonLowercase] = useState("")
 // sets Pokemon info and sets loaded status for PokeInfo.js
-function setInfo(response){console.log(response)
+function setInfo(response){
     setPokeinfo(response.data.data);
     setArrayLength(response.data.length);
 setLoaded(true);
@@ -54,7 +54,7 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p>Can put * after incomplete name to pull up many (Char* pulls up Charmander, Charmeleon, Charizard). Can search "V" for all vmax. Use one word from two-worded search items ("Guy" for Ball Guy. "Fini" for Tapu Fini etc) </p>
+<p>Can put * after incomplete name to pull up many (<span className="pink">Char*</span> pulls up Charmander, Charmeleon, Charizard). Can search <span className="pink">"V" for all Vmax.</span> Use one word from two-worded search items (<span className="pink">"Guy" for Ball Guy. "Fini" for Tapu Fini</span> etc) </p>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
             return(<CardInfo data={pokemonNumber} loading={loadedStatus}/>)})}
     </div>)}

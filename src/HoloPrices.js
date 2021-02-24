@@ -1,15 +1,35 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 export default function HoloPrices(props){
+    useEffect(() => {
+        if (props.data){
+            let loaded = props.data.loaded;
+            let holoMarket = props.data.pricemarket;
+            if (holoMarket  > 0){holoMarket = holoMarket.toFixed(2);}
+            let url = props.data.pricesUpdatedUrl
+            let date = props.data.pricesUpdated
+            if (holoMarket === "0" || holoMarket === null){holoMarket = "n/a"} else{holoMarket = `$ ${holoMarket}`; }
+        let holoHigh = props.data.priceHigh;
+        if (holoHigh  > 0){holoHigh = holoHigh.toFixed(2);}
+        let holoLow = props.data.priceLow;
+        if (holoLow  > 0 ){ holoLow = holoLow.toFixed(2);}
+        let holoMid = props.data.priceMid;
+        if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}
+      }}, [props.data]);
 
 if (props.data != "null" && props.data != ""){
     let loaded = props.data.loaded;
-    if (loaded){
-    let holoMarket = props.data.pricemarket.toFixed(2);
+    let holoMarket = props.data.pricemarket;
+    if (holoMarket  > 0){holoMarket = holoMarket.toFixed(2);}
+    let url = props.data.pricesUpdatedUrl
+    let date = props.data.pricesUpdated
     if (holoMarket === "0" || holoMarket === null){holoMarket = "n/a"} else{holoMarket = `$ ${holoMarket}`; }
-const holoHigh = props.data.priceHigh.toFixed(2);
-const holoLow = props.data.priceLow.toFixed(2);
-const holoMid = props.data.priceMid.toFixed(2);
+let holoHigh = props.data.priceHigh;
+if (holoHigh  > 0){holoHigh = holoHigh.toFixed(2);}
+let holoLow = props.data.priceLow;
+if (holoLow  > 0 ){ holoLow = holoLow.toFixed(2);}
+let holoMid = props.data.priceMid;
+if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}
 return(<div className="HoloPrices">
  <div className="cardColumn">
     <h2>Holo Market Price: {holoMarket}</h2>
@@ -28,33 +48,6 @@ return(<div className="HoloPrices">
     </div>
 </div>
 </div>
-
+Prices last updated on {date} using prices from <a href={url} target= "_blank">TCGPlayer</a>
 </div>)}
-if ( props.reverse != null && props.reverse != undefined) {
-    let reverseMarket = props.reverse.pricemarket.toFixed(2);
-    if (reverseMarket === "0" || reverseMarket === null){reverseMarket = "n/a"} else{reverseMarket = `$ ${reverseMarket}`; }
-    const reverseHigh = props.reverse.priceHigh.toFixed(2);
-    const reverseLow = props.reverse.priceLow.toFixed(2);
-    const reverseMid = props.reverse.priceMid.toFixed(2);
-    return(<div className="ReverseHoloPrices">
-    <div className="cardColumn">
-       <h2>Reverse Holo Market Price: {reverseMarket}</h2>
-   <div className="row">
-       <div className="lowColumn">
-           <h3>Low</h3>
-          <p> ${reverseLow}</p>
-       </div>
-       <div className="midColumn">
-           <h3>Mid</h3>
-          <p> ${reverseMid}</p>
-       </div>
-       <div className="highColumn">
-           <h3>High</h3>
-          <p> ${reverseHigh}</p>
-       </div>
-   </div>
-   </div>
-   
-   </div>)
-}}
 else return(null)} 
