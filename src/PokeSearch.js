@@ -48,6 +48,7 @@ if(loaded){return(
     <ul>
                     <li> Zamazenta and Zacian need -hero <span className="pink">(ex: Zamazenta-Hero)</span> </li>
                     <li>  Darmanitan needs "-standard" <span className="pink">(ex: Darmanitan-Standard / Darmanitan-Standard-Galar)</span> </li>
+                    <li>  Pumpkaboo needs sizes "-small/-average/-large/-super" <span className="pink">(ex: Pumpkaboo-super)</span> </li>
                     <li>   Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>. </li>
                     </ul>
     <PokeInfo data={pokeinfo} loading={loadedStatus} />
