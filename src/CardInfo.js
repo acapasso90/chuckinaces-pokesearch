@@ -23,10 +23,13 @@ export default function CardInfo(props){
     let newPriceTwoType = null;
     let holoPriceList = null;
     let reverseHoloPriceList = null;   
+    const normal = document.querySelector(".normal");
+    console.log(normal)
     const [priceData, setPriceData] = useState("");
     const [holoPriceData, setHoloPriceData] = useState("");
     const [reverseholoPriceData, setReverseHoloPriceData] = useState("");
     const [firstEditionPriceData, setFirstEditionPriceData] = useState("");
+
 
         useEffect(() => { 
             setImage(<img src={data.images.large} alt={data.set.name} className="cardImage" />)
@@ -130,6 +133,7 @@ else{setPriceData("null");}}
 }
 , [id]);
 
+
     if (loaded === "loaded"){
      return(<div className="CardInfo">
          <div className="row">
@@ -152,9 +156,10 @@ else{setPriceData("null");}}
 </ul>
     </div>
 <div className="cardPriceColumn">
-    <CardPrices data={priceData} /> <br />
-    <HoloPrices data={holoPriceData}/>
-    <ReverseHoloPrices data={reverseholoPriceData}/>
+    
+    <CardPrices data={priceData} /> <br /> <div className="holo">
+    <HoloPrices data={holoPriceData}/> </div> <br /> <div className="reverseholo">
+    <ReverseHoloPrices data={reverseholoPriceData}/></div>
     </div>
     </div>
 </div>)}

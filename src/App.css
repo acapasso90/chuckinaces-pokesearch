@@ -21,12 +21,48 @@ font-size: 16pt;}
   margin-bottom: 7%;
 }
 
-#priceRow {margin-left: 40px;
+#priceRow {margin-right: -70%;
+  margin-left: 8%;
 position: relative;
 top: -10px;}
 
-#cardColumnPricesExtended {position: relative;
-margin-left: 30%;}
+#dropdown-button-drop-down {background-color: transparent;
+  color: #ffffff!important;
+  font-weight: normal;
+text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
+font-size: 26pt;
+border: none;}
+
+#dropdown-button-drop-down:hover {color: #000f97!important;
+  text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
+
+  .dropdownColumn {background-image: url(./dropdown.png);
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    top: 18px;
+    left: -30%;
+  width: 180%;}
+
+  .dropdownColumn a {color: #ffffff!important;
+    text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
+    font-size: 26pt;}
+
+    .dropdownColumn a:hover {color: #000f97!important;
+      text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
+
+.holo, .reverseholo {margin-bottom: 240px;}
+
+#firstHeaderlink {
+ position: fixed; 
+ width: 256px;
+ top: 10.1%;
+ height: 44px;
+  left: 1.9%;}
+
+#cardColumnPricesExtended {position: absolute;
+right: 3%;
+}
 
 .notFound {margin-top: 200px!important;
 text-align: center;}
@@ -46,7 +82,11 @@ text-align: center;}
 }
 
 
-.loading {margin-top: 12%;}
+.loading {margin-top: 22%;
+width: 200px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;}
 
 .lowColumn {color: #60eb44; font-size: 14pt; }
 .midColumn {color: #ebd244; font-size: 14pt; margin-left: 15%;}
@@ -63,7 +103,7 @@ text-align: center;}
 
 .cardInfoColumn {position: absolute;
   text-align: left;
-left: 450px;}
+left: 550px;}
 .cardInfoColumn ul {margin-top: 14px;}
 
 .cardInfoColumn ul li {margin-top: 25px; margin-bottom: 25px;}
@@ -125,7 +165,7 @@ font-family: 'Shrikhand', cursive;}
 
 .headerLinks {position: fixed;
   left: 18.9%;
-  top: 9.2%;
+  top: 10.2%;
 z-index: 9999;
 width: 250px;
 padding-top: 4px;
@@ -137,10 +177,13 @@ font-size: 26pt;}
 .headerLinks:hover {color: #000f97!important;
   background-color: rgba(255, 0, 200, 0.45);
   text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
+
+.holo, .reverseholo {margin-bottom: 240px;}
+
 #firstHeaderlink {
  position: fixed; 
  width: 256px;
- top: 9.1%;
+ top: 10.1%;
  height: 44px;
   left: 1.9%;}
 
