@@ -1,6 +1,5 @@
 import PokeSearch from "./PokeSearch.js";
 import Header from "./Header.js";
-import Footer from "./Footer.js";
 import notFound from "./notFound.gif";
 import CardSearch from "./CardSearch.js";
 import { BrowserRouter as Router, Route, NavLink, Switch} from "react-router-dom";
@@ -14,7 +13,6 @@ function App() {
      <Header />
      <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink">♠ Sizes ♥</NavLink>
      <NavLink to="/cards" style={{ textDecoration: 'none' }} className="headerLinks">♦ Cards ♣</NavLink>
-     <Footer />
    </div>
     </div>
     <Switch>

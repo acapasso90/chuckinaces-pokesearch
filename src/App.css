@@ -30,7 +30,7 @@ margin-left: 30%;}
 
 .notFound {margin-top: 200px!important;
 text-align: center;}
-.PokeSearch, .CardSearch {margin-top: 160px!important;}
+.PokeSearch, .CardSearch {margin-top: 142px!important;}
 .App, .PokeSearch, .CardSearch, .footer {
   text-align: center;
   width: 98.8vw;
@@ -78,6 +78,9 @@ margin-bottom: 1%;}
 
 .cardPriceColumn {margin-left: 450px;}
 
+.CardSearch {  position: relative;
+  min-height: 100vh;}
+
 button {background-color: #252730;
   color:  #e9fbff;
   position: relative;
@@ -114,7 +117,9 @@ right: 0;
 left: -40px;
 user-select: none;}
 
-.header h1 {margin: -9px 0 0 0;
+.header h1 {position: absolute;
+  left: 140px;
+  top: -52px;
   letter-spacing: 8px;
 font-family: 'Shrikhand', cursive;}
 
@@ -129,16 +134,25 @@ color: #ffffff!important;
 text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
 font-size: 26pt;}
 
-.headerLinks:hover {color: #ce00bd!important;
-  background-color: rgba(56, 204, 241, 0.5);
-  text-shadow: -3px 0 #fff7fe, 0 3px #fff, 3px 0 #fff, 0 -3px #fff;}
+.headerLinks:hover {color: #000f97!important;
+  background-color: rgba(255, 0, 200, 0.45);
+  text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
 #firstHeaderlink {
  position: fixed; 
-  left: 2%;}
+ width: 256px;
+ top: 9.1%;
+ height: 44px;
+  left: 1.9%;}
+
+  .content-wrap {
+    padding-bottom: 2rem;}
 .footer {position: absolute;
-bottom: -5%;}
+  font-size: 13!important;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem}
 .officialImg {
- width: 340px;
+ width: 320px;
   border-radius: 2px;
 border: 3px solid #ee77e2;}
 
@@ -154,9 +168,15 @@ font-size: 29pt;}
 margin-left: auto;
 margin-right: auto;}
 
-.PokeSearch p {font-size: 18pt;
+.pokeSearchInstructions {width: 70%;
+text-align: center;
+margin-left: auto;
+margin-right: auto;}
+
+.pokeSearchP {font-size: 15pt;
+  font-weight: bold;
 width: 90%;
-margin-bottom: 0.4%;
+margin-bottom: 0.2%;
 margin-left: auto;
 margin-right: auto;}
 
@@ -175,7 +195,7 @@ font-size: 16pt;}
 
 .submitButton {width: 60px;
   position: relative;
-  top: -3px;
+  top: -1.2px;
   height: 47px;}
 
 button:hover {background-color: #8be9fd;

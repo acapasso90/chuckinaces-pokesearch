@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import axios from "axios";
+import Footer from "./Footer.js";
 import loading from "./loading.gif";
 import PokeInfo from "./PokeInfo.js";
 
@@ -38,20 +39,20 @@ axios.get(APIurl).then(setInfo);}
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
-            <p>
+            <p className="pokeSearchP">
             Search by pokemon number or name</p>
     <form onSubmit={handleSubmit}>
     <input type="text" onChange={setPokemon} placeholder="Enter Pokemon name / number" 
     className="searchBar" />
     <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
     </form>
-    <ul>
-                    <li> Zamazenta and Zacian need -hero <span className="pink">(ex: Zamazenta-Hero)</span> </li>
-                    <li>  Darmanitan needs "-standard" <span className="pink">(ex: Darmanitan-Standard / Darmanitan-Standard-Galar)</span> </li>
-                    <li>  Pumpkaboo needs sizes "-small/-average/-large/-super" <span className="pink">(ex: Pumpkaboo-super)</span> </li>
-                    <li>   Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>. </li>
-                    </ul>
+    <p className="pokeSearchInstructions">Zamazenta and Zacian need -hero <span className="pink">(ex: Zamazenta-Hero)</span>.
+                   Darmanitan needs "-standard" <span className="pink">(ex: Darmanitan-Standard / Darmanitan-Standard-Galar)</span>. 
+                   Pumpkaboo needs sizes "-small/-average/-large/-super" <span className="pink">(ex: Pumpkaboo-super)</span>. 
+                   Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>.
+                    </p>
     <PokeInfo data={pokeinfo} loading={loadedStatus} />
+    <Footer />
         </div>)}
 //  searches default pokemon and shows loading pokeball gif
 else{ searchPokemon();
