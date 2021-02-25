@@ -22,6 +22,7 @@ export default function ReverseHoloPrices(props){
     if (props.data != "null" && props.data != ""){
         let loaded = props.data.loaded;
         let holoMarket = props.data.pricemarket;
+        if (holoMarket  > 0){holoMarket = holoMarket.toFixed(2);}
         let url = props.data.pricesUpdatedUrl
         let date = props.data.pricesUpdated
         if (holoMarket === "0" || holoMarket === null){holoMarket = "n/a"} else{holoMarket = `$ ${holoMarket}`; }
@@ -32,7 +33,7 @@ export default function ReverseHoloPrices(props){
     let holoMid = props.data.priceMid;
     if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}
     return(<div className="HoloPrices">
-     <div className="cardColumn">
+     <div className="cardColumn" id="cardColumnPricesExtended">
         <h2>Reverse Holo Market Price: {holoMarket}</h2>
     <div className="row" id="priceRow">
         <div className="lowColumn">
@@ -48,7 +49,8 @@ export default function ReverseHoloPrices(props){
            <p> ${holoHigh}</p>
         </div>
     </div>
+    Prices last updated on {date} using prices from <a href={url} target= "_blank">TCGPlayer</a> <br/>
+    <a href={url} target="_blank"><button className="checkPriceButton">Check current prices</button></a>
     </div>
-    Prices last updated on {date} using prices from <a href={url} target= "_blank">TCGPlayer</a>
     </div>)}
     else return(null)}

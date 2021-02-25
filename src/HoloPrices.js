@@ -19,7 +19,7 @@ export default function HoloPrices(props){
         if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}}
       }}, [props.data]);
 
-if (props.data != "null" && props.data != ""){
+if (props.data != "null" && props.data != "" && props.data !=null){
     let loaded = props.data.loaded;
     let holoMarket = props.data.pricemarket;
     if (holoMarket  > 0){holoMarket = holoMarket.toFixed(2);}
@@ -33,7 +33,7 @@ if (holoLow  > 0 ){ holoLow = holoLow.toFixed(2);}
 let holoMid = props.data.priceMid;
 if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}
 return(<div className="HoloPrices">
- <div className="cardColumn">
+ <div className="cardColumn" id="cardColumnPricesExtended">
     <h2>Holo Market Price: {holoMarket}</h2>
 <div className="row" id="priceRow">
     <div className="lowColumn">
@@ -49,7 +49,8 @@ return(<div className="HoloPrices">
        <p> ${holoHigh}</p>
     </div>
 </div>
+Prices last updated on {date} using prices from <a href={url} target= "_blank">TCGPlayer</a> <br/>
+<a href={url} target="_blank"><button className="checkPriceButton">Check current prices</button></a>
 </div>
-Prices last updated on {date} using prices from <a href={url} target= "_blank">TCGPlayer</a>
 </div>)}
 else return(null)} 

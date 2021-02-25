@@ -21,7 +21,12 @@ font-size: 16pt;}
   margin-bottom: 7%;
 }
 
-#priceRow {margin-left: 23%;}
+#priceRow {margin-left: 40px;
+position: relative;
+top: -10px;}
+
+#cardColumnPricesExtended {position: relative;
+margin-left: 30%;}
 
 .PokeSearch, .CardSearch {margin-top: 130px;}
 .App {
@@ -44,7 +49,8 @@ font-size: 16pt;}
 .lowColumn {color: #60eb44; font-size: 14pt; }
 .midColumn {color: #ebd244; font-size: 14pt; margin-left: 15%;}
 .highColumn {color: #f85a5a; font-size: 14pt; margin-left: 15%;}
-.priceColumn{margin-left: 5%;
+.priceColumn{margin-left: 
+5%;
   margin-right: npm 5%;}
 
 .cardImage {min-width: 23%;
@@ -63,12 +69,28 @@ left: 450px;}
 .CardInfo {border: 3px solid #f133de;
   padding-bottom: 0.8%;
 border-radius: 2px;
-width: 95%;
+width: 96%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 1%;}
 
 .cardPriceColumn {margin-left: 450px;}
+
+button {background-color: #252730;
+  color:  #e9fbff;
+  position: relative;
+  top: -1px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 2px;
+  border: 2.5px solid #b737df;
+font-size: 16px;}
+
+.checkPriceButton {width: 180px;
+  margin-top: 15px;
+  height: 38px;}
+
+
 .column {margin-left: 6.2%;
   margin-right: 5%;
 text-align: center;}
@@ -127,23 +149,16 @@ margin-right: auto;}
   outline: none;
   margin-right: 11px;
   border-radius: 2px;
-font-size: 18pt;}
-
-
-.submitButton {width: 60px;
-  height: 47px;
-  background-color: #252730;
-  color:  #e9fbff;
-  position: relative;
-
-  top: -1px;
-  font-weight: bold;
-  outline: none;
-  border-radius: 2px;
-  border: 2.5px solid #b737df;
 font-size: 16pt;}
 
-.submitButton:active {animation: 1s buttonActive normal;
+.submitButton {width: 60px;
+  position: relative;
+  top: -3px;
+  height: 47px;}
+
+button:hover {background-color: #8be9fd;
+  color: #b737df;}
+button:active {animation: 1s buttonActive normal;
 position: relative;
 top: 1px;
 }

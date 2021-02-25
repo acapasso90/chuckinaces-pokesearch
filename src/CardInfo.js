@@ -28,8 +28,8 @@ export default function CardInfo(props){
     const [reverseholoPriceData, setReverseHoloPriceData] = useState("");
     const [firstEditionPriceData, setFirstEditionPriceData] = useState("");
 
-        useEffect(() => {
-            setImage(data.images.large)
+        useEffect(() => { 
+            setImage(<img src={data.images.large} alt={data.set.name} className="cardImage" />)
             if (pricetypes){newPricelist = Object.values(pricetypes)[2];
           pricesUpdated = props.data.tcgplayer.updatedAt;
           pricesUpdatedUrl = props.data.tcgplayer.url;
@@ -59,6 +59,14 @@ setHoloPriceData({priceLow: holoPriceList.low,
     pricesUpdated,
     pricesUpdatedUrl})
 } 
+// if there is one price available and it is holo set holo pricing
+else if (newPriceOneType != undefined && (Object.getOwnPropertyNames(newPricelist).includes("holofoil")))
+{setHoloPriceData({priceLow: holoPriceList.low,
+    priceMid: holoPriceList.mid,
+    priceHigh: holoPriceList.high, 
+    pricemarket: holoPriceList.market,
+    pricesUpdated,
+    pricesUpdatedUrl})}
 else {setHoloPriceData("null");}
    // if prices includes reverseHoloFoil and Normal types sets Normal to first object in array and holo prices to second.
    if (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
@@ -90,8 +98,7 @@ else if ( newPriceOneType != undefined  && (Object.getOwnPropertyNames(newPricel
         else {setReverseHoloPriceData("null");}
 
   // if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
-  if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
-    newPriceTwoType = Object.values(newPricelist)[1];   
+  if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){  
     setPriceData({priceLow: newPriceOneType.low,
     priceMid: newPriceOneType.mid,
     priceHigh: newPriceOneType.high, 
@@ -109,14 +116,6 @@ pricesUpdatedUrl})
 } 
 } 
 if (pricesUpdatedUrl === null || pricesUpdatedUrl === undefined){pricesUpdatedUrl = "URL Unavailable"}
-// if there is one price available and it is holo set holo pricing
-if (newPriceOneType != undefined && (Object.getOwnPropertyNames(newPricelist).includes("holofoil")))
-{setHoloPriceData({priceLow: holoPriceList.low,
-    priceMid: holoPriceList.mid,
-    priceHigh: holoPriceList.high, 
-    pricemarket: holoPriceList.market,
-    pricesUpdated,
-    pricesUpdatedUrl})}
 
 // if there is one price available and it is normal set normal pricing
 if ( newPriceOneType != undefined  && (Object.getOwnPropertyNames(newPricelist).includes("normal"))){
@@ -126,7 +125,9 @@ priceHigh: newPriceOneType.high,
 pricemarket: newPriceOneType.market,
 pricesUpdated,
 loaded: loaded,
-pricesUpdatedUrl})}}}
+pricesUpdatedUrl})}
+else{setPriceData("null");}}
+}
 , [id]);
 
     if (loaded === "loaded"){
@@ -134,7 +135,7 @@ pricesUpdatedUrl})}}}
          <div className="row">
              <div className="cardimageColumn">
              <h1 className="pokeName" id="pokeName">{name}</h1> 
-             <img src={image} alt={name} className="cardImage" />
+     {image}
 </div>
 <div className="cardInfoColumn">
 <ul>

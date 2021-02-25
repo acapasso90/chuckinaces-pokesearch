@@ -5,7 +5,7 @@ import CardInfo from "./CardInfo.js";
 
 
 export default function CardSearch(){
-    const [pokemon, Setpokemon] = useState("pikachu");
+    const [pokemon, Setpokemon] = useState("pikachu*vmax");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
@@ -54,7 +54,7 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p>Use a * between 2-word named cards (ex. <span className="pink">Ball*Guy. Venusaur*V. Tapu*Fini.</span>) Can put * after incomplete name to pull up many (<span className="pink">Char*</span> pulls up Charmander, Charmeleon, Charizard).  Can search <span className="pink">"V" for all Vmax.</span> </p>
+<p>Use a * between 2-word named cards (ex. <span className="pink">Ball*Guy. Venusaur*V. Galarian*Mr*Mime.</span>) Can put * after incomplete name to pull up many (<span className="pink">Char*</span> pulls up Charmander, Charmeleon, Charizard).  Can search <span className="pink">"V" for all Vmax.</span> </p>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
             return(<CardInfo data={pokemonNumber} loading={loadedStatus}/>)})}
     </div>)}
