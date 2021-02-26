@@ -2,10 +2,12 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import loading from "./loading.gif";
 import Footer from "./Footer.js";
+import SubTypeInstructions from "./SubTypeInstructions.js";
 import CardInfo from "./CardInfo.js";
 
 
 export default function SubTypeCardCardSearch(){
+    const [instructions, setInstructions] = useState("");
     const [pokemon, Setpokemon] = useState("baby");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
@@ -18,6 +20,10 @@ function setInfo(response){
     setArrayLength(response.data.length);
 setLoaded(true);
 setLoadedStatus("loaded");}
+
+function setData(response){
+    setInstructions(response.data.data);
+}
 
 // prevents page refreshing and searches pokemon with pokemon set in setPokemon
 function handleSubmit(event){  event.preventDefault();
@@ -39,6 +45,9 @@ useEffect(() => {
     if (mounted) {axios.get(`https://api.pokemontcg.io/v2/cards?q=subtypes:${pokemon}&api_key=${apiKey}`, {
         cancelToken: cancelTokenSource.token
       }).then(setInfo);}
+      {axios.get(`https://api.pokemontcg.io/v2/subtypes`, {
+        cancelToken: cancelTokenSource.token
+      }).then(setData);}
     return function cleanup() {
       mounted = false
       cancelTokenSource.cancel();
@@ -49,12 +58,13 @@ useEffect(() => {
 if(loaded){return(
     <div className="SubTypeCardCardSearch" >
            <div className="content-wrap">
-        <h3 className="searchInstructions">Search by subtype (baby, tag*team, vmax etc) </h3>
+        <h3 className="searchInstructions">Search by SubType</h3>
 <form onSubmit={handleSubmit}>
 <input type="text" onChange={setPokemon} placeholder="Enter a set name" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
+<p className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></p>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
             return(<CardInfo data={pokemonNumber} loading={loadedStatus}/>)})}
         </div>
