@@ -39,10 +39,10 @@ axios.get(APIurl).then(setInfo);}
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
-            <p className="pokeSearchP">
-            Search by pokemon number or name</p>
+            <h3 className="searchInstructions">
+            Search by Pokémon Number or Name</h3>
     <form onSubmit={handleSubmit}>
-    <input type="text" onChange={setPokemon} placeholder="Enter Pokemon name / number" 
+    <input type="text" onChange={setPokemon} placeholder="Enter Pokémon name / number" 
     className="searchBar" />
     <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
     </form>
@@ -58,7 +58,7 @@ if(loaded){return(
 else{ searchPokemon();
     return(
 <div className="loading">
-<h1>Loading Pokes</h1>
+<h1>Loading Pokés</h1>
     <img src={loading} alt="loading" />
 </div>
 

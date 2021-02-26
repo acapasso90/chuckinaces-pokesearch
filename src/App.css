@@ -106,7 +106,7 @@ margin-right: auto;}
 
 .cardInfoColumn {position: absolute;
   text-align: left;
-right: 650px;}
+right: 48%;}
 .cardInfoColumn ul {margin-top: 14px;}
 
 .cardInfoColumn ul li {margin-top: 25px; margin-bottom: 25px;}
@@ -120,6 +120,8 @@ margin-right: auto;
 margin-bottom: 1%;}
 
 .cardPriceColumn {margin-left: 450px;}
+
+.cardPriceColumn h2 {color: #d656fd;}
 
 .CardSearch {  position: relative;
   min-height: 100vh;}
@@ -239,6 +241,8 @@ margin-right: auto;}
   border-radius: 2px;
 font-size: 16pt;}
 
+.searchInstructions {font-size: 16pt!important;
+margin-bottom: 10px;}
 .submitButton {width: 60px;
   position: relative;
   top: -1.2px;
@@ -277,7 +281,7 @@ flex-direction: row;}
 
 
 @media only screen and (min-width: 501px){ 
-  .CardInfo{min-width: 1180px;}
+  .CardInfo{min-width: 1080px;}
 
 }
 /** Mobile Sized**/

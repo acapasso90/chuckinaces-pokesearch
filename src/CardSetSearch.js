@@ -49,7 +49,7 @@ useEffect(() => {
 if(loaded){return(
     <div className="CardSearch" >
            <div className="content-wrap">
-        <h3>Search by set name </h3>
+        <h3 className="searchInstructions">Search by Set Name </h3>
 <form onSubmit={handleSubmit}>
 <input type="text" onChange={setPokemon} placeholder="Enter a set name" 
 className="searchBar" />
@@ -66,7 +66,7 @@ className="searchBar" />
 else{
     return(
 <div className="loading">
-<h1>Loading Pokes</h1>
+<h1>Loading Pokés</h1>
     <img src={loading} alt="loading" />
 </div>)
 }}
