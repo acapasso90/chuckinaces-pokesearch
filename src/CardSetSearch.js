@@ -66,7 +66,7 @@ className="searchBar" />
 else{
     return(
 <div className="loading">
-<h1>Loading</h1>
+<h1>Loading Pokes</h1>
     <img src={loading} alt="loading" />
 </div>)
 }}

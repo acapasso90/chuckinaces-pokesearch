@@ -24,7 +24,6 @@ export default function CardInfo(props){
     let holoPriceList = null;
     let reverseHoloPriceList = null;   
     const normal = document.querySelector(".normal");
-    console.log(normal)
     const [priceData, setPriceData] = useState("");
     const [holoPriceData, setHoloPriceData] = useState("");
     const [reverseholoPriceData, setReverseHoloPriceData] = useState("");
@@ -32,80 +31,84 @@ export default function CardInfo(props){
 
 
         useEffect(() => { 
-            setImage(<img src={data.images.large} alt={data.set.name} className="cardImage" />)
-            if (pricetypes){newPricelist = Object.values(pricetypes)[2];
-          pricesUpdated = props.data.tcgplayer.updatedAt;
-          pricesUpdatedUrl = props.data.tcgplayer.url;
+            setImage(data.images.large)     }
+, [id]);
 
-          //Grabs the first value in the array of prices. If there's multiple the first is typically normal
-          newPriceOneType = Object.values(newPricelist)[0];
-          newPriceTwoType = Object.values(newPricelist)[1];  
-          // sets holofoil pricelist
-          holoPriceList = pricetypes.prices.holofoil; 
-          // sets reverse holo price list
-          reverseHoloPriceList = pricetypes.prices.reverseHolofoil;   
-          if ( newPriceOneType != undefined && newPricelist){
- // if prices includes HoloFoil and Normal types sets Normal to first object in array and holo prices to second.
- if (Object.getOwnPropertyNames(newPricelist).includes("holofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
-    newPriceTwoType = Object.values(newPricelist)[1];   
-    setPriceData({priceLow: newPriceOneType.low,
-    priceMid: newPriceOneType.mid,
-    priceHigh: newPriceOneType.high, 
-    pricemarket: newPriceOneType.market,
-    loaded: loaded,
+
+useEffect(() => { 
+    if (pricetypes){newPricelist = Object.values(pricetypes)[2];
+  pricesUpdated = props.data.tcgplayer.updatedAt;
+  pricesUpdatedUrl = props.data.tcgplayer.url;
+
+  //Grabs the first value in the array of prices. If there's multiple the first is typically normal
+  newPriceOneType = Object.values(newPricelist)[0];
+  newPriceTwoType = Object.values(newPricelist)[1];  
+  // sets holofoil pricelist
+  holoPriceList = pricetypes.prices.holofoil; 
+  // sets reverse holo price list
+  reverseHoloPriceList = pricetypes.prices.reverseHolofoil;   
+  if ( newPriceOneType != undefined && newPricelist){
+// if prices includes HoloFoil and Normal types sets Normal to first object in array and holo prices to second.
+if (Object.getOwnPropertyNames(newPricelist).includes("holofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
+newPriceTwoType = Object.values(newPricelist)[1];   
+setPriceData({priceLow: newPriceOneType.low,
+priceMid: newPriceOneType.mid,
+priceHigh: newPriceOneType.high, 
+pricemarket: newPriceOneType.market,
+loaded: loaded,
 pricesUpdated,
 pricesUpdatedUrl})
 setHoloPriceData({priceLow: holoPriceList.low,
-    priceMid: holoPriceList.mid,
-    priceHigh: holoPriceList.high, 
-    pricemarket: holoPriceList.market,
-    pricesUpdated,
-    pricesUpdatedUrl})
+priceMid: holoPriceList.mid,
+priceHigh: holoPriceList.high, 
+pricemarket: holoPriceList.market,
+pricesUpdated,
+pricesUpdatedUrl})
 } 
 // if there is one price available and it is holo set holo pricing
 else if (newPriceOneType != undefined && (Object.getOwnPropertyNames(newPricelist).includes("holofoil")))
 {setHoloPriceData({priceLow: holoPriceList.low,
-    priceMid: holoPriceList.mid,
-    priceHigh: holoPriceList.high, 
-    pricemarket: holoPriceList.market,
-    pricesUpdated,
-    pricesUpdatedUrl})}
+priceMid: holoPriceList.mid,
+priceHigh: holoPriceList.high, 
+pricemarket: holoPriceList.market,
+pricesUpdated,
+pricesUpdatedUrl})}
 else {setHoloPriceData("null");}
-   // if prices includes reverseHoloFoil and Normal types sets Normal to first object in array and holo prices to second.
-   if (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
-        newPriceTwoType = Object.values(newPricelist)[1];   
-        setPriceData({priceLow: newPriceOneType.low,
-        priceMid: newPriceOneType.mid,
-        priceHigh: newPriceOneType.high, 
-        pricemarket: newPriceOneType.market,
-   pricesUpdated,
-   loaded: loaded,
-   pricesUpdatedUrl})
-   setReverseHoloPriceData({priceLow: reverseHoloPriceList.low,
+// if prices includes reverseHoloFoil and Normal types sets Normal to first object in array and holo prices to second.
+if (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
+newPriceTwoType = Object.values(newPricelist)[1];   
+setPriceData({priceLow: newPriceOneType.low,
+priceMid: newPriceOneType.mid,
+priceHigh: newPriceOneType.high, 
+pricemarket: newPriceOneType.market,
+pricesUpdated,
+loaded: loaded,
+pricesUpdatedUrl})
+setReverseHoloPriceData({priceLow: reverseHoloPriceList.low,
+priceMid: reverseHoloPriceList.mid,
+priceHigh: reverseHoloPriceList.high, 
+pricemarket: reverseHoloPriceList.market,
+pricesUpdated,
+loaded: loaded,
+pricesUpdatedUrl})
+} 
+// if there is one price available and it is reverse holo set reverse holo pricing
+else if ( newPriceOneType != undefined  && (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil"))){
+setReverseHoloPriceData({priceLow: reverseHoloPriceList.low,
     priceMid: reverseHoloPriceList.mid,
     priceHigh: reverseHoloPriceList.high, 
     pricemarket: reverseHoloPriceList.market,
 pricesUpdated,
 loaded: loaded,
-pricesUpdatedUrl})
-} 
-    // if there is one price available and it is reverse holo set reverse holo pricing
-else if ( newPriceOneType != undefined  && (Object.getOwnPropertyNames(newPricelist).includes("reverseHolofoil"))){
-        setReverseHoloPriceData({priceLow: reverseHoloPriceList.low,
-            priceMid: reverseHoloPriceList.mid,
-            priceHigh: reverseHoloPriceList.high, 
-            pricemarket: reverseHoloPriceList.market,
-        pricesUpdated,
-        loaded: loaded,
-        pricesUpdatedUrl})}
-        else {setReverseHoloPriceData("null");}
+pricesUpdatedUrl})}
+else {setReverseHoloPriceData("null");}
 
-  // if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
-  if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){  
-    setPriceData({priceLow: newPriceOneType.low,
-    priceMid: newPriceOneType.mid,
-    priceHigh: newPriceOneType.high, 
-    pricemarket: newPriceOneType.market,
+// if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
+if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionNormal") && Object.getOwnPropertyNames(newPricelist).includes("normal")){  
+setPriceData({priceLow: newPriceOneType.low,
+priceMid: newPriceOneType.mid,
+priceHigh: newPriceOneType.high, 
+pricemarket: newPriceOneType.market,
 pricesUpdated,
 loaded: loaded,
 pricesUpdatedUrl})
@@ -133,13 +136,12 @@ else{setPriceData("null");}}
 }
 , [id]);
 
-
     if (loaded === "loaded"){
      return(<div className="CardInfo">
          <div className="row">
              <div className="cardimageColumn">
              <h1 className="pokeName" id="pokeName">{name}</h1> 
-     {image}
+            <img src={image} alt={name} className="cardImage" key={image} loading="lazy"/>
 </div>
 <div className="cardInfoColumn">
 <ul>

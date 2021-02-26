@@ -9,14 +9,15 @@ import { BrowserRouter as Router, Route, NavLink, Switch} from "react-router-dom
 import './App.css';
 
 function App() {
+  const dropdownTitle = `♦ Cards ♣`;
   return (
     <Router>
     <div className="App">
    <div className="container">
      <Header />
-     <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink">♠ Sizes ♥</NavLink>
+     <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink"> &spades; Sizes &hearts;</NavLink>
      <div  className="headerLinks">
-     <DropdownButton id='dropdown-button-drop-down' title="♦ Cards ♣">
+     <DropdownButton id='dropdown-button-drop-down' title={dropdownTitle}>
      <div className="dropdownColumn">
         <NavLink to="/cards.name" style={{ textDecoration: 'none' }} className="dropdownLink" >  <Dropdown.Item href="#/action-1">By Name</Dropdown.Item> </NavLink> <br/>
         <NavLink to="/cards.set" style={{ textDecoration: 'none' }} className="dropdownLink" > <Dropdown.Item href="#/action-2">By Set</Dropdown.Item> </NavLink>
