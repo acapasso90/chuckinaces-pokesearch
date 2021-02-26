@@ -11,7 +11,7 @@ let priceHigh = props.data.priceHigh;
 if (priceHigh) {priceHigh = props.data.priceHigh.toFixed(2); priceHigh = `$${priceHigh}`;}
 else if (priceHigh === null || priceHigh === undefined) {priceHigh = "n/a"; }
 let pricemarket = props.data.pricemarket;
-if (pricemarket){pricemarket = props.data.pricemarket.toFixed(2); pricemarket = `$ ${pricemarket}`; }
+if (pricemarket){pricemarket = props.data.pricemarket.toFixed(2); pricemarket = `$${pricemarket}`; }
 else if (pricemarket === null || pricemarket === undefined || pricemarket === 0) {pricemarket = "n/a";}
 let pricesUpdated = props.data.pricesUpdated;
 let pricesUpdatedUrl = props.data.pricesUpdatedUrl;

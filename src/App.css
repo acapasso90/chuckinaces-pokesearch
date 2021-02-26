@@ -21,9 +21,10 @@ font-size: 16pt;}
   margin-bottom: 7%;
 }
 
-#priceRow {margin-right: -70%;
-  margin-left: 8%;
+#priceRow {margin-right: -60%;
+  margin-left: 20%;
 position: relative;
+width: 452px;
 top: -10px;}
 
 #dropdown-button-drop-down {background-color: transparent;
@@ -46,15 +47,15 @@ animation: none;
     position: relative;
     padding-bottom: 10px;
     padding-top: 5px;
-    top: 2.4px;
-    left: 0px;
+    top: 1px;
+    left: -2px;
     border-radius: 2px;
-  width: 178%;}
+  width: 210%;}
 
 
   .dropdownColumn a {color: #ffffff!important;
     text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
-    font-size: 26pt;}
+    font-size: 22pt;}
 
     .dropdownColumn a:hover {color: #000f97!important;
       text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
@@ -64,15 +65,9 @@ animation: none;
 
 .holo, .reverseholo {margin-bottom: 240px;}
 
-#firstHeaderlink {
- position: fixed; 
- width: 256px;
- top: 10.1%;
- height: 44px;
-  left: 1.9%;}
 
 #cardColumnPricesExtended {position: absolute;
-right: 3%;
+right: 14%;
 }
 
 .notFound {margin-top: 200px!important;
@@ -108,22 +103,22 @@ margin-right: auto;}
   margin-right: npm 5%;}
 
 .cardImage {min-width: 23%;
-  max-width: 306px;}
+  max-width: 280px;}
 
   .cardimageColumn {margin-left: 2%;
 }
 
 .cardInfoColumn {position: absolute;
   text-align: left;
-right: 48%;}
+  right: 52%;}
 .cardInfoColumn ul {margin-top: 14px;}
 
 .cardInfoColumn ul li {margin-top: 25px; margin-bottom: 25px;}
 
 .CardInfo {border: 3px solid #f133de;
-  padding-bottom: 0.8%;
+  padding-bottom: 1.5%;
 border-radius: 2px;
-width: 96%;
+width: 76%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 1%;}
@@ -197,7 +192,7 @@ font-size: 26pt;}
 #firstHeaderlink {
  position: fixed; 
  width: 256px;
- top: 75px;
+ top: 73.5px;
  height: 44px;
   left: 30px;}
 
@@ -214,6 +209,8 @@ font-size: 26pt;}
 border: 3px solid #ee77e2;}
 
 .pokeName {text-transform: capitalize;
+  white-space: normal;
+  width: 346px;
 color: #f840e6;
 font-size: 29pt;}
 
