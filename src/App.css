@@ -39,7 +39,7 @@ border: none;}
   text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
 
 #dropdown-button-drop-down:active {position: relative;
-top: 0px;
+top: -1px;
 animation: none;
 }
 
