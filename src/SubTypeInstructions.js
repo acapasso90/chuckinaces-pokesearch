@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function SubTypeInstructions(props){
-console.log(props.data);
+if(props.data.length > 0){
 let info = props.data
 let length = info.length;
 let lastType = props.data[--(length)];
@@ -11,5 +11,5 @@ return(<div className="SubTypeInstructions">({info.slice(0, length).map(function
     {lastType} )
 </div>
 );
-
+} else{return(null)}
 }

@@ -64,9 +64,9 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></p>
+<div className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
-            return(<CardInfo data={pokemonNumeral} key={pokemonNumeral.toString()}  loading={loadedStatus}/>)})}
+            return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
         </div>
     <Footer />
     </div>

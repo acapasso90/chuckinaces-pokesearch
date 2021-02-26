@@ -30,7 +30,7 @@ right: -16%}
 #dropdown-button-drop-down {background-color: transparent;
   color: #ffffff!important;
   font-weight: normal;
-  width: 256px;
+  width: 250px;
 text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
 font-size: 26pt;
 border: none;}
@@ -77,6 +77,7 @@ text-align: center;}
   margin: 0;
 }
 
+.SubTypeCardCardSearch .footer {display: none;}
 .bullet {width: 6%;
   height: 25px;
   float: left;
@@ -87,11 +88,17 @@ text-align: center;}
 
 
 .loading {margin-top: 22%;
+  font-size: 28px;
+  color: #5ee7ff;
+text-shadow: -5px 0 #e630d3, 0 5px #ff00e6, 5px 0 #ff00e6, 0 -5px #ff00e6;
   white-space: nowrap;
+  font-family: 'Shrikhand', cursive;
 width: 200px;
 text-align: center;
 margin-left: auto;
 margin-right: auto;}
+
+.loading h1 {margin-left: -28%;}
 
 .lowColumn {color: #60eb44; font-size: 14pt; font-weight: bold; }
 .midColumn {color: #ebd244; font-size: 14pt; margin-left: 15%; font-weight: bold; }
@@ -108,7 +115,7 @@ margin-right: auto;}
 
 .cardInfoColumn {position: absolute;
   text-align: left;
-  right: 52%;}
+  right: 48%;}
 .cardInfoColumn ul {margin-top: 14px;}
 
 .cardInfoColumn ul li {margin-top: 25px; margin-bottom: 25px;}
@@ -152,10 +159,11 @@ text-align: center;}
 
 .header {min-height: 120px;
   max-height: 120px;
+  color: #5ee7ff;
   white-space: nowrap;
   z-index: 1;
 font-size: 31px;
-text-shadow: -4px 0 #f133de, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
+text-shadow: -5px 0 #e630d3, 0 5px #ff00e6, 5px 0 #ff00e6, 0 -5px #ff00e6;
 background-image: url(./wall.jpg);
 font-weight: lighter;
 position: fixed;

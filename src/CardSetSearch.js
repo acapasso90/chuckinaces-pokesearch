@@ -57,7 +57,7 @@ className="searchBar" />
 </form>
 <p className="pokeSearchInstructions">Use a * between 2-word named sets (ex. <span className="pink">Vivid*Voltage.</span>)  </p>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
-            return(<CardInfo data={pokemonNumber} key={pokemonNumber.toString()} loading={loadedStatus}/>)})}
+            return(<CardInfo data={pokemonNumber}  loading={loadedStatus}/>)})}
         </div>
     <Footer />
     </div>
