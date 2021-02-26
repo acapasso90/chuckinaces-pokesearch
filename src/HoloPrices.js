@@ -25,7 +25,7 @@ if (props.data != "null" && props.data != "" && props.data !=null){
     if (holoMarket  > 0){holoMarket = holoMarket.toFixed(2);}
     let url = props.data.pricesUpdatedUrl
     let date = props.data.pricesUpdated
-    if (holoMarket === "0" || holoMarket === null){holoMarket = "n/a"} else{holoMarket = `$ ${holoMarket}`; }
+    if (holoMarket === "0" || holoMarket === null){holoMarket = "n/a"} else{holoMarket = `$${holoMarket}`; }
 let holoHigh = props.data.priceHigh;
 if (holoHigh  > 0){holoHigh = holoHigh.toFixed(2);}
 let holoLow = props.data.priceLow;

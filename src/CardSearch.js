@@ -57,8 +57,8 @@ className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
 <p className="pokeSearchInstructions">Use a * between 2-word named cards (ex. <span className="pink">Ball*Guy. Venusaur*V. Galarian*Mr*Rime.</span>) Can put * after incomplete name to pull up many (<span className="pink">Char*</span> pulls up Charmander, Charmeleon, Charizard).  Can search <span className="pink">V for all Vmax.</span> </p>
-{pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
-            return(<CardInfo data={pokemonNumber} loading={loadedStatus}/>)})}
+{pokeinfo.slice(0, arrayLength).map(function(pokemonNum){
+            return(<CardInfo data={pokemonNum} loading={loadedStatus}/>)})}
         </div>
     <Footer />
     </div>

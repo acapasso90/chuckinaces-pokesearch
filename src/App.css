@@ -25,7 +25,7 @@ font-size: 16pt;}
 position: absolute;
 width: 452px;
 top: 150px;
-right: -20%}
+right: -16%}
 
 #dropdown-button-drop-down {background-color: transparent;
   color: #ffffff!important;
@@ -255,6 +255,8 @@ margin-bottom: 10px;}
   top: -1.2px;
   height: 47px;}
 
+  .SubTypeInstructions {margin-bottom: 1.5%;}
+
 button:hover {background-color: #8be9fd;
   color: #b737df;}
 button:active {animation: 1s buttonActive normal;
@@ -303,6 +305,16 @@ flex-direction: row;}
     height: 30px;
     margin: 4% 1% 0% 2%;
   }
+  .cardPriceColumn h2 {color: #63f337;}
+  
+  .cardImage {min-width: 23%;
+    max-width: 150px;}
+
+  
+    .cardimageColumn {margin-left: 38%;}
+
+    .CardInfo{min-width: 90%;
+    margin-left: 1%;}
 
 
   .column {margin-left: 0;}
@@ -327,6 +339,15 @@ flex-direction: row;}
   width: 150px;
  }
 
+ #dropdown-button-drop-down {
+font-size: 20pt;
+}
+
+
+.lowColumn {display: none;}
+.midColumn {display: none;}
+.highColumn {display: none;}
+
     .searchBar {width: 65%;
       font-size: 14pt;}
       
@@ -348,4 +369,8 @@ flex-direction: row;}
           margin-left: 6.5%;}
 
           .pokeName {margin-left: 6%;}
+
+#pokeName {font-size: 20pt;
+  margin-left: -28%;
 }
+        }

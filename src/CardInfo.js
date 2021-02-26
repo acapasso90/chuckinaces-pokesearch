@@ -160,8 +160,8 @@ else{setPriceData("null");}}
 <div className="cardPriceColumn">
     
     <CardPrices data={priceData} /> <br /> <div className="holo">
-    <HoloPrices data={holoPriceData}/> </div> <br /> <div className="reverseholo">
-    <ReverseHoloPrices data={reverseholoPriceData}/></div>
+    <HoloPrices data={holoPriceData} /> </div> <br /> <div className="reverseholo">
+    <ReverseHoloPrices data={reverseholoPriceData} /></div>
     </div>
     </div>
 </div>)}
