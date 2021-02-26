@@ -1,7 +1,5 @@
 import PokeSearch from "./PokeSearch.js";
-import Header from "./Header.js";
 import notFound from "./notFound.gif";
-import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import CardSearch from "./CardSearch.js";
 import CardSetSearch from "./CardSetSearch.js"
@@ -14,7 +12,8 @@ function App() {
     <Router>
     <div className="App">
    <div className="container">
-     <Header />
+   <div className="header">
+        <h1>The ChuckinAces PokéSearch App</h1>
      <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink"> &spades; Sizes &hearts;</NavLink>
      <div  className="headerLinks">
      <DropdownButton id='dropdown-button-drop-down' title={dropdownTitle}>
@@ -23,6 +22,7 @@ function App() {
         <NavLink to="/cards.set" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2"> By Set </NavLink>
   </div>
 </DropdownButton>
+   </div>
    </div>
    </div>
     </div>

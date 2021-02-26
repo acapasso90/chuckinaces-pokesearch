@@ -37,14 +37,20 @@ border: none;}
 #dropdown-button-drop-down:hover {color: #000f97!important;
   text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
 
+#dropdown-button-drop-down:active {position: relative;
+top: 0px;
+animation: none;
+}
+
   .dropdownColumn {background-image: url(./dropdown.jpg);
     position: relative;
     padding-bottom: 10px;
     padding-top: 5px;
     top: 2.4px;
-    left: -2.5%;
+    left: 0px;
     border-radius: 2px;
   width: 178%;}
+
 
   .dropdownColumn a {color: #ffffff!important;
     text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
@@ -172,8 +178,8 @@ user-select: none;}
 font-family: 'Shrikhand', cursive;}
 
 .headerLinks {position: fixed;
-  left: 18.9%;
-  top: 9.55%;
+  left: 300px;
+  top: 75px;
 z-index: 9999;
 width: 250px;
 padding-top: 4px;
@@ -191,9 +197,9 @@ font-size: 26pt;}
 #firstHeaderlink {
  position: fixed; 
  width: 256px;
- top: 9.45%;
+ top: 75px;
  height: 44px;
-  left: 1.9%;}
+  left: 30px;}
 
   .content-wrap {
     padding-bottom: 2rem;}
@@ -286,6 +292,7 @@ flex-direction: row;}
 @media only screen and (min-width: 501px){ 
   .CardInfo{min-width: 1080px;}
 
+  body {overflow-x: hidden;}
 }
 /** Mobile Sized**/
 @media only screen and (max-width: 500px){
