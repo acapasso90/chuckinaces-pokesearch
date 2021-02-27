@@ -316,7 +316,7 @@ flex-direction: row;}
     margin: 4% 1% 0% 2%;
   }
 
-  .cardInfoColumn {margin-left: 12%;}
+  .cardInfoColumn {margin-left: 2%;}
 
   .cardInfoColumn ul {margin-top: 15px;}
 
@@ -330,29 +330,28 @@ flex-direction: row;}
   
     .cardimageColumn {margin-left: 38%;}
 
-    .CardInfo{min-width: 90%;
+    .CardInfo{min-width: 98%;
       padding-bottom: 25px;
-    position: relative;
-  right: 3.5%;}
+    margin-left: 6%;}
 
 
   .column {margin-left: 0;}
 
   .header {
-    width: 91.5%;
-    font-size: 9.5pt;
+    font-size: 10.5pt;
     background-size: 1520px;
-    position: fixed;
-    left: -1.1%;
     min-height: 120px;
   max-height: 120px;
+  position: fixed;
+  left: 0px;
     margin-bottom: 0%;}
     
+    .footer {display: none;}
 
 
 .header h1 {position: absolute;
-  left: 25px;
-  top: -18px;
+  left: 2px;
+  top: -25px;
   white-space: normal;}
 
 .headerLinks {
