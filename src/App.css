@@ -114,8 +114,9 @@ margin-right: auto;}
 }
 
 .cardInfoColumn {position: absolute;
+  width: 232px;
   text-align: left;
-  right: 48%;}
+  right: 50%;}
 .cardInfoColumn ul {margin-top: 14px;}
 
 .cardInfoColumn ul li {margin-top: 25px; margin-bottom: 25px;}
@@ -244,7 +245,8 @@ margin-left: auto;
 margin-right: auto;}
 
 .PokeSearch p li {font-size: 14pt;}
-.row {display: flex;}
+.row {display: flex;
+width: 100%;}
 
 .searchBar {width: 20%;
   height: 40px;
