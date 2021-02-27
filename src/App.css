@@ -322,17 +322,18 @@ flex-direction: row;}
 
   .cardInfoColumn ul li {margin-top: 30px; margin-bottom: 30px;}
 
-  .cardPriceColumn h2 {color: #63f337;}
+  .cardPriceColumn h2 {color: #63f337; }
   
   .cardImage {min-width: 23%;
     max-width: 150px;}
 
   
-    .cardimageColumn {margin-left: 38%;}
+    .cardimageColumn {position: relative;
+    left: 100px;}
 
     .CardInfo{min-width: 98%;
       padding-bottom: 25px;
-    margin-left: 6%;}
+    margin-left: 1%;}
 
 
   .column {margin-left: 0;}
@@ -389,19 +390,19 @@ font-size: 20pt;
           .officialImg {width: 354px;
           margin-left: 6.5%;}
 
-          .pokeName {margin-left: 6%;}
+          .pokeName {margin-left: 10%;}
 
 #pokeName {font-size: 20pt;
   position: relative;
-  left: -30%;
+  left: -2%;
 }
 
 .CardPrices {position: relative;
   top: 100px;
-left: -90px;}
+left: -50px;}
         
 
-        .HoloPrices {position: relative;
+        .HoloPrices, .ReverseHoloPrices {position: relative;
           top: 25px;
-        left: -90px;}
+        left: -50px;}
                 }
