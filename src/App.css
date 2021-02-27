@@ -35,7 +35,7 @@ text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
 font-size: 26pt;
 border: none;}
 
-#dropdown-button-drop-down:hover {color: #000f97!important;
+#dropdown-button-drop-down:hover {color: #060e52!important;
   text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
 
 #dropdown-button-drop-down:active {position: relative;
@@ -57,7 +57,7 @@ animation: none;
     text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
     font-size: 22pt;}
 
-    .dropdownColumn a:hover {color: #000f97!important;
+    .dropdownColumn a:hover {color: #03072e!important;
       text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
 
 
@@ -190,7 +190,7 @@ color: #ffffff!important;
 text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
 font-size: 26pt;}
 
-.headerLinks:hover {color: #000f97!important;
+.headerLinks:hover {color: #060e52!important;
   background-color: rgba(255, 0, 200, 0.45);
   text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
 
@@ -315,6 +315,13 @@ flex-direction: row;}
     height: 30px;
     margin: 4% 1% 0% 2%;
   }
+
+  .cardInfoColumn {margin-left: 12%;}
+
+  .cardInfoColumn ul {margin-top: 15px;}
+
+  .cardInfoColumn ul li {margin-top: 30px; margin-bottom: 30px;}
+
   .cardPriceColumn h2 {color: #63f337;}
   
   .cardImage {min-width: 23%;
@@ -324,14 +331,19 @@ flex-direction: row;}
     .cardimageColumn {margin-left: 38%;}
 
     .CardInfo{min-width: 90%;
-    margin-left: 1%;}
+      padding-bottom: 25px;
+    position: relative;
+  right: 3.5%;}
 
 
   .column {margin-left: 0;}
 
   .header {
-    font-size: 10.5pt;
+    width: 91.5%;
+    font-size: 9.5pt;
     background-size: 1520px;
+    position: fixed;
+    left: -1.1%;
     min-height: 120px;
   max-height: 120px;
     margin-bottom: 0%;}
@@ -339,8 +351,8 @@ flex-direction: row;}
 
 
 .header h1 {position: absolute;
-  left: 35px;
-  top: -25px;
+  left: 25px;
+  top: -18px;
   white-space: normal;}
 
 .headerLinks {
@@ -381,6 +393,16 @@ font-size: 20pt;
           .pokeName {margin-left: 6%;}
 
 #pokeName {font-size: 20pt;
-  margin-left: -28%;
+  position: relative;
+  left: -30%;
 }
-        }
+
+.CardPrices {position: relative;
+  top: 100px;
+left: -90px;}
+        
+
+        .HoloPrices {position: relative;
+          top: 25px;
+        left: -90px;}
+                }
