@@ -28,7 +28,8 @@ a, a:active {color:#ee65a9!important;
   
   .CardSetSearch #priceRow {right: -19.5%;}
 
-  .CardSetSearch  {text-align: center;}
+  .CardSetSearch  {text-align: center;
+  margin-top: 5}
   #dropdown-button-drop-down {background-color: transparent;
     color: #ffffff!important;
     font-weight: normal;
@@ -73,7 +74,7 @@ a, a:active {color:#ee65a9!important;
   
   .notFound {margin-top: 200px!important;
   text-align: center;}
-  .PokeSearch, .CardSearch, .SubTypeCardCardSearch {margin-top: 142px!important;}
+  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch {margin-top: 142px!important;}
   .App {
     padding-bottom: 30px;
     position: relative;
