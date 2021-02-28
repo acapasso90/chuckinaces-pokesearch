@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   const dropdownTitle = `♦ Cards ♣`;
-  const hamburger = <i class="fas fa-bars"></i>;
+  const hamburger = <i className="fas fa-bars"></i>;
   return (
     <Router>
     <div className="App">
@@ -36,7 +36,6 @@ function App() {
    </div>
    </div>
    </div>
-    </div>
     <Switch>
          <Route path="/" exact component={PokeSearch} />
          <Route path="/cards.name"  component={CardSearch} />
@@ -44,6 +43,7 @@ function App() {
          <Route path="/cards.subtype"  component={SubTypeCardSearch} />
     <Route render={() => <div className="notFound"> <h1>404: page not found</h1><img src={notFound} alt="notfound" /> </div>} />
     </Switch>
+    </div>
     </Router>
     
   );

@@ -74,13 +74,16 @@ a, a:active {color:#ee65a9!important;
   .notFound {margin-top: 200px!important;
   text-align: center;}
   .PokeSearch, .CardSearch, .SubTypeCardCardSearch {margin-top: 142px!important;}
-  .App, .PokeSearch, .CardSearch, .footer, .SubTypeCardCardSearch {
+  .App {
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 100vh;
     text-align: center;
     width: 98.8vw;
     margin: 0;
   }
   
-  .SubTypeCardCardSearch .footer {display: none;}
+
   .bullet {width: 6%;
     height: 25px;
     float: left;
@@ -125,7 +128,7 @@ a, a:active {color:#ee65a9!important;
   
   .cardInfoColumn ul li {margin-top: 26px; margin-bottom: 26px; white-space: nowrap;}
   
-  .CardInfo {border: 3px solid #f555e5;
+  .CardInfo {border: 3px solid #9227b3;
     padding-bottom: 1.5%;
   border-radius: 2px;
   width: 76%;
@@ -135,10 +138,8 @@ a, a:active {color:#ee65a9!important;
   
   .cardPriceColumn {margin-left: 450px;}
   
-  .cardPriceColumn h2 {color: #d656fd;}
+  .cardPriceColumn h2 {color: #fd56e7;}
   
-  .CardSearch, .CardSetSearch {  position: relative;
-    min-height: 100vh;}
   
   button {background-color: #252730;
     color:  #e9fbff;
@@ -207,8 +208,7 @@ a, a:active {color:#ee65a9!important;
    height: 44px;
     left: 30px;}
   
-    .content-wrap {
-      padding-bottom: 2rem;}
+
   .footer {position: absolute;
     font-size: 13!important;
     bottom: 0;
