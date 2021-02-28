@@ -8,6 +8,7 @@ export default function CardInfo(props){
     let id = props.data.id;
     let name = props.data.name;
     if (name === "Hop"){name = "f*ing Hop";}
+    if (name === "Sizzlipede"){name = "Bacon";}
     let rarity = props.data.rarity;
     if (!rarity){rarity = "n/a"}
     let set = props.data.set.name;

@@ -9,6 +9,7 @@ import './App.css';
 
 function App() {
   const dropdownTitle = `♦ Cards ♣`;
+  const hamburger = <i class="fas fa-bars"></i>;
   return (
     <Router>
     <div className="App">
@@ -17,11 +18,19 @@ function App() {
         <h1>The ChuckinAces PokéSearch App</h1>
      <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink"> &spades; Sizes &hearts;</NavLink>
      <div  className="headerLinks">
-     <DropdownButton id='dropdown-button-drop-down' title={dropdownTitle}>
+     <DropdownButton id='dropdown-button-drop-down' className="regDropDown" title={dropdownTitle}>
      <div className="dropdownColumn">
         <NavLink to="/cards.name" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1">  By Name </NavLink> <br/>
         <NavLink to="/cards.set" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2"> By Set </NavLink> <br/>
         <NavLink to="/cards.subtype" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2"> By SubType </NavLink>
+  </div>
+  </DropdownButton>
+  <DropdownButton id='dropdown-button-drop-down' className="hamburgerDropdown" title={hamburger}>
+     <div className="dropdownColumn">
+     <NavLink to="/" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1">&spades; Sizes &hearts;</NavLink> <br/>
+        <NavLink to="/cards.name" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1"> Cards By Name </NavLink> <br/>
+        <NavLink to="/cards.set" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By Set </NavLink> <br/>
+        <NavLink to="/cards.subtype" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By SubType </NavLink>
   </div>
 </DropdownButton>
    </div>
@@ -36,6 +45,7 @@ function App() {
     <Route render={() => <div className="notFound"> <h1>404: page not found</h1><img src={notFound} alt="notfound" /> </div>} />
     </Switch>
     </Router>
+    
   );
 }
 
