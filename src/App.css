@@ -5,6 +5,13 @@ a, a:active {color:#ee65a9!important;
   body {background-color: #20212b;
   color: #a3eeff;
   font-family: 'Montserrat', sans-serif;}
+
+  button:hover {background-color: #8be9fd;
+    color: #b737df;}
+  button:active {animation: 1s buttonActive normal;
+  position: relative;
+  top: 1px;
+  }
   
   form {margin-bottom: 1%;}
   
@@ -28,8 +35,7 @@ a, a:active {color:#ee65a9!important;
   
   .CardSetSearch #priceRow {right: -19.5%;}
 
-  .CardSetSearch  {text-align: center;
-  margin-top: 5}
+
   #dropdown-button-drop-down {background-color: transparent;
     color: #ffffff!important;
     font-weight: normal;
@@ -73,8 +79,9 @@ a, a:active {color:#ee65a9!important;
   }
   
   .notFound {margin-top: 200px!important;
-  text-align: center;}
+  }
   .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch {margin-top: 142px!important;}
+
   .App {
     padding-bottom: 30px;
     position: relative;
@@ -102,11 +109,9 @@ a, a:active {color:#ee65a9!important;
     white-space: nowrap;
     font-family: 'Shrikhand', cursive;
   width: 200px;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;}
   
-  .loading h1 {margin-left: -30%;}
   
   .lowColumn {color: #60eb44; font-size: 14pt; font-weight: bold; }
   .midColumn {color: #ebd244; font-size: 14pt; margin-left: 15%; font-weight: bold; }
@@ -125,6 +130,7 @@ a, a:active {color:#ee65a9!important;
     width: 232px;
     text-align: left;
     right: 50%;}
+
   .cardInfoColumn ul {margin-top: 14px;}
   
   .cardInfoColumn ul li {margin-top: 26px; margin-bottom: 26px; white-space: nowrap;}
@@ -160,14 +166,18 @@ a, a:active {color:#ee65a9!important;
   .column {margin-left: 6.2%;
     margin-right: 5%;
   text-align: center;}
-  .container {  margin: 0;}
-  
+
+  .container {  margin: 0;
+    width: 100%;}
+    
   .pink {color: #f15de3;}
   
-  .header {min-height: 120px;
-    max-height: 120px;
+  .header {min-height: 15.2%;
+    max-height: 15%;
     color: #5ee7ff;
     white-space: nowrap;
+    width: 100%;
+    max-width: 100%;
     z-index: 1;
   font-size: 31px;
   text-shadow: -5px 0 #e630d3, 0 5px #ff00e6, 5px 0 #ff00e6, 0 -5px #ff00e6;
@@ -176,7 +186,6 @@ a, a:active {color:#ee65a9!important;
   position: fixed;
   top: 0;
   right: 0;
-  left: -40px;
   user-select: none;}
   
   .header h1 {position: absolute;
@@ -186,7 +195,7 @@ a, a:active {color:#ee65a9!important;
   font-family: 'Shrikhand', cursive;}
   
   .headerLinks {position: fixed;
-    left: 300px;
+    left: 339px;
     top: 75px;
   z-index: 9999;
   width: 250px;
@@ -205,9 +214,9 @@ a, a:active {color:#ee65a9!important;
   #firstHeaderlink {
    position: fixed; 
    width: 256px;
-   top: 73.5px;
+   top: 71.5px;
    height: 44px;
-    left: 30px;}
+    left: 70px;}
   
 
   .footer {position: absolute;
@@ -238,7 +247,6 @@ a, a:active {color:#ee65a9!important;
   margin-right: auto;}
   
   .pokeSearchInstructions {width: 70%;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;}
   
@@ -272,12 +280,7 @@ a, a:active {color:#ee65a9!important;
   
     .SubTypeInstructions {margin-bottom: 1.5%;}
   
-  button:hover {background-color: #8be9fd;
-    color: #b737df;}
-  button:active {animation: 1s buttonActive normal;
-  position: relative;
-  top: 1px;
-  }
+
   .weightColumn {margin-top: 5%;}
   
   .height {  color: #cf65f0;
@@ -340,12 +343,14 @@ a, a:active {color:#ee65a9!important;
     right: -24%;}
 
     .CardInfo{min-width: 98%;
+      width: 97.5%;
       padding-bottom: 25px;
     margin-left: 1%;}
 
 
   .column {margin-left: 0;}
 
+  .App {overflow-x: hidden;}
   .dropdownColumn {
     left: -7px;
     border-radius: 2px;
@@ -358,15 +363,14 @@ position: absolute;
   .header {font-size: 10.5pt;
     min-height: 120px;
   max-height: 120px;
-  position: fixed;
-  left: 0px;
     margin-bottom: 0px;}
     
 
-
+    .CardSearch .header, .SubTypeCardCardSearch .header, .CardSetSearch .header {width: 100%;
+      left: 0;}
 
     .header h1 {position: absolute;
-      left: -2%;
+      left: -0.5%;
       top: -17%;
       white-space: normal;}
     

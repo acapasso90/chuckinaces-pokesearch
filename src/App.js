@@ -14,8 +14,6 @@ function App() {
     <Router>
     <div className="App">
    <div className="container">
-   <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
      <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink"> &spades; Sizes &hearts;</NavLink>
      <div  className="headerLinks">
      <DropdownButton id='dropdown-button-drop-down' className="regDropDown" title={dropdownTitle}>
@@ -33,7 +31,6 @@ function App() {
         <NavLink to="/cards.subtype" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By SubType </NavLink>
   </div>
 </DropdownButton>
-   </div>
    </div>
    </div>
     <Switch>

@@ -39,7 +39,9 @@ axios.get(APIurl).then(setInfo);}
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
-            
+                 <div className="header">
+        <h1>The ChuckinAces PokéSearch App</h1>
+        </div>
             <h3 className="searchInstructions">
             Search by Pokémon Number or Name</h3>
     <form onSubmit={handleSubmit}>
@@ -59,6 +61,9 @@ if(loaded){return(
 else{ searchPokemon();
     return(
 <div className="loading">
+<div className="header">
+        <h1>The ChuckinAces PokéSearch App</h1>
+        </div>
 <h1>Loading Pokés</h1>
     <img src={loading} alt="loading" />
 </div>
