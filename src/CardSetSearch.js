@@ -47,7 +47,7 @@ useEffect(() => {
 
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
-    <div className="CardSearch" >
+    <div className="CardSetSearch" >
            <div className="content-wrap">
         <h3 className="searchInstructions">Search by Set Name </h3>
 <form onSubmit={handleSubmit}>

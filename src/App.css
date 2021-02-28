@@ -24,8 +24,11 @@ a, a:active {color:#ee65a9!important;
   position: absolute;
   width: 452px;
   top: 150px;
-  right: -16%}
+  right: -17%}
   
+  .CardSetSearch #priceRow {right: -19.5%;}
+
+  .CardSetSearch  {text-align: center;}
   #dropdown-button-drop-down {background-color: transparent;
     color: #ffffff!important;
     font-weight: normal;
@@ -120,9 +123,9 @@ a, a:active {color:#ee65a9!important;
     right: 50%;}
   .cardInfoColumn ul {margin-top: 14px;}
   
-  .cardInfoColumn ul li {margin-top: 25px; margin-bottom: 25px;}
+  .cardInfoColumn ul li {margin-top: 26px; margin-bottom: 26px; white-space: nowrap;}
   
-  .CardInfo {border: 3px solid #f133de;
+  .CardInfo {border: 3px solid #f555e5;
     padding-bottom: 1.5%;
   border-radius: 2px;
   width: 76%;
