@@ -27,7 +27,7 @@ function App() {
   </DropdownButton>
   <DropdownButton id='dropdown-button-drop-down' className="hamburgerDropdown" title={hamburger}>
      <div className="dropdownColumn">
-     <NavLink to="/" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1">&spades; Sizes &hearts;</NavLink> <br/>
+     <NavLink to="/" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1"> Sizes </NavLink> <br/>
         <NavLink to="/cards.name" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1"> Cards By Name </NavLink> <br/>
         <NavLink to="/cards.set" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By Set </NavLink> <br/>
         <NavLink to="/cards.subtype" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By SubType </NavLink>
