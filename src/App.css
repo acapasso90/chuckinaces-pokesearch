@@ -116,9 +116,8 @@ a, a:active {color:#ee65a9!important;
   .lowColumn {color: #60eb44; font-size: 14pt; font-weight: bold; }
   .midColumn {color: #ebd244; font-size: 14pt; margin-left: 15%; font-weight: bold; }
   .highColumn {color: #f85a5a; font-size: 14pt; margin-left: 15%; font-weight: bold; }
-  .priceColumn{margin-left: 
-  5%;
-    margin-right: npm 5%;}
+  .priceColumn{margin-left: 5%;
+    margin-right: 5%;}
   
   .cardImage {min-width: 23%;
     max-width: 280px;}
@@ -308,11 +307,31 @@ a, a:active {color:#ee65a9!important;
   color: #b737df;}}
 
 
-@media only screen and (min-width: 501px){ 
+@media only screen and (min-width: 1112px){ 
   .CardInfo{min-width: 1080px;}
-
 }
-/** Mobile Sized**/
+
+/*Tablet Sized*/
+@media only screen and (max-width: 1111px) and (min-width: 501px){  .CardInfo{min-width: 95%;}
+
+.CardPrices {position: absolute;
+  right: 10%;}
+        
+
+  .cardInfoColumn {position: absolute;
+    left: 320px;}
+  
+  
+  #priceRow {
+  position: absolute;
+  top: 100%;
+  right: -108%}
+
+        .HoloPrices, .ReverseHoloPrices {position: absolute;
+        right: 10%;}
+}
+
+/*Mobile Sized*/
 @media only screen and (max-width: 500px){
 
   #firstHeaderlink {
@@ -336,13 +355,14 @@ a, a:active {color:#ee65a9!important;
   .cardImage {min-width: 23%;
     position: relative;
     top: 50px;
+    right: 15px;
     max-width: 150px;}
 
   
     .cardimageColumn {position: relative;
     right: -24%;}
 
-    .CardInfo{min-width: 98%;
+    .CardInfo{min-width: 97.4%;
       width: 97.5%;
       padding-bottom: 25px;
     margin-left: 1%;}
@@ -420,7 +440,7 @@ font-size: 20pt;
 #pokeName {font-size: 20pt;
   position: absolute;
   top: -5px;
-  right: 5%;
+  right: 9%;
 }
 
 .headerLinks:hover {
@@ -437,3 +457,5 @@ left: -75px;}
           top: 25px;
         left: -75px;}
                 }
+
+          
