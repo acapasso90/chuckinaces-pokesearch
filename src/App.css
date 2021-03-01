@@ -352,13 +352,14 @@ a, a:active {color:#ee65a9!important;
 
   .App {overflow-x: hidden;}
   .dropdownColumn {
-    left: -7px;
+    left: 2.5px;
     border-radius: 2px;
   width: 105%;}
 
   .hamburgerDropdown {display: inherit;
 position: absolute;
 }
+
 
   .header {font-size: 10.5pt;
     min-height: 120px;
@@ -422,10 +423,15 @@ font-size: 20pt;
   right: 5%;
 }
 
+.headerLinks:hover {
+  background-color: transparent;
+}
+
 .CardPrices {position: relative;
   top: 100px;
 left: -75px;}
         
+
 
         .HoloPrices, .ReverseHoloPrices {position: relative;
           top: 25px;
