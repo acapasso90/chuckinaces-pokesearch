@@ -80,9 +80,11 @@ a, a:active {color:#ee65a9!important;
   
   .notFound {margin-top: 200px!important;
   }
-  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch {margin-top: 142px!important;}
+  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch {margin-top: 142px!important;
+  width: 100%;}
 
   .App {
+    overflow-x: hidden;
     padding-bottom: 30px;
     position: relative;
     min-height: 100vh;
@@ -137,7 +139,7 @@ a, a:active {color:#ee65a9!important;
   
   .cardInfoColumn ul li {margin-top: 26px; margin-bottom: 26px; white-space: nowrap;}
   
-  .CardInfo {border: 3px solid #9227b3;
+  .CardInfo {border: 3px solid #27a3b3;
     padding-bottom: 1.5%;
   border-radius: 2px;
   width: 76%;
@@ -147,7 +149,7 @@ a, a:active {color:#ee65a9!important;
   
   .cardPriceColumn {margin-left: 450px;}
   
-  .cardPriceColumn h2 {color: #fd56e7;}
+  .cardPriceColumn h2 {color: #ff68d9;}
   
   
   button {background-color: #252730;
@@ -172,11 +174,12 @@ a, a:active {color:#ee65a9!important;
   .container {  margin: 0;
     width: 100%;}
     
-  .pink {color: #f15de3;}
+  .pink {color: #ff68d9;}
   
   .header {min-height: 122.5px;
     max-height: 15%;
     color: #5ee7ff;
+    background-size: (100vw);
     width: 100%;
     max-width: 100%;
     white-space: nowrap;
@@ -191,7 +194,7 @@ a, a:active {color:#ee65a9!important;
   user-select: none;}
   
   .header h1 {position: absolute;
-    left: 6%;
+    left: 5.5vw;
     top: -2.7vw;
     text-shadow:     -4px 0 #e630d3, 0 4px #ff00e6, 4px 0 #ff00e6, 0 -4px #ff00e6,
      -5.5px 0 #2b2a2b, 0 5.5px #2b2a2b, 5.5px 0 #2b2a2b, 0 -5.5px #2b2a2b;
@@ -239,7 +242,7 @@ a, a:active {color:#ee65a9!important;
   .pokeName {text-transform: capitalize;
     white-space: normal;
     width: 346px;
-  color: #f840e6;
+  color: #ff68d9;
   font-size: 29pt;}
   
   .pokeName2 {font-size: 25pt;}
@@ -276,6 +279,7 @@ a, a:active {color:#ee65a9!important;
   font-size: 16pt;}
   
   .searchInstructions {font-size: 16pt!important;
+    color: #ff68d9;
   margin-bottom: 10px;}
   .submitButton {width: 60px;
     position: relative;
@@ -412,7 +416,6 @@ right: 30%;}
 
   .column {margin-left: 0;}
 
-  .App {overflow-x: hidden;}
   .dropdownColumn {
     left: 2.5px;
     border-radius: 2px;
@@ -429,7 +432,7 @@ position: absolute;
     margin-bottom: 0px;}
     
 
-    .CardSearch .header, .SubTypeCardCardSearch .header, .CardSetSearch .header, .RaritySearch .header{width: 100%;
+    .CardSearch .header, .SubTypeCardCardSearch .header, .CardSetSearch .header, .RaritySearch .header {width: 100%;
       left: 0;}
 
     .header h1 {position: absolute;
@@ -472,7 +475,7 @@ font-size: 20pt;
             font-size: 21pt;
           }
           .content-wrap {
-            padding-bottom: 0rem;
+          width: 100%
          }
           .officialImg {width: 354px;
           margin-left: 6.5%;}
