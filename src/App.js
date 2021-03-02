@@ -38,7 +38,9 @@ function App() {
          <Route path="/cards.name"  component={CardSearch} />
          <Route path="/cards.set"  component={CardSetSearch} />
          <Route path="/cards.subtype"  component={SubTypeCardSearch} />
-    <Route render={() => <div className="notFound"> <h1>404: page not found</h1><img src={notFound} alt="notfound" /> </div>} />
+    <Route render={() => <div className="notFound">    <div className="header">
+        <h1>The ChuckinAces PokéSearch App</h1>
+        </div> <h1>404: page not found</h1><img src={notFound} alt="notfound" /> </div>} />
     </Switch>
     </div>
     </Router>
