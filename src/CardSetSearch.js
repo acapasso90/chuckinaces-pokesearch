@@ -58,7 +58,7 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pokeSearchInstructions">Use a * between 2-word named sets (ex. <span className="pink">Vivid*Voltage.</span>)  </p>
+<p className="pokeSearchInstructions" >Use a * between 2-word named sets (ex. <span className="pink">Vivid*Voltage.</span>)  </p>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
             return(<CardInfo data={pokemonNumber}  loading={loadedStatus}/>)})}
         </div>

@@ -150,7 +150,7 @@ a, a:active {color:#ee65a9!important;
   
   .cardPriceColumn {margin-left: 450px;}
   
-  .cardPriceColumn h2 {color: #ff68d9;}
+  .cardPriceColumn h2, .statsColumn h2 {color: #ff68d9;}
   
   
   button {background-color: #0e0f1b;
@@ -168,8 +168,8 @@ a, a:active {color:#ee65a9!important;
     height: 38px;}
   
   
-  .column {margin-left: 6.2%;
-    margin-right: 5%;
+  .column {margin-left: 4.2%;
+    margin-right: 4%;
   text-align: center;}
 
   .container {  margin: 0;
@@ -222,7 +222,7 @@ a, a:active {color:#ee65a9!important;
   #firstHeaderlink {
    position: fixed; 
    width: 256px;
-   top: 71.5px;
+   top: 73.5px;
    height: 44px;
     left: 70px;}
   
@@ -236,9 +236,11 @@ a, a:active {color:#ee65a9!important;
     .instructions{margin-left: 3px;
     margin-right: 3px;}
   .officialImg {
-   width: 320px;
+   width: 310px;
+   background-image: url(./pexels-luis-quintero-2471234.jpg);
+   background-size: 360px 330px;
     border-radius: 2px;
-  border: 3px solid #ee77e2;}
+  border: 4px solid #00c3ff;}
   
   .pokeName {text-transform: capitalize;
     white-space: normal;
@@ -248,9 +250,11 @@ a, a:active {color:#ee65a9!important;
   
   .pokeName2 {font-size: 25pt;}
   
-  .PokeInfo {width: 60%;
+  .PokeInfo {width: 75%;
     margin-top: 1.5%;
     padding-top: 2%;
+    border: 3px solid #27a3b3;
+    background-color: #000313;
   margin-left: auto;
   margin-right: auto;}
   
@@ -282,6 +286,13 @@ a, a:active {color:#ee65a9!important;
   .searchInstructions {font-size: 16pt!important;
     color: #ff68d9;
   margin-bottom: 10px;}
+
+  .stats {font-size: 16pt;
+  margin-top: 3.2%;}
+  .statsColumn {white-space: nowrap;
+  margin-top: 1.5%;
+position: absolute;
+right: 17%;}
   .submitButton {width: 60px;
     position: relative;
     top: -1.2px;
@@ -293,14 +304,15 @@ a, a:active {color:#ee65a9!important;
   .weightColumn {margin-top: 5%;}
   
   .height {  color: #cf65f0;
+    font-size: 21pt;
     margin-left: 1%;
     white-space: nowrap;
     font-style:italic;}
   .weight {color: #60eb44;
     margin-left: 1%;
+    font-size: 21pt;
     white-space: nowrap;
-    font-style:italic;
-  }
+    font-style:italic;}
   
   .weightDetails {margin-left: 3%;   font-style: normal;}
   .heightDetails {margin-left: 3%;
@@ -309,6 +321,8 @@ a, a:active {color:#ee65a9!important;
   flex-direction: row;}
   
   .heightRow { margin-top: 5%;}
+
+  .weightColumn {max-width: 500px;}
   
 
 @keyframes buttonActive { 0%{background-color: #252730;

@@ -24,7 +24,8 @@ export default function PokeInfo(props){
     let roundedFormattedHeight = Math.round(10*formattedHeight)/10;
     // Converts to meters by dividing by 10
     let metricHeight = (unformattedHeight / 10);
-    
+
+
 
     useEffect(() => {
         let mounted = true;
@@ -63,9 +64,21 @@ if (loaded === "loaded"){return(
         </div>
         <div className="column" className="weightColumn">
             <div className="weightRow">
-        <img src={pokeball} className="bullet" alt="pokeball-bullet" /><h1 className="weight">  Weight: <span className="weightDetails"> {roundedFormattedWeight} lbs / {metricWeight} kg  </span> </h1> </div>
+        <img src={pokeball} className="bullet" alt="pokeball-bullet" /><h2 className="weight">  Weight: <span className="weightDetails"> {roundedFormattedWeight} lbs / {metricWeight} kg  </span> </h2> </div>
         <div className="heightRow">
-        <img src={pokeball} className="bullet" alt="pokeball-bullet" /> <h1 className="height">Height:  <span className="heightDetails"> {roundedFormattedHeight} ft / {metricHeight} m  </span></h1> </div>
+        <img src={pokeball} className="bullet" alt="pokeball-bullet" /> <h2 className="height">Height:  <span className="heightDetails"> {roundedFormattedHeight} ft / {metricHeight} m  </span></h2> </div>
+        </div>
+        <div className="statsColumn">
+        <h2 className="statTitle">Base Stats</h2>
+        <p className="stats">
+        {props.data.stats.slice(0, 6).map(function(stats){
+    let statName = stats.stat.name;
+let stat = stats.base_stat;
+return(<div className="stats">
+    {statName} : {stat}
+    
+    </div>);})}
+    </p>
         </div>
         </div>
     </div>

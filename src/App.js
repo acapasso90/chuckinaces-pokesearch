@@ -15,7 +15,7 @@ function App() {
     <Router>
     <div className="App">
    <div className="container">
-     <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink"> &spades; Sizes &hearts;</NavLink>
+     <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink"> &spades; Stats &hearts;</NavLink>
      <div  className="headerLinks">
      <DropdownButton id='dropdown-button-drop-down' className="regDropDown" title={dropdownTitle}>
      <div className="dropdownColumn">
@@ -27,7 +27,7 @@ function App() {
   </DropdownButton>
   <DropdownButton id='dropdown-button-drop-down' className="hamburgerDropdown" title={hamburger}>
      <div className="dropdownColumn">
-     <NavLink to="/" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1"> Sizes </NavLink> <br/>
+     <NavLink to="/" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1"> Stats </NavLink> <br/>
         <NavLink to="/cards.name" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1"> Cards By Name </NavLink> <br/>
         <NavLink to="/cards.set" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By Set </NavLink> <br/>
         <NavLink to="/cards.subtype" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By SubType </NavLink> <br/>

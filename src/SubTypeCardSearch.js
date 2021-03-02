@@ -61,13 +61,13 @@ if(loaded){return(
            <div className="header">
         <h1>The ChuckinAces PokéSearch App</h1>
         </div>
-        <h3 className="searchInstructions">Search by SubType</h3>
+        <h3 className="searchInstructions">Search by Subtype</h3>
 <form onSubmit={handleSubmit}>
-<input type="text" onChange={setPokemon} placeholder="Enter a subtype" 
+<input type="text" onChange={setPokemon} placeholder="Enter a Subtype" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p>use * between multi-word search terms</p>
+<p className="pink">use * between multi-word search terms</p>
 <div className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
             return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
