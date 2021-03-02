@@ -80,7 +80,7 @@ a, a:active {color:#ee65a9!important;
   
   .notFound {margin-top: 200px!important;
   }
-  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch {margin-top: 142px!important;}
+  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch {margin-top: 142px!important;}
 
   .App {
     padding-bottom: 30px;
@@ -105,12 +105,15 @@ a, a:active {color:#ee65a9!important;
   .loading {margin-top: 22%;
     font-size: 28px;
     color: #5ee7ff;
-  text-shadow: -5px 0 #e630d3, 0 5px #ff00e6, 5px 0 #ff00e6, 0 -5px #ff00e6;
+  text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
     white-space: nowrap;
-    font-family: 'Shrikhand', cursive;
-  width: 200px;
+    font-family: 'Broadway', cursive;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;}
+
+  .loading h1 {position: relative;
+  left: -25%;}
   
   
   .lowColumn {color: #60eb44; font-size: 14pt; font-weight: bold; }
@@ -178,7 +181,7 @@ a, a:active {color:#ee65a9!important;
     max-width: 100%;
     white-space: nowrap;
     z-index: 1;
-    font-size:calc(12px + 1vw);
+    font-size:calc(14px + 1vw);
   text-shadow: -5px 0 #e630d3, 0 5px #ff00e6, 5px 0 #ff00e6, 0 -5px #ff00e6;
   background-image: url(./wall.jpg);
   font-weight: lighter;
@@ -188,10 +191,12 @@ a, a:active {color:#ee65a9!important;
   user-select: none;}
   
   .header h1 {position: absolute;
-    left: 10%;
-    top: -2.8vw;
+    left: 6%;
+    top: -2.7vw;
+    text-shadow:     -4px 0 #e630d3, 0 4px #ff00e6, 4px 0 #ff00e6, 0 -4px #ff00e6,
+     -5.5px 0 #2b2a2b, 0 5.5px #2b2a2b, 5.5px 0 #2b2a2b, 0 -5.5px #2b2a2b;
     letter-spacing: 8px;
-  font-family: 'Shrikhand', cursive;}
+  font-family: 'broadway', cursive;}
   
   .headerLinks {position: fixed;
     left: 339px;
@@ -424,7 +429,7 @@ position: absolute;
     margin-bottom: 0px;}
     
 
-    .CardSearch .header, .SubTypeCardCardSearch .header, .CardSetSearch .header {width: 100%;
+    .CardSearch .header, .SubTypeCardCardSearch .header, .CardSetSearch .header, .RaritySearch .header{width: 100%;
       left: 0;}
 
     .header h1 {position: absolute;
