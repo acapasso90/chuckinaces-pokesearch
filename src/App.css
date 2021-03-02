@@ -171,14 +171,14 @@ a, a:active {color:#ee65a9!important;
     
   .pink {color: #f15de3;}
   
-  .header {min-height: 15.2%;
+  .header {min-height: 122.5px;
     max-height: 15%;
     color: #5ee7ff;
-    white-space: nowrap;
     width: 100%;
     max-width: 100%;
+    white-space: nowrap;
     z-index: 1;
-  font-size: 31px;
+    font-size:calc(12px + 1vw);
   text-shadow: -5px 0 #e630d3, 0 5px #ff00e6, 5px 0 #ff00e6, 0 -5px #ff00e6;
   background-image: url(./wall.jpg);
   font-weight: lighter;
@@ -188,8 +188,8 @@ a, a:active {color:#ee65a9!important;
   user-select: none;}
   
   .header h1 {position: absolute;
-    left: 140px;
-    top: -52px;
+    left: 10%;
+    top: -2.8vw;
     letter-spacing: 8px;
   font-family: 'Shrikhand', cursive;}
   
@@ -312,7 +312,16 @@ a, a:active {color:#ee65a9!important;
 }
 
 /*Tablet Sized*/
-@media only screen and (max-width: 1111px) and (min-width: 501px){  .CardInfo{width: 99%;
+@media only screen and (max-width: 1111px) and (min-width: 501px){ 
+  .bullet {width: 7.5%;
+    height: 30px;
+    margin: 4% 1% 0% 2%;
+    position: relative;
+    right: 40%;
+  }
+
+  
+  .CardInfo{width: 96%;
 margin-left: 1%;
 padding-bottom: 4%;}
 
@@ -327,13 +336,20 @@ padding-bottom: 4%;}
   .cardInfoColumn {position: absolute;
     left: 260px;}
 
-    #pokeName {font-size: 22pt;
+    .header {
+      font-size:calc(8px + 1.2vw);}
+    #pokeName {font-size: 20pt;
       position: relative;
-      right: 58px;
+      right: 14%;
 
 }
   
 .holo, .reverseholo {margin-bottom: 300px;}
+
+.officialImg {width: 250px;
+margin-left: 0;
+position: relative;
+right: 30%;}
   
   #priceRow {
   position: absolute;
@@ -343,6 +359,13 @@ padding-bottom: 4%;}
         .HoloPrices, .ReverseHoloPrices {position: absolute;
         right: 8%;}
 
+        .height, .weight {position: relative;
+          font-size:calc(12px + 1.2vw);
+        right: 40%;}
+
+        .pokeName {position: relative;
+        right: 30%;}
+    
 }
 
 /*Mobile Sized*/
