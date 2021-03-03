@@ -1,5 +1,4 @@
 import React, {useEffect} from "react";
-import pokeball from "./pokeball.png";
 
 export default function PokeInfo(props){
     const official = "official-artwork";
@@ -64,13 +63,13 @@ if (loaded === "loaded"){return(
         </div>
         <div className="column" className="weightColumn">
             <div className="weightRow">
-        <img src={pokeball} className="bullet" alt="pokeball-bullet" /><h2 className="weight">  Weight: <span className="weightDetails"> {roundedFormattedWeight} lbs / {metricWeight} kg  </span> </h2> </div>
+        <h2 className="weight"> Weight <div className="weightDetails"> {roundedFormattedWeight} lbs / {metricWeight} kg  </div> </h2> </div>
         <div className="heightRow">
-        <img src={pokeball} className="bullet" alt="pokeball-bullet" /> <h2 className="height">Height:  <span className="heightDetails"> {roundedFormattedHeight} ft / {metricHeight} m  </span></h2> </div>
+        <h2 className="height">Height  <div className="heightDetails"> {roundedFormattedHeight} ft / {metricHeight} m  </div></h2> </div>
         </div>
         <div className="statsColumn">
         <h2 className="statTitle">Base Stats</h2>
-        <p className="stats">
+        <div className="stats">
         {props.data.stats.slice(0, 6).map(function(stats){
     let statName = stats.stat.name;
 let stat = stats.base_stat;
@@ -78,7 +77,7 @@ return(<div className="stats">
     {statName} : {stat}
     
     </div>);})}
-    </p>
+    </div>
         </div>
         </div>
     </div>
