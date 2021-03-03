@@ -132,8 +132,10 @@ a, a:active {color:#ee65a9!important;
   
   .cardInfoColumn {position: absolute;
     width: 232px;
+    border-radius: 2px;
     text-align: left;
     right: 50%;}
+    
 
   .cardInfoColumn ul {margin-top: 14px;}
   
@@ -142,6 +144,7 @@ a, a:active {color:#ee65a9!important;
   .CardInfo {border: 3px solid #27a3b3;
     padding-bottom: 1.5%;
     background-color: #000313;
+    background-image: url(./background.jpg);
   border-radius: 2px;
   width: 76%;
   margin-left: auto;
@@ -168,8 +171,8 @@ a, a:active {color:#ee65a9!important;
     height: 38px;}
   
   
-  .column {margin-left: 4.2%;
-    margin-right: 4%;
+  .column {margin-left: 5.2%;
+    margin-right: 5%;
   text-align: center;}
 
   .container {  margin: 0;
@@ -255,6 +258,7 @@ a, a:active {color:#ee65a9!important;
     padding-top: 2%;
     border: 3px solid #27a3b3;
     background-color: #000313;
+    background-image: url(./background.jpg);
   margin-left: auto;
   margin-right: auto;}
   
@@ -276,7 +280,7 @@ a, a:active {color:#ee65a9!important;
   .searchBar {width: 20%;
     height: 40px;
     border: 2.5px solid #b737df;
-    background-color: #252730;
+    background-color: #0E0F1B;
     color:  #e9fbff;
     outline: none;
     margin-right: 11px;
@@ -292,7 +296,7 @@ a, a:active {color:#ee65a9!important;
   .statsColumn {white-space: nowrap;
   margin-top: 1.5%;
 position: absolute;
-right: 17%;}
+right: 18%;}
   .submitButton {width: 60px;
     position: relative;
     top: -1.2px;
@@ -304,13 +308,13 @@ right: 17%;}
   .weightColumn {margin-top: 5%;}
   
   .height {  color: #cf65f0;
-    font-size: 21pt;
+    font-size: 19pt;
     margin-left: 1%;
     white-space: nowrap;
     font-style:italic;}
   .weight {color: #60eb44;
     margin-left: 1%;
-    font-size: 21pt;
+    font-size: 19pt;
     white-space: nowrap;
     font-style:italic;}
   
@@ -341,7 +345,7 @@ right: 17%;}
     height: 30px;
     margin: 4% 1% 0% 2%;
     position: relative;
-    right: 40%;
+    right: 70%;
   }
 
   
@@ -370,26 +374,36 @@ padding-bottom: 4%;}
   
 .holo, .reverseholo {margin-bottom: 300px;}
 
-.officialImg {width: 250px;
-margin-left: 0;
+.officialImg {width: 200px;
+margin-left: 1.5%;
 position: relative;
 right: 30%;}
   
-  #priceRow {
+  #priceRow { 
   position: absolute;
   top: 100%;
   right: -108%}
 
         .HoloPrices, .ReverseHoloPrices {position: absolute;
-        right: 8%;}
+        right: 8%;
+    }
 
-        .height, .weight {position: relative;
-          font-size:calc(12px + 1.2vw);
-        right: 40%;}
+        .height, .weight {position: absolute;
+          left: 40%;
+          font-size:calc(10px + 1.15vw);
+        right: 60%;}
 
         .pokeName {position: relative;
+          font-size: 22pt;
         right: 30%;}
     
+        .stats {font-size: 15pt;
+          margin-top: 1.2%;}
+
+          .statsColumn {white-space: nowrap;
+          margin-top: 0;
+        position: absolute;
+        right: 15%;}
 }
 
 /*Mobile Sized*/
