@@ -3,6 +3,7 @@ import axios from "axios";
 import Footer from "./Footer.js";
 import loading from "./loading.gif";
 import PokeInfo from "./PokeInfo.js";
+import ScrollTop from "./ScrollTop.js";
 
 export default function PokeSearch(){
 const [pokemon, Setpokemon] = useState("spoink");
@@ -39,6 +40,7 @@ axios.get(APIurl).then(setInfo);}
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
+            <ScrollTop />
                  <div className="header">
         <h1>The ChuckinAces PokéSearch App</h1>
         </div>

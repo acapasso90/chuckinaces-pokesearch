@@ -4,7 +4,7 @@ import loading from "./loading.gif";
 import Footer from "./Footer.js";
 import SubTypeInstructions from "./SubTypeInstructions.js";
 import CardInfo from "./CardInfo.js";
-
+import ScrollTop from "./ScrollTop.js";
 
 export default function SubTypeCardCardSearch(){
     const [instructions, setInstructions] = useState("");
@@ -58,6 +58,7 @@ useEffect(() => {
 if(loaded){return(
     <div className="SubTypeCardCardSearch" >
            <div className="content-wrap">
+               <ScrollTop />
            <div className="header">
         <h1>The ChuckinAces PokéSearch App</h1>
         </div>

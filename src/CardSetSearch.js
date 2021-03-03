@@ -3,6 +3,7 @@ import axios from "axios";
 import loading from "./loading.gif";
 import Footer from "./Footer.js";
 import CardInfo from "./CardInfo.js";
+import ScrollTop from "./ScrollTop.js";
 
 
 export default function CardSearch(){
@@ -12,6 +13,7 @@ const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
 const [arrayLength, setArrayLength] = useState("");
 const [pokemonLowercase, setPokemonLowercase] = useState("")
+
 // sets Pokemon info and sets loaded status for PokeInfo.js
 function setInfo(response){
     setPokeinfo(response.data.data);
@@ -45,10 +47,12 @@ useEffect(() => {
   }}, [pokemon]);
 
 
+
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
     <div className="CardSetSearch" >
            <div className="content-wrap">
+           <ScrollTop />
            <div className="header">
         <h1>The ChuckinAces PokéSearch App</h1>
         </div>

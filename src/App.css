@@ -34,7 +34,8 @@ a, a:active {color:#ee65a9!important;
   right: -17%}
   
   .CardSetSearch #priceRow {right: -19.5%;}
-
+  .topButton {min-height: 40px;
+  min-width: 70px;}
 
   #dropdown-button-drop-down {background-color: transparent;
     color: #ffffff!important;
@@ -267,6 +268,11 @@ a, a:active {color:#ee65a9!important;
   .PokeSearch p li {font-size: 14pt;}
   .row {display: flex;
   width: 100%;}
+
+  .scroll-to-top {position: fixed;
+    bottom: 0.5%;
+    right: 1%;
+font-size: 30pt;}
   
   .searchBar {width: 20%;
     height: 40px;
@@ -288,6 +294,8 @@ a, a:active {color:#ee65a9!important;
   margin-top: 1.5%;
 position: absolute;
 right: 20%;}
+
+
   .submitButton {width: 60px;
     position: relative;
     top: -1.2px;
@@ -295,7 +303,6 @@ right: 20%;}
   
     .SubTypeInstructions {margin-bottom: 1.5%;}
   
-
   .weightColumn {margin-top: 3.5%;}
   
   .height { 
@@ -318,7 +325,7 @@ right: 20%;}
   .weightColumn {max-width: 500px;}
   
 
-@keyframes buttonActive { 0%{background-color: #252730;
+@keyframes buttonActive { 0%{background-color: #0a0b0f;
   color:  #EEF0F0;}
 100% {background-color: #8be9fd;
   color: #b737df;}}

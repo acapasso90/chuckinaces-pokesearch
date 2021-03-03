@@ -3,6 +3,7 @@ import axios from "axios";
 import loading from "./loading.gif";
 import Footer from "./Footer.js";
 import CardInfo from "./CardInfo.js";
+import ScrollTop from "./ScrollTop.js";
 
 
 export default function CardSearch(){
@@ -50,6 +51,7 @@ useEffect(() => {
 if(loaded){return(
     <div className="CardSearch" >
            <div className="content-wrap">
+               <ScrollTop />
            <div className="header">
         <h1>The ChuckinAces PokéSearch App</h1>
         </div>
