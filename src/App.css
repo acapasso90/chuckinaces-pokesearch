@@ -2,7 +2,7 @@ a, a:active {color:#ee65a9!important;
   text-decoration: none;}
   a:hover { color: #60eb44!important;}
   
-  body {background-color: #0e0f1b;
+  body {background-color: #090911;
   color: #a3eeff;
   font-family: 'Montserrat', sans-serif;}
 
@@ -54,6 +54,7 @@ a, a:active {color:#ee65a9!important;
   }
   
     .dropdownColumn {background-image: url(./dropdown.jpg);
+      background-color: #ABA8ED;
       position: relative;
       padding-bottom: 10px;
       padding-top: 5px;
@@ -148,7 +149,7 @@ a, a:active {color:#ee65a9!important;
   .cardPriceColumn h2, .statsColumn h2, .weight, .height {color: #ff68d9;}
   
   
-  button {background-color: #0e0f1b;
+  button {background-color: #090911;
     color:  #e9fbff;
     position: relative;
     top: -1px;
@@ -278,13 +279,13 @@ font-size: 30pt;}
   .searchBar {width: 20%;
     height: 40px;
     border: 2.5px solid #b737df;
-    background-color: #0E0F1B;
+    background-color: #090911;
     color:  #e9fbff;
     outline: none;
     margin-right: 11px;
     border-radius: 2px;
   font-size: 16pt;}
-  
+ 
   .searchInstructions {font-size: 16pt!important;
     color: #ff68d9;
   margin-bottom: 10px;}
@@ -385,6 +386,8 @@ right: 30%;}
           font-size:calc(10px + 1.15vw);
         right: 60%;}
 
+        .height {top: 440px;
+          left: 26%;}
         .pokeName {position: relative;
           font-size: 22pt;
         right: 30%;}
@@ -475,26 +478,37 @@ font-size: 20pt;
 
     .searchBar {width: 65%;
       font-size: 14pt;}
+
+      .statsColumn {position: absolute;
+        top: 760px;
+      right: 0.75%;}
       
       .submitButton {width: 20.5%;
         font-size: 14pt;}
 
-        .PokeInfo {width: 100%;}
+        .PokeInfo {width: 98%;
+        margin-left: 0.7%;}
 
 .regDropDown {display: none;}
     .row {display: flex;
           flex-direction: column;}
 
           .height {
-            font-size: 21pt;}
-          .weight {
-            font-size: 21pt;
+            font-size: 19pt;
+          position: relative;
+          top: -65px;
+        left: -7.5%;}
+          .weight { position: relative;
+            top: -9px;
+            font-size: 19pt;
           }
+
+          .weightDetails, .heightDetails {font-size: 17pt;}
           .content-wrap {
           width: 100%
          }
-          .officialImg {width: 354px;
-          margin-left: 6.5%;}
+          .officialImg {width: 240px;
+          margin-left: 12%;}
 
           .pokeName {margin-left: 10%;}
 
