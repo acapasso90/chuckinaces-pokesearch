@@ -17,6 +17,7 @@ function App() {
    <div className="container">
      <NavLink to="/" style={{ textDecoration: 'none'} } className="headerLinks" id="firstHeaderlink"> &spades; Stats &hearts;</NavLink>
      <div  className="headerLinks">
+
      <DropdownButton id='dropdown-button-drop-down' className="regDropDown" title={dropdownTitle}>
      <div className="dropdownColumn">
         <NavLink to="/cards.name" style={{ textDecoration: 'none' }} className="dropdownLink"  href="#/action-1">  By Name </NavLink> <br/>
@@ -32,9 +33,11 @@ function App() {
         <NavLink to="/cards.set" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By Set </NavLink> <br/>
         <NavLink to="/cards.subtype" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By SubType </NavLink> <br/>
         <NavLink to="/cards.rarity" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2"> By Rarity </NavLink>
+      <br />  <a href="https://www.twitch.tv/chuckinaces" target="_blank" className="dropdownLink" id="dropdownLinkTwo" >Twitch</a>
   </div>
 </DropdownButton>
    </div>
+   <a href="https://www.twitch.tv/chuckinaces" target="_blank" id="lastHeaderLink">&hearts; Twitch &spades;</a>
    </div>
     <Switch>
          <Route path="/" exact component={PokeSearch} />

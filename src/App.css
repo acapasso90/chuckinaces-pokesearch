@@ -27,6 +27,17 @@ a, a:active {color:#ee65a9!important;
     margin-bottom: 7%;
   }
   
+  #lastHeaderLink {position: fixed;
+  top: 75px;
+left: 875px;
+z-index: 9999;
+width: 250px;
+  padding-top: 4px;
+  height: 42px;
+  color: #ffffff!important;
+  text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
+  font-size: 26pt;}
+
   #priceRow {
   position: absolute;
   width: 452px;
@@ -209,8 +220,8 @@ a, a:active {color:#ee65a9!important;
   text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
   font-size: 26pt;}
   
-  .headerLinks:hover {color: #060e52!important;
-    background-color: rgba(255, 0, 200, 0.45);
+  .headerLinks:hover, #lastHeaderLink:hover  {color: #060e52!important;
+    background-color: rgba(22, 255, 138, 0.50);
     text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
   .holo, .reverseholo {margin-bottom: 240px;}
@@ -340,6 +351,10 @@ right: 20%;}
 /*Tablet Sized*/
 @media only screen and (max-width: 1111px) and (min-width: 501px){ 
 
+  #lastHeaderLink {position: fixed;
+    top: 75px;
+  left: 605px;
+  }
 
   
   .CardInfo{width: 96%;
