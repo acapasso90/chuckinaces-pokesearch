@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import axios from "axios";
 import Footer from "./Footer.js";
 import loading from "./loading.gif";
@@ -11,7 +11,7 @@ const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
 const searchIcon = <i class="fas fa-search"></i>;
-
+let pokemonLowercase = null;
 // sets Pokemon info and sets loaded status for PokeInfo.js
 function setInfo(response){
     setPokeinfo(response.data)
@@ -22,20 +22,27 @@ setLoadedStatus("loaded");
 
 // prevents page refreshing and searches pokemon with pokemon set in setPokemon
 function handleSubmit(event){  event.preventDefault();
-   searchPokemon();
+    Setpokemon(pokemonLowercase);
 }
 
 // on text input pokemon is changed to what is typed
 function setPokemon(event){
     event.preventDefault();
-   const pokemonLowercase = (event.target.value).toLowerCase();
-    Setpokemon(pokemonLowercase);
+ pokemonLowercase = (event.target.value).toLowerCase();
 }
 
-// Searches pokemon and makes axios request to setInfo
-function searchPokemon () {    const APIurl = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
-axios.get(APIurl).then(setInfo);}
 
+
+useEffect(() => {
+    let mounted = true;
+    const cancelTokenSource = axios.CancelToken.source();
+    if (mounted) {axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon}`, {
+        cancelToken: cancelTokenSource.token
+      }).then(setInfo);}
+    return function cleanup() {
+      mounted = false
+      cancelTokenSource.cancel();
+  }}, [pokemon]);
 
 // once loaded shows input forms and displays PokeInfo from default search
 if(loaded){return(
@@ -60,7 +67,7 @@ if(loaded){return(
     <Footer />
         </div>)}
 //  searches default pokemon and shows loading pokeball gif
-else{ searchPokemon();
+else{
     return(
 <div className="loading">
 <div className="header">
