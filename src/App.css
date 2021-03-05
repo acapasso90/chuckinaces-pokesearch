@@ -316,16 +316,20 @@ right: 20%;}
   
     .SubTypeInstructions {margin-bottom: 1.5%;}
   
-  .weightColumn {margin-top: 3.5%;}
+  .weightColumn {margin-top: 3.5%;
+  width: 25%;
+  text-align: left;
+justify-content: center;}
   
   .height { 
     font-size: 19pt;
-    margin-left: 15%;
-
+    position: relative;
+    top: -35px;
     white-space: nowrap;}
   .weight {
-    margin-left: 1%;
     font-size: 19pt;
+    position: relative;
+    top: -20px;
     white-space: nowrap;}
   
   .weightDetails, .heightDetails { margin-top: 3%; color: #9fe2e7; font-size: 18pt;}
@@ -402,7 +406,9 @@ right: 30%;}
         right: 60%;}
 
         .height {top: 440px;
-          left: 26%;}
+          left: 40%;}
+
+          .weight {          top: 350px;}
         .pokeName {position: relative;
           font-size: 22pt;
         right: 30%;}
@@ -495,7 +501,7 @@ font-size: 20pt;
       font-size: 14pt;}
 
       .statsColumn {position: absolute;
-        top: 760px;
+        top: 710px;
       right: 0.75%;}
       
       .submitButton {width: 20.5%;
@@ -511,8 +517,8 @@ font-size: 20pt;
           .height {
             font-size: 19pt;
           position: relative;
-          top: -65px;
-        left: -7.5%;}
+          top: -22px;
+        left: 2%;}
           .weight { position: relative;
             top: -9px;
             font-size: 19pt;
@@ -525,7 +531,9 @@ font-size: 20pt;
           .officialImg {width: 240px;
           margin-left: 12%;}
 
-          .pokeName {margin-left: 10%;}
+          .pokeName {margin-left: 10%;
+          position: relative;
+        top: -15px;}
 
 #pokeName {font-size: 20pt;
   position: absolute;
