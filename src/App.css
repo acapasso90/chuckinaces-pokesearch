@@ -73,14 +73,17 @@ width: 250px;
       left: -2px;
       border-radius: 2px;
     width: 160%;}
+
   
     .hamburgerDropdown {display: none;}
 
     .dropdownColumn a {color: #ffffff!important;
       text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
+      white-space: nowrap;
       font-size: 22pt;}
   
       .dropdownColumn a:hover {color: #03072e!important;
+        background-color:rgba(22, 255, 138, 0.30);
         text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
   
