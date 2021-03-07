@@ -61,12 +61,6 @@ if (loaded === "loaded"){return(
         <img src={pokePicture} alt={pokeName} className="officialImg" />
        <h1 className="pokeName">{pokeName} </h1> 
         </div>
-        <div className="column" className="weightColumn">
-        <div className="heightRow">
-        <h2 className="height">Height  <div className="heightDetails"> {roundedFormattedHeight} ft / {metricHeight} m  </div></h2> </div>
-        <div className="weightRow">
-        <h2 className="weight"> Weight <div className="weightDetails"> {roundedFormattedWeight} lbs / {metricWeight} kg  </div> </h2> </div>
-        </div>
         <div className="statsColumn">
         <h2 className="statTitle">Base Stats</h2>
         <div className="stats">
@@ -78,6 +72,12 @@ return(<div className="stats">
     
     </div>);})}
     </div>
+        </div>
+        <div className="column" className="weightColumn">
+        <div className="heightRow">
+        <h2 className="height">Height  <div className="heightDetails"> {roundedFormattedHeight} ft / {metricHeight} m  </div></h2> </div>
+        <div className="weightRow">
+        <h2 className="weight"> Weight <div className="weightDetails"> {roundedFormattedWeight} lbs / {metricWeight} kg  </div> </h2> </div>
         </div>
         </div>
     </div>

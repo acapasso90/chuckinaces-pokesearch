@@ -9,7 +9,7 @@ import './App.css';
 import RaritySearch from "./RaritySearch.js";
 
 function App() {
-  const dropdownTitle = `♦ Cards ♣`;
+  const dropdownTitle = `♦ Cards ♣ `;
   const hamburger = <i className="fas fa-bars"></i>;
   return (
     <Router>
