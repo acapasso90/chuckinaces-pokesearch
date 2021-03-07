@@ -265,7 +265,7 @@ width: 250px;
   
   .pokeName2 {font-size: 25pt;}
   
-  .PokeInfo {width: 58%;
+  .PokeInfo {width: 65%;
     margin-top: 1.5%;
     padding-top: 2%;
     border: 3px solid #27a3b3;
@@ -309,12 +309,12 @@ font-size: 30pt;}
     color: #ff68d9;
   margin-bottom: 10px;}
 
-  .stats {font-size: 18pt;
+  .stats {font-size: calc(6pt + 1vw);
   margin-top: 3.2%;}
   .statsColumn {white-space: nowrap;
   margin-top: 1.5%;
 position: absolute;
-right: 23%;}
+right: 19%;}
 
 
   .submitButton {width: 60px;
@@ -330,17 +330,17 @@ right: 23%;}
 justify-content: center;}
   
   .height { 
-    font-size: 19pt;
+    font-size: 23px;
     position: relative;
     top: -20px;
     white-space: nowrap;}
   .weight {
-    font-size: 19pt;
+    font-size: 23px;
     position: relative;
     top: 5px;
     white-space: nowrap;}
   
-  .weightDetails, .heightDetails { margin-top: 3%; color: #9fe2e7; font-size: 18pt;}
+  .weightDetails, .heightDetails { margin-top: 3%; color: #9fe2e7;     font-size: calc(6pt + 1vw);}
 
   .weightRow, .heightRow {display: flex;
   flex-direction: row;}
