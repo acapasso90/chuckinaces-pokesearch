@@ -259,8 +259,8 @@ width: 250px;
   .pokeName {text-transform: capitalize;
     white-space: normal;
     width: 346px;
-    color: #ff00e6;
-  text-shadow: -2px 0 #007488, 0 2px #007488, 2px 0 #007488, 0 -2px #007488;
+    color: #FF68D9;
+  text-shadow: -2px 0 #482af3, 0 2px #482af3, 2px 0 #482af3, 0 -2px #482af3;
   font-size: 29pt;}
   
   .pokeName2 {font-size: 25pt;}
@@ -340,7 +340,7 @@ justify-content: center;}
     top: 5px;
     white-space: nowrap;}
   
-  .weightDetails, .heightDetails { margin-top: 3%; color: #9fe2e7;     font-size: calc(6pt + 1vw);}
+  .weightDetails, .heightDetails { margin-top: 3%; color: #9fe2e7; font-weight: normal;   font-size: calc(6pt + 1vw);}
 
   .weightRow, .heightRow {display: flex;
   flex-direction: row;}
