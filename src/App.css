@@ -509,9 +509,11 @@ font-size: 20pt;
     .searchBar {width: 65%;
       font-size: 14pt;}
 
+.stats {        font-size: 14pt;}
+
       .statsColumn {position: absolute;
-        top: 710px;
-      right: 0.75%;}
+        top: 755px;
+      right: 2.75%;}
       
       .submitButton {width: 20.5%;
         font-size: 14pt;}
@@ -527,10 +529,11 @@ font-size: 20pt;
             font-size: 19pt;
           position: relative;
           top: -22px;
-        left: 2%;}
+        left: 4%;}
           .weight { position: relative;
             top: -9px;
             font-size: 19pt;
+            left: 4%;
           }
 
           .weightDetails, .heightDetails {font-size: 17pt;}
@@ -538,9 +541,10 @@ font-size: 20pt;
           width: 100%
          }
           .officialImg {width: 240px;
-          margin-left: 12%;}
+          margin-left: auto;
+        margin-right: auto;}
 
-          .pokeName {margin-left: 10%;
+          .pokeName {margin-left: 3.5%;
           position: relative;
         top: -15px;}
 
