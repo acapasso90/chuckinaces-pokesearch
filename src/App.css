@@ -468,7 +468,14 @@ right: 30%;}
   .dropdownColumn {
     left: 2.5px;
     border-radius: 2px;
-  width: 107%;}
+    padding-left: 0px;
+    text-align: right;
+    left: 70px;
+  width: 41.5%;}
+
+  .dropdownColumn a {position: relative;
+    font-size: 20pt;
+  left: -180px;}
 
   .hamburgerDropdown {display: inherit;
 position: absolute;
