@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import loading from "./loading.gif";
-import Footer from "./Footer.js";
 import CardInfo from "./CardInfo.js";
 import ScrollTop from "./ScrollTop.js";
 
@@ -65,7 +64,6 @@ className="searchBar" />
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNum){
             return(<CardInfo data={pokemonNum} loading={loadedStatus}/>)})}
         </div>
-    <Footer />
     </div>
     )}
 //  searches default pokemon and shows loading pokeball gif

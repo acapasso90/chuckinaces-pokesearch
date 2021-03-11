@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react"
 import axios from "axios";
-import Footer from "./Footer.js";
 import loading from "./loading.gif";
 import PokeInfo from "./PokeInfo.js";
 import ScrollTop from "./ScrollTop.js";
@@ -64,7 +63,6 @@ if(loaded){return(
                    Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>.
                     </p>
     <PokeInfo data={pokeinfo} loading={loadedStatus} />
-    <Footer />
         </div>)}
 //  searches default pokemon and shows loading pokeball gif
 else{
