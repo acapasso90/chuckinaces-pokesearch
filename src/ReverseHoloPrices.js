@@ -32,7 +32,7 @@ export default function ReverseHoloPrices(props){
     if (holoLow  > 0 ){ holoLow = holoLow.toFixed(2);}
     let holoMid = props.data.priceMid;
     if (holoMid  > 0 ){ holoMid = holoMid.toFixed(2);}
-    return(<div className="HoloPrices">
+    return(<div className="ReverseHoloPrices">
      <div className="cardColumn" id="cardColumnPricesExtended">
         <h2>Reverse Holo Market Price: {holoMarket}</h2>
     <div className="row" id="priceRow">

@@ -100,7 +100,7 @@ width: 250px;
   
   .notFound {margin-top: 200px!important;
   }
-  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch {margin-top: 142px!important;
+  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch, .CardSeriesSearch, .CardIdSearch {margin-top: 142px!important;
   width: 100%;}
 
   .App {
@@ -161,6 +161,8 @@ width: 250px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1%;}
+
+  .CardPrices {  margin-bottom: 240px!important;}
   
   .cardPriceColumn {margin-left: 450px;}
   
@@ -250,7 +252,8 @@ width: 250px;
     .instructions{margin-left: 3px;
     margin-right: 3px;}
   .officialImg {
-   width: 310px;
+   max-width: 310px;
+   min-width: 200px;
    background-image: url(./pexels-luis-quintero-2471234.jpg);
    background-size: 360px 330px;
     border-radius: 2px;
@@ -309,6 +312,8 @@ font-size: 30pt;}
     color: #ff68d9;
   margin-bottom: 10px;}
 
+  .seriesInstructions {font-size: 12pt;
+    margin-bottom: 1.5%;}
   .stats {font-size: calc(6pt + 1vw);
   margin-top: 3.2%;}
   .statsColumn {white-space: nowrap;
@@ -326,6 +331,7 @@ right: 19%;}
   
   .weightColumn {margin-top: 3.5%;
   width: 25%;
+  max-width: 400px;
   text-align: left;
 justify-content: center;}
   
@@ -334,20 +340,23 @@ justify-content: center;}
     position: relative;
     top: -20px;
     white-space: nowrap;}
+
   .weight {
     font-size: 23px;
     position: relative;
     top: 5px;
     white-space: nowrap;}
   
-  .weightDetails, .heightDetails { margin-top: 3%; color: #9fe2e7; font-weight: normal;   font-size: calc(6pt + 1vw);}
+  .weightDetails, .heightDetails { margin-top: 3%; color: #9fe2e7; font-weight: normal;   font-size: calc(5pt + 1vw);}
 
   .weightRow, .heightRow {display: flex;
-  flex-direction: row;}
-  
-  .heightRow { margin-top: 15.5%;}
+  flex-direction: row;
+position: absolute;
+left: 47%;}
 
-  .weightColumn {max-width: 500px;}
+.heightRow { margin-top: 160px;
+}
+  
   
 
 @keyframes buttonActive { 0%{background-color: #0a0b0f;
@@ -409,26 +418,30 @@ right: 30%;}
         right: 8%;
     }
 
-        .height, .weight {position: absolute;
+
+        .height, .weight {
           left: 41.5%;
           font-size:calc(10px + 1.15vw);
-        right: 60%;}
+        }
 
-        .height {top: 440px;
-          left: 41.5%}
+        .height {top: -40px;
+          left: 1.5%}
 
-          .weight {          top: 350px;}
+          .weight {          top: -5px;
+          left: 1px;}
         .pokeName {position: relative;
           font-size: 22pt;
         right: 17%;}
     
-        .stats {font-size: 15pt;
+        .stats {font-size: calc(6pt + 1vw);
           margin-top: 1.2%;}
 
           .statsColumn {white-space: nowrap;
           margin-top: 0;
         position: absolute;
         right: 18%;}
+
+ 
 }
 
 /*Mobile Sized*/
@@ -574,6 +587,11 @@ left: -75px;}
         .HoloPrices, .ReverseHoloPrices {position: relative;
           top: 25px;
         left: -75px;}
+
+        .weightRow, .heightRow {
+        position: relative;
+        }
+
                 }
 
           
