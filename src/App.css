@@ -218,6 +218,8 @@ width: 250px;
 
   .container {  margin: 0;
     width: 100%;}
+
+    .currentlyShowing {text-transform: capitalize;}
     
   .pink {color: #ff68d9;}
   
@@ -261,7 +263,7 @@ width: 250px;
     background-color: rgba(22, 255, 138, 0.50);
     text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
-  .holo, .reverseholo {margin-bottom: 220px;}
+  .holo, .reverseholo {margin-bottom: 230px;}
   
   #firstHeaderlink {
    position: fixed; 
@@ -628,5 +630,3 @@ left: -75px;}
         }
 
                 }
-
-          

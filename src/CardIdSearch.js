@@ -59,7 +59,7 @@ className="searchBar" />
 </form>
 <p><div className="priceInstructions"><span className="pink"> Card prices do not include cards below Lightly Played </span></div> </p>
 <div className="row" id="currentDisplayRow">
-<h3><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
+<h3><div>Currently Displaying: <span className="pink">{pokemon} </span></div>
 </h3> 
 </div>
 <CardInfo data={pokeinfo}   loading={loadedStatus}/>
