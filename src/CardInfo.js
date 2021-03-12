@@ -2,7 +2,8 @@ import React, {useState, useEffect} from "react";
 import CardPrices from "./CardPrices.js";
 import HoloPrices from "./HoloPrices.js";
 import ReverseHoloPrices from "./ReverseHoloPrices.js";
-import FirstEditionNormalPrices from "./FirstEditionNormalPrices.js"
+import FirstEditionNormalPrices from "./FirstEditionNormalPrices.js";
+import FirstEditionHoloPrices from "./FirstEditionHoloPrices.js";
 export default function CardInfo(props){
     let loaded = props.loading;
     let data = props.data
@@ -30,6 +31,7 @@ export default function CardInfo(props){
     const [holoPriceData, setHoloPriceData] = useState("");
     const [reverseholoPriceData, setReverseHoloPriceData] = useState("");
     const [firstEditionPriceData, setFirstEditionPriceData] = useState("");
+    const [firstEditionHoloPriceData, setFirstEditionHoloPriceData] = useState("");
 
 
         useEffect(() => { 
@@ -50,7 +52,6 @@ useEffect(() => {
   // sets reverse holo price list
   reverseHoloPriceList = pricetypes.prices.reverseHolofoil;   
   if ( newPriceOneType != undefined && newPricelist){
-      console.log(Object.getOwnPropertyNames(newPricelist))
 // if prices includes HoloFoil and Normal types sets Normal to first object in array and holo prices to second.
 if (Object.getOwnPropertyNames(newPricelist).includes("holofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
 newPriceTwoType = Object.values(newPricelist)[1];   
@@ -123,6 +124,24 @@ pricesUpdated,
 loaded: loaded,
 pricesUpdatedUrl})
 }else{setFirstEditionPriceData(null)}
+
+// if prices includes 1st Edition and Normal types sets Normal to first object in array and holo prices to second.
+if (Object.getOwnPropertyNames(newPricelist).includes("1stEditionHolofoil") && Object.getOwnPropertyNames(newPricelist).includes("holofoil")){  
+    setHoloPriceData({priceLow: newPriceOneType.low,
+    priceMid: newPriceOneType.mid,
+    priceHigh: newPriceOneType.high, 
+    pricemarket: newPriceOneType.market,
+    pricesUpdated,
+    loaded: loaded,
+    pricesUpdatedUrl})
+    setFirstEditionHoloPriceData({priceLow: newPriceTwoType.low,
+    priceMid: newPriceTwoType.mid,
+    priceHigh: newPriceTwoType.high, 
+    pricemarket: newPriceTwoType.market,
+    pricesUpdated,
+    loaded: loaded,
+    pricesUpdatedUrl})
+    }else{setFirstEditionHoloPriceData(null)}
 } 
 if (pricesUpdatedUrl === null || pricesUpdatedUrl === undefined){pricesUpdatedUrl = "URL Unavailable"}
 
@@ -164,6 +183,7 @@ else{setPriceData("null");}}
     
     <CardPrices data={priceData} /> <br /> 
     <div className="holo"> <HoloPrices data={holoPriceData} /> </div> <br /> 
+    <div className="firstEditionHolo"> <FirstEditionHoloPrices data={firstEditionHoloPriceData} /></div>    <br />
     <div className="reverseholo"> <ReverseHoloPrices data={reverseholoPriceData} /></div> <br />
     <div className="firstEdition"> <FirstEditionNormalPrices data={firstEditionPriceData} /></div>
     </div>

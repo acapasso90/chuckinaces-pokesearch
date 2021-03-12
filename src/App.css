@@ -43,6 +43,8 @@ width: 250px;
   width: 452px;
   top: 150px;
   right: -12%}
+
+  .priceInstructions {margin-top: 10px;}
   
   .CardSetSearch #priceRow {right: -13.5%;}
   .topButton {min-height: 40px;
@@ -94,7 +96,12 @@ width: 250px;
   .holo, .reverseholo {margin-bottom: 240px;}
   
   .firstEdition {
-margin-top: -470px;}
+    position: relative;
+    top: -470px;
+    left: -120px!important;
+  width: 560px;}
+
+.firstEditionHolo {margin-top: 5px;}
   #cardColumnPricesExtended {position: absolute;
   right: 14%;
   }

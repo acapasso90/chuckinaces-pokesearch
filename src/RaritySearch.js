@@ -67,8 +67,9 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pink">use * between multi-word search terms</p>
+<p className="pink">use * between multi-word search terms </p>
 <div className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></div>
+<p><div className="priceInstructions"><span className="pink"> Card prices do not consider cards below Lightly Played </span></div> </p> 
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
             return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
         </div>

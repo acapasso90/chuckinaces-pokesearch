@@ -59,7 +59,9 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pink">use * between multi-word search terms or use after first word only ( HeartGold* )</p>
+<p className="pink">use * between multi-word search terms or use after first word only ( HeartGold* ) 
+<br /> <div className="priceInstructions">Card prices do not consider cards below Lightly Played </div> </p>
+
 <div className="seriesInstructions"> &#40; Base • Gym • Neo • Other • E-Card • EX • NP • POP • Diamond*&amp;*Pearl • Platinum • HeartGold*&amp;*SoulSilver • Black*&amp;*White • XY
 • Sun*&amp;*Moon • Sword*&amp;*Shield &#41;</div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
