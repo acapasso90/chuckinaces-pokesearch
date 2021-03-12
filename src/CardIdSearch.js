@@ -6,7 +6,7 @@ import ScrollTop from "./ScrollTop.js";
 
 export default function CardIdSearch(){
     const [instructions, setInstructions] = useState("");
-    const [pokemon, Setpokemon] = useState("sm7-116");
+    const [pokemon, Setpokemon] = useState("smp-SM233");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
@@ -57,10 +57,10 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p><div className="priceInstructions"><span className="pink"> Card prices do not include cards below Lightly Played </span></div> </p>
+<p><div className="priceInstructions"><span className="pink"> Card prices only includes Lightly Played condition or better</span></div> </p>
 <div className="row" id="currentDisplayRow">
-<h3><div>Currently Displaying: <span className="pink">{pokemon} </span></div>
-</h3> 
+<h2><div>Currently Displaying: <span className="pink">{pokemon} </span></div>
+</h2> 
 </div>
 <CardInfo data={pokeinfo}   loading={loadedStatus}/>
                  <footer>💀scent was here</footer>

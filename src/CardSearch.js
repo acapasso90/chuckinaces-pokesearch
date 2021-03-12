@@ -64,10 +64,10 @@ className="searchBar" />
 </form>
 <p className="pokeSearchInstructions">Use a * between 2-word named cards (ex. <span className="pink">Ball*Guy. Venusaur*V. Galarian*Mr*Rime.</span>) Can put * after incomplete name to pull up many (<span className="pink">Char*</span> pulls up Charmander, Charmeleon, Charizard).  Can search <span className="pink">V for all Vmax.</span></p>
 <br />
-<div className="priceInstructions"><span className="pink"> <p>Card prices do not include cards below Lightly Played </p> </span></div> 
+<div className="priceInstructions"><span className="pink"> <p>Card prices only includes Lightly Played condition or better </p> </span></div> 
 <div className="row" id="currentDisplayRow">
-<h3><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
-<div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h3> 
+<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
+<div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
 </div>
 
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNum){

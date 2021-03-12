@@ -71,10 +71,10 @@ className="searchBar" />
 <p className="pink">use * between multi-word search terms or use after first word only ( diamond* or diamond*&amp;*pearl )</p>
 <div className="seriesInstructions"> &#40; Base • Gym • Neo • Other • E-Card • EX • NP • POP • Diamond&amp;Pearl • Platinum • HeartGold&amp;SoulSilver • Black&amp;White • XY
 • Sun&amp;Moon • Sword&amp;Shield &#41;</div>
-<p><div className="priceInstructions"><span className="pink"> Card prices do not include cards below Lightly Played </span></div> </p>
+<p><div className="priceInstructions"><span className="pink"> Card prices only includes Lightly Played condition or better</span></div> </p>
 <div className="row" id="currentDisplayRow">
-<h3><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
-<div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h3> 
+<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
+<div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
 </div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
             return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
