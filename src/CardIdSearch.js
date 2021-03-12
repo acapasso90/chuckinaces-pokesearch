@@ -6,16 +6,14 @@ import ScrollTop from "./ScrollTop.js";
 
 export default function CardIdSearch(){
     const [instructions, setInstructions] = useState("");
-    const [pokemon, Setpokemon] = useState("base");
+    const [pokemon, Setpokemon] = useState("sm7-116");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
-const [arrayLength, setArrayLength] = useState("");
 const [pokemonLowercase, setPokemonLowercase] = useState("")
 // sets Pokemon info and sets loaded status for PokeInfo.js
 function setInfo(response){
     setPokeinfo(response.data.data);
-    setArrayLength(response.data.length);
 setLoaded(true);
 setLoadedStatus("loaded");}
 
@@ -53,18 +51,18 @@ if(loaded){return(
            <div className="header">
         <h1>The ChuckinAces PokéSearch App</h1>
         </div>
-        <h3 className="searchInstructions">Search by Card Series</h3>
+        <h3 className="searchInstructions">Search by Card ID</h3>
 <form onSubmit={handleSubmit}>
-<input type="text" onChange={setPokemon} placeholder="Enter series name" 
+<input type="text" onChange={setPokemon} placeholder="Enter card ID# (ex: ex9-65)" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pink">use * between multi-word search terms or use after first word only ( HeartGold* ) 
-<br /> </p>
-<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></h3>
-<div className="priceInstructions"> <p>Card prices do not include cards below Lightly Played </p></div>
-{pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
-            return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
+<p><div className="priceInstructions"><span className="pink"> Card prices do not include cards below Lightly Played </span></div> </p>
+<div className="row" id="currentDisplayRow">
+<h3><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
+</h3> 
+</div>
+<CardInfo data={pokeinfo}   loading={loadedStatus}/>
                  <footer>💀scent was here</footer>
         </div>
     </div>
