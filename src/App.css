@@ -13,6 +13,15 @@ a, a:active {color:#ee65a9!important;
   top: 1px;
   }
   
+  .topButton {min-height: 45px;
+    background-color: #8be9fd;
+    color: #b737df;
+  min-width: 70px;}
+
+  .topButton:hover {background-color: #090911;
+    color: #a3eeff;}
+
+
   form {margin-bottom: 1%;}
   
   ul {list-style: none; 
@@ -44,24 +53,22 @@ width: 250px;
   top: 150px;
   right: -12%}
 
-  #currentDisplayRow {position: absolute;
+  #currentDisplayRow {position: relative;
     left: 12.5%;
-    top: 350px;
   }
 
+
   .setLength {position: absolute;
+    white-space: nowrap;
+    top: 20px;
   right: 25%;}
 
 
-  .setLength {
-  white-space: nowrap;}
-
   .priceInstructions {margin-top: 10px;
-  margin-bottom: 60px;}
+  margin-bottom: 35px;}
   
   .CardSetSearch #priceRow {right: -13.5%;}
-  .topButton {min-height: 40px;
-  min-width: 70px;}
+
 
   #dropdown-button-drop-down {background-color: transparent;
     color: #ffffff!important;
@@ -311,6 +318,7 @@ width: 250px;
   margin-right: auto;}
   
   .PokeSearch p li {font-size: 14pt;}
+
   .row {display: flex;
   width: 100%;}
 

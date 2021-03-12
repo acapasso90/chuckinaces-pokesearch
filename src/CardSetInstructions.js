@@ -2,8 +2,8 @@ import React, {useState} from "react";
 
 export default function CardSetInstructions(props){
     const [name, setName] = useState("");
+    if (props){
     let data = props.data;
-    console.log(data)
  
         const myArrCreatedFromMap = data.map(x => x.name )
     let length = myArrCreatedFromMap.length;
@@ -13,4 +13,4 @@ export default function CardSetInstructions(props){
     return(<span className="instructions" key={subtype.toString()}> {subtype} &nbsp;• </span>)})}
      {lastType} )
     </div>)  
-;}
+;}}
