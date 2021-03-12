@@ -60,12 +60,12 @@ className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
 <p className="pink">use * between multi-word search terms or use after first word only ( HeartGold* ) 
-<br /> <div className="priceInstructions">Card prices do not consider cards below Lightly Played </div> </p>
-
-<div className="seriesInstructions"> &#40; Base • Gym • Neo • Other • E-Card • EX • NP • POP • Diamond*&amp;*Pearl • Platinum • HeartGold*&amp;*SoulSilver • Black*&amp;*White • XY
-• Sun*&amp;*Moon • Sword*&amp;*Shield &#41;</div>
+<br /> </p>
+<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></h3>
+<div className="priceInstructions"> <p>Card prices do not include cards below Lightly Played </p></div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
             return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
+                 <footer>💀scent was here</footer>
         </div>
     </div>
     )}

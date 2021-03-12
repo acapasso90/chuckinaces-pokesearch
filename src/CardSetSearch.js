@@ -11,13 +11,17 @@ const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
 const [arrayLength, setArrayLength] = useState("");
+const [setLength, setSetLength] = useState("")
 const [pokemonLowercase, setPokemonLowercase] = useState("")
+const [instructions, setInstructions] = useState("");
+
 
 // sets Pokemon info and sets loaded status for PokeInfo.js
 function setInfo(response){
     setPokeinfo(response.data.data);
     setArrayLength(response.data.length);
 setLoaded(true);
+setSetLength(response.data.count);
 setLoadedStatus("loaded");}
 
 // prevents page refreshing and searches pokemon with pokemon set in setPokemon
@@ -25,6 +29,10 @@ function handleSubmit(event){  event.preventDefault();
     Setpokemon(pokemonLowercase);
    }
 
+
+function setData(response){
+    setInstructions(response.data.data);
+}
 
 // on text input pokemon is changed to what is typed
 function setPokemon(event){
@@ -40,11 +48,13 @@ useEffect(() => {
     if (mounted) {axios.get(`https://api.pokemontcg.io/v2/cards?q=set.name:${pokemon}&api_key=${apiKey}`, {
         cancelToken: cancelTokenSource.token
       }).then(setInfo);}
+      {axios.get('https://api.pokemontcg.io/v2/sets', {
+        cancelToken: cancelTokenSource.token
+      }).then(setData);}
     return function cleanup() {
       mounted = false
       cancelTokenSource.cancel();
   }}, [pokemon]);
-
 
 
 // once loaded shows input forms and displays PokeInfo from default search
@@ -61,10 +71,13 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pokeSearchInstructions" >Use a * between 2-word named sets (ex. <span className="pink">Vivid*Voltage.</span>)
-<div className="priceInstructions"><span className="pink"> Card prices do not consider cards below Lightly Played </span></div> </p>
+<p className="pokeSearchInstructions" >Use a * between 2-word named sets (ex. <span className="pink">Vivid*Voltage.</span>)</p>
+<div className="priceInstructions"><p><span className="pink"> Card prices do not include cards below Lightly Played </span></p></div> 
+<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></h3>
+<h3 className="setLength">Number of cards: {setLength} </h3>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
             return(<CardInfo data={pokemonNumber}  loading={loadedStatus}/>)})}
+                 <footer>💀scent was here</footer>
         </div>
     </div>
     )}

@@ -63,6 +63,7 @@ if(loaded){return(
                    Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>.
                     </p>
     <PokeInfo data={pokeinfo} loading={loadedStatus} />
+    <footer>💀scent was here</footer>
         </div>)}
 //  searches default pokemon and shows loading pokeball gif
 else{

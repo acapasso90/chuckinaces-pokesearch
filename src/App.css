@@ -168,7 +168,7 @@ width: 250px;
   width: 76%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1%;}
+  margin-bottom: 40px;}
 
   .CardPrices {  margin-bottom: 240px!important;}
   
@@ -253,7 +253,6 @@ width: 250px;
 
   .footer {position: absolute;
     font-size: 13!important;
-    bottom: 0;
     width: 100%;
     height: 2.5rem}
   
@@ -280,6 +279,7 @@ width: 250px;
     margin-top: 1.5%;
     padding-top: 2%;
     border: 3px solid #27a3b3;
+    margin-bottom: 30px;
     background-color: #000313;
     background-image: url(./background.jpg);
   margin-left: auto;
@@ -480,6 +480,7 @@ right: 30%;}
 
     .CardInfo{min-width: 97%;
       width: 97%;
+      
       padding-bottom: 25px;
     margin-left: 1%;}
 

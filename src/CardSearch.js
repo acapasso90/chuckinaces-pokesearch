@@ -11,12 +11,14 @@ const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
 const [arrayLength, setArrayLength] = useState("");
+const [setLength, setSetLength] = useState("")
 const [pokemonLowercase, setPokemonLowercase] = useState("")
 // sets Pokemon info and sets loaded status for PokeInfo.js
 function setInfo(response){
     setPokeinfo(response.data.data);
     setArrayLength(response.data.length);
 setLoaded(true);
+setSetLength(response.data.count);
 setLoadedStatus("loaded");}
 
 // prevents page refreshing and searches pokemon with pokemon set in setPokemon
@@ -60,11 +62,15 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pokeSearchInstructions">Use a * between 2-word named cards (ex. <span className="pink">Ball*Guy. Venusaur*V. Galarian*Mr*Rime.</span>) Can put * after incomplete name to pull up many (<span className="pink">Char*</span> pulls up Charmander, Charmeleon, Charizard).  Can search <span className="pink">V for all Vmax.</span>
+<p className="pokeSearchInstructions">Use a * between 2-word named cards (ex. <span className="pink">Ball*Guy. Venusaur*V. Galarian*Mr*Rime.</span>) Can put * after incomplete name to pull up many (<span className="pink">Char*</span> pulls up Charmander, Charmeleon, Charizard).  Can search <span className="pink">V for all Vmax.</span></p>
 <br />
-<div className="priceInstructions"><span className="pink"> Card prices do not consider cards below Lightly Played </span></div> </p>
+<div className="priceInstructions"><span className="pink"> <p>Card prices do not include cards below Lightly Played </p> </span></div> 
+<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></h3>
+<h3 className="setLength">Number of cards: {setLength} </h3>
+
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNum){
             return(<CardInfo data={pokemonNum} loading={loadedStatus}/>)})}
+                 <footer>💀scent was here</footer>
         </div>
     </div>
     )}

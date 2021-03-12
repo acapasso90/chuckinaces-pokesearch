@@ -11,12 +11,14 @@ const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
 const [arrayLength, setArrayLength] = useState("");
+const [setLength, setSetLength] = useState("")
 const [pokemonLowercase, setPokemonLowercase] = useState("")
 // sets Pokemon info and sets loaded status for PokeInfo.js
 function setInfo(response){
     setPokeinfo(response.data.data);
     setArrayLength(response.data.length);
 setLoaded(true);
+setSetLength(response.data.count);
 setLoadedStatus("loaded");}
 
 function setData(response){
@@ -69,9 +71,12 @@ className="searchBar" />
 <p className="pink">use * between multi-word search terms or use after first word only ( HeartGold* )</p>
 <div className="seriesInstructions"> &#40; Base • Gym • Neo • Other • E-Card • EX • NP • POP • Diamond*&amp;*Pearl • Platinum • HeartGold*&amp;*SoulSilver • Black*&amp;*White • XY
 • Sun*&amp;*Moon • Sword*&amp;*Shield &#41;</div>
-<p><div className="priceInstructions"><span className="pink"> Card prices do not consider cards below Lightly Played </span></div> </p>
+<p><div className="priceInstructions"><span className="pink"> Card prices do not include cards below Lightly Played </span></div> </p>
+<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span> set</h3>
+<h3 className="setLength">Number of cards: {setLength} </h3>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
             return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
+                 <footer>💀scent was here</footer>
         </div>
     </div>
     )}
