@@ -72,8 +72,10 @@ className="searchBar" />
 <p className="pink">use * between multi-word search terms <br /> </p>
 <div className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></div>
 <p><div className="priceInstructions"><span className="pink"> Card prices do not include cards below Lightly Played </span></div> </p>
-<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></h3>
-<h3 className="setLength">Number of cards: {setLength} </h3>
+<div className="row" id="currentDisplayRow">
+<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span>
+<span className="setLength">Number of cards: {setLength} </span> </h3> 
+</div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
             return(<CardInfo data={pokemonNumeral}   loading={loadedStatus}/>)})}
             <footer>💀scent was here</footer>

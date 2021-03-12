@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import loading from "./loading.gif";
 import CardInfo from "./CardInfo.js";
+import CardSetInstructions from "./CardSetInstructions.js"
 import ScrollTop from "./ScrollTop.js";
 
 
@@ -72,9 +73,12 @@ className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
 <p className="pokeSearchInstructions" >Use a * between 2-word named sets (ex. <span className="pink">Vivid*Voltage.</span>)</p>
+<CardSetInstructions data={instructions} />
 <div className="priceInstructions"><p><span className="pink"> Card prices do not include cards below Lightly Played </span></p></div> 
-<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></h3>
-<h3 className="setLength">Number of cards: {setLength} </h3>
+<div className="row" id="currentDisplayRow">
+<h3 className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span>
+<span className="setLength">Number of cards: {setLength} </span> </h3> 
+</div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
             return(<CardInfo data={pokemonNumber}  loading={loadedStatus}/>)})}
                  <footer>💀scent was here</footer>
