@@ -9,6 +9,7 @@ export default function CardInfo(props){
     let data = props.data
     let id = props.data.id;
     let name = props.data.name;
+    let artist = props.data.artist;
     if (name === "Hop"){name = "f*ing Hop";}
     if (name === "Sizzlipede"){name = "Bacon";}
     if (name === "Wailmer"){name = "Whaleload"}
@@ -165,6 +166,7 @@ else{setPriceData("null");}}
              <div className="cardimageColumn">
              <h1 className="pokeName" id="pokeName">{name}</h1> 
             <img src={image} alt={name} className="cardImage" key={image} loading="lazy"/>
+            <h3 className="artist">Art by {artist}</h3>
 </div>
 <div className="cardInfoColumn">
 <ul>

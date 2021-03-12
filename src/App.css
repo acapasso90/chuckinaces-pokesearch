@@ -13,6 +13,7 @@ a, a:active {color:#ee65a9!important;
   top: 1px;
   }
   
+
   .topButton {min-height: 45px;
     background-color: #8be9fd;
     color: #b737df;
@@ -115,6 +116,8 @@ width: 250px;
   
   .holo, .reverseholo {margin-bottom: 240px;}
   
+  .artist {position: relative;
+    top: 15px;}
   .firstEdition {
     position: relative;
     top: -470px;
@@ -178,7 +181,7 @@ width: 250px;
 
   .cardInfoColumn ul {margin-top: 14px;}
   
-  .cardInfoColumn ul li {margin-top: 26px; margin-bottom: 26px; white-space: nowrap;}
+  .cardInfoColumn ul li {margin-top: 30px; margin-bottom: 30px; white-space: nowrap;}
   
   .CardInfo {border: 3px solid #27a3b3;
     padding-bottom: 2.5%;
@@ -192,7 +195,8 @@ width: 250px;
 
   .CardPrices {  margin-bottom: 240px!important;}
   
-  .cardPriceColumn {margin-left: 450px;}
+  .cardPriceColumn {position: relative;
+  left: 330px;}
   
   .cardPriceColumn h2, .statsColumn h2, .weight, .height {color: #ff68d9;}
   

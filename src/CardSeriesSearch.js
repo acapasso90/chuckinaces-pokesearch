@@ -69,8 +69,8 @@ className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
 <p className="pink">use * between multi-word search terms or use after first word only ( diamond* or diamond*&amp;*pearl )</p>
-<div className="seriesInstructions"> &#40; Base • Gym • Neo • Other • E-Card • EX • NP • POP • Diamond&amp;Pearl • Platinum • HeartGold&amp;SoulSilver • Black&amp;White • XY
-• Sun&amp;Moon • Sword&amp;Shield &#41;</div>
+<div className="seriesInstructions"> &#40; Base • Gym • Neo • Other • E-Card • EX • NP • POP • Diamond &amp; Pearl • Platinum • HeartGold &amp; SoulSilver • Black &amp; White • XY
+• Sun &amp; Moon • Sword &amp; Shield &#41;</div>
 <p><div className="priceInstructions"><span className="pink"> Card prices only includes Lightly Played condition or better</span></div> </p>
 <div className="row" id="currentDisplayRow">
 <h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
