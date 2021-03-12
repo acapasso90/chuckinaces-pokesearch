@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import CardPrices from "./CardPrices.js";
 import HoloPrices from "./HoloPrices.js";
 import ReverseHoloPrices from "./ReverseHoloPrices.js";
+import FirstEditionNormalPrices from "./FirstEditionNormalPrices.js"
 export default function CardInfo(props){
     let loaded = props.loading;
     let data = props.data
@@ -49,6 +50,7 @@ useEffect(() => {
   // sets reverse holo price list
   reverseHoloPriceList = pricetypes.prices.reverseHolofoil;   
   if ( newPriceOneType != undefined && newPricelist){
+      console.log(Object.getOwnPropertyNames(newPricelist))
 // if prices includes HoloFoil and Normal types sets Normal to first object in array and holo prices to second.
 if (Object.getOwnPropertyNames(newPricelist).includes("holofoil") && Object.getOwnPropertyNames(newPricelist).includes("normal")){
 newPriceTwoType = Object.values(newPricelist)[1];   
@@ -120,7 +122,7 @@ pricemarket: newPriceTwoType.market,
 pricesUpdated,
 loaded: loaded,
 pricesUpdatedUrl})
-} 
+}else{setFirstEditionPriceData(null)}
 } 
 if (pricesUpdatedUrl === null || pricesUpdatedUrl === undefined){pricesUpdatedUrl = "URL Unavailable"}
 
@@ -160,9 +162,10 @@ else{setPriceData("null");}}
     </div>
 <div className="cardPriceColumn">
     
-    <CardPrices data={priceData} /> <br /> <div className="holo">
-    <HoloPrices data={holoPriceData} /> </div> <br /> <div className="reverseholo">
-    <ReverseHoloPrices data={reverseholoPriceData} /></div>
+    <CardPrices data={priceData} /> <br /> 
+    <div className="holo"> <HoloPrices data={holoPriceData} /> </div> <br /> 
+    <div className="reverseholo"> <ReverseHoloPrices data={reverseholoPriceData} /></div> <br />
+    <div className="firstEdition"> <FirstEditionNormalPrices data={firstEditionPriceData} /></div>
     </div>
     </div>
 </div>)}

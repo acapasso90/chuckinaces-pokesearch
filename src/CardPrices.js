@@ -63,7 +63,7 @@ else if (pricemarket === "n/a" || props.data === "null" || props.data === null){
     <h2>Normal Market Price: {pricemarket}</h2>
 <div className="row" id="priceRow">
     <div className="lowColumn">
-        <h3>Low</h3>
+        <h3>Lowest</h3>
        <p> {priceLow}</p>
     </div>
     <div className="midColumn">
@@ -71,7 +71,7 @@ else if (pricemarket === "n/a" || props.data === "null" || props.data === null){
        <p> {priceMid}</p>
     </div>
     <div className="highColumn">
-        <h3>High</h3>
+        <h3>Highest</h3>
        <p> {priceHigh}</p>
     </div>
 </div>

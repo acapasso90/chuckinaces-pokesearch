@@ -37,7 +37,7 @@ return(<div className="HoloPrices">
     <h2>Holo Market Price: {holoMarket}</h2>
 <div className="row" id="priceRow">
     <div className="lowColumn">
-        <h3>Low</h3>
+        <h3>Lowest</h3>
        <p> ${holoLow}</p>
     </div>
     <div className="midColumn">
@@ -45,7 +45,7 @@ return(<div className="HoloPrices">
        <p> ${holoMid}</p>
     </div>
     <div className="highColumn">
-        <h3>High</h3>
+        <h3>Highest</h3>
        <p> ${holoHigh}</p>
     </div>
 </div>

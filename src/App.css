@@ -42,9 +42,9 @@ width: 250px;
   position: absolute;
   width: 452px;
   top: 150px;
-  right: -17%}
+  right: -12%}
   
-  .CardSetSearch #priceRow {right: -19.5%;}
+  .CardSetSearch #priceRow {right: -13.5%;}
   .topButton {min-height: 40px;
   min-width: 70px;}
 
@@ -93,7 +93,8 @@ width: 250px;
   
   .holo, .reverseholo {margin-bottom: 240px;}
   
-  
+  .firstEdition {
+margin-top: -470px;}
   #cardColumnPricesExtended {position: absolute;
   right: 14%;
   }
@@ -153,7 +154,7 @@ width: 250px;
   .cardInfoColumn ul li {margin-top: 26px; margin-bottom: 26px; white-space: nowrap;}
   
   .CardInfo {border: 3px solid #27a3b3;
-    padding-bottom: 1.5%;
+    padding-bottom: 2.5%;
     background-color: #000313;
     background-image: url(./background.jpg);
   border-radius: 2px;
@@ -233,7 +234,7 @@ width: 250px;
     background-color: rgba(22, 255, 138, 0.50);
     text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
-  .holo, .reverseholo {margin-bottom: 240px;}
+  .holo, .reverseholo {margin-bottom: 220px;}
   
   #firstHeaderlink {
    position: fixed; 
