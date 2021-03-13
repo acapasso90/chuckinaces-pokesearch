@@ -48,7 +48,7 @@ if(loaded){return(
         <div className="PokeSearch" key={pokeinfo}>
             <ScrollTop />
                  <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
+        <h1>The ChuckinAces PokéSearch</h1>
         </div>
             <h3 className="searchInstructions">
             Search by Pokémon Number or Name</h3>
@@ -70,7 +70,7 @@ else{
     return(
 <div className="loading">
 <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
+        <h1>The ChuckinAces PokéSearch</h1>
         </div>
 <h1>Loading Pokés</h1>
     <img src={loading} alt="loading" />

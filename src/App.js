@@ -3,6 +3,7 @@ import SubTypeCardSearch from "./SubTypeCardSearch.js"
 import notFound from "./notFound.gif";
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import CardSearch from "./CardSearch.js";
+import Breaks from "./Breaks.js";
 import CardIdSearch from "./CardIdSearch.js";
 import CardSetSearch from "./CardSetSearch.js";
 import CardSeriesSearch from "./CardSeriesSearch.js";
@@ -47,6 +48,7 @@ function App() {
    </div>
     <Switch>
          <Route path="/" exact component={PokeSearch} />
+         <Route path="/breaks"  component={Breaks} />
          <Route path="/cards.name"  component={CardSearch} />
          <Route path="/cards.id"  component={CardIdSearch} />
          <Route path="/cards.set"  component={CardSetSearch} />

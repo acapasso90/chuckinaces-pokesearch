@@ -61,7 +61,7 @@ if(loaded){return(
            <div className="content-wrap">
                <ScrollTop />
            <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
+        <h1>The ChuckinAces PokéSearch</h1>
         </div>
         <h3 className="searchInstructions">Search by Subtype</h3>
 <form onSubmit={handleSubmit}>
@@ -71,7 +71,7 @@ className="searchBar" />
 </form>
 <p className="pink">use * between multi-word search terms <br /> </p>
 <div className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></div>
-<p><div className="priceInstructions"><span className="pink"> Card prices only includes Lightly Played condition or better </span></div> </p>
+<div className="priceInstructions"><span className="pink"><p> Card prices only includes Lightly Played condition or better</p> </span></div>
 <div className="row" id="currentDisplayRow">
 <h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
 <div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
@@ -87,7 +87,7 @@ else{
     return(
 <div className="loading">
 <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
+        <h1>The ChuckinAces PokéSearch </h1>
         </div>
 <h1>Loading Pokés</h1>
     <img src={loading} alt="loading" />

@@ -60,7 +60,7 @@ if(loaded){return(
            <div className="content-wrap">
                <ScrollTop />
            <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
+        <h1>The ChuckinAces PokéSearch </h1>
         </div>
         <h3 className="searchInstructions">Search by Card Series</h3>
 <form onSubmit={handleSubmit}>
@@ -87,7 +87,7 @@ else{
     return(
 <div className="loading">
 <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
+        <h1>The ChuckinAces PokéSearch</h1>
         </div>
 <h1>Loading Pokés</h1>
     <img src={loading} alt="loading" />
