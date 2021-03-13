@@ -1,5 +1,6 @@
 import React from "react";
-import ScrollTop from "./ScrollTop.js"
+import ScrollTop from "./ScrollTop.js";
+import squirtle from "./squirtle.gif"
 
 export default function Breaks(){
 const set = ["Base", "Jungle", "Fossil", "Base Set 2", "Team Rocket", "Gym Heroes", "Gym Challenge", "Neo Genesis", "Neo Discovery", "Neo Revelation", "Neo Destiny",
@@ -21,20 +22,24 @@ const length = set.length;
            <div className="header">
         <h1>The ChuckinAces PokéSearch</h1>
         </div>
-<div className="credit"> Displays number of cards to move from the back of a pack when breaking based on set. All information used is taken from 
-<a href="http://thepokegeeks.com/booster-card-tricks/" target="_blank"> The PokeGeeks</a>. They've also made a video <a href="https://www.youtube.com/watch?v=XjXTdrXyUY8" target="_blank">here</a>
+<div className="credit"> Displays number of cards to move from the back of a pack when breaking based on Set Name. All information used is taken from 
+<a href="http://thepokegeeks.com/booster-card-tricks/" target="_blank"> The PokeGeeks</a>. (They've also made a video <a href="https://www.youtube.com/watch?v=XjXTdrXyUY8" target="_blank">here</a>)
 </div>
+<img src={squirtle} alt="squirtleSquad" className="squirtleGif"/>
 <div className="row">
 <div className="sets">
-<h3> Set Name</h3>
 <ul>
+<li className="liHeader">
+<h3 > Set Name</h3></li>
+
 {set.slice(0, length).map(function(setName){
     return(<li className="breakSetName" key={setName.toString()}> {setName}  </li>)})}
     </ul>
     </div>
     <div className="cardNumberPull">
-<h3># of Cards to Move from Back</h3>
-<ul>
+        <ul>
+            <li className="liHeader">
+<h3 ># to Move from Back</h3></li>
 {cardNumbers.slice(0, length).map(function(cardNumber){
     return(<li className="breakSetNumber" key={cardNumber.toString()}> {cardNumber}  </li>)})}
 </ul>
