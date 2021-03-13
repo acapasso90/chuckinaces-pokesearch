@@ -12,7 +12,6 @@ a, a:active {color:#ee65a9!important;
   position: relative;
   top: 1px;
   }
-  
 
   .topButton {min-height: 45px;
     background-color: #8be9fd;
@@ -48,27 +47,25 @@ width: 250px;
   text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
   font-size: 26pt;}
 
-  #priceRow {
-  position: absolute;
-  width: 452px;
-  top: 150px;
-  right: -12%}
 
   #currentDisplayRow {position: relative;
     left: 12.5%;
+    width: 86%;
   }
 
+  #priceRow {
+  margin-left: 7.5%;}
+  
 
   .setLength {position: absolute;
     white-space: nowrap;
     top: 20px;
-  right: 25%;}
+  right: 13%;}
 
 
   .priceInstructions {margin-top: 10px;
   margin-bottom: 35px;}
   
-  .CardSetSearch #priceRow {right: -13.5%;}
 
 
   #dropdown-button-drop-down {background-color: transparent;
@@ -114,29 +111,23 @@ width: 250px;
         text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
   
-  .holo, .reverseholo {margin-bottom: 240px;}
   
   .artist {position: relative;
     top: 15px;}
-  .firstEdition {
-    position: relative;
-    top: -470px;
-    left: -120px!important;
-  width: 560px;}
 
-.firstEditionHolo {margin-top: 5px;}
-  #cardColumnPricesExtended {position: absolute;
-  right: 14%;
-  }
+
   
   .notFound {margin-top: 200px!important;
   }
-  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch, .CardSeriesSearch, .CardIdSearch {margin-top: 142px!important;
-  width: 100%;}
+  
+  .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch, .CardSeriesSearch, .CardIdSearch {
+    position: relative;
+    top: 142px;
+  width: 100%;
+}
 
   .App {
-    overflow-x: hidden;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     position: relative;
     min-height: 100vh;
     text-align: center;
@@ -160,9 +151,10 @@ width: 250px;
   left: -25%;}
   
   
-  .lowColumn {color: #60eb44; font-size: 14pt; font-weight: bold; }
-  .midColumn {color: #ebd244; font-size: 14pt; margin-left: 15%; font-weight: bold; }
-  .highColumn {color: #f85a5a; font-size: 14pt; margin-left: 15%; font-weight: bold; }
+  .lowColumn {color: #5deb41; font-size: 14pt; font-weight: bold; }
+  .midColumn {color: #f0e330; font-size: 14pt; margin-left: 20%; font-weight: bold; }
+  .highColumn {color: #fd4545; font-size: 14pt; margin-left: 20%; font-weight: bold; }
+  
   .priceColumn{margin-left: 5%;
     margin-right: 5%;}
   
@@ -193,10 +185,14 @@ width: 250px;
   margin-right: auto;
   margin-bottom: 40px;}
 
-  .CardPrices {  margin-bottom: 240px!important;}
+  .cardPriceColumn {position: absolute;
+  right: 15%;}
+
+
   
-  .cardPriceColumn {position: relative;
-  left: 330px;}
+
+
+    
   
   .cardPriceColumn h2, .statsColumn h2, .weight, .height {color: #ff68d9;}
   
@@ -226,7 +222,8 @@ width: 250px;
     .currentlyShowing {text-transform: capitalize;}
     
   .pink {color: #ff68d9;}
-  
+
+
   .header {min-height: 122.5px;
     max-height: 15%;
     background-size: (100vw);
@@ -267,7 +264,6 @@ width: 250px;
     background-color: rgba(22, 255, 138, 0.50);
     text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
-  .holo, .reverseholo {margin-bottom: 230px;}
   
   #firstHeaderlink {
    position: fixed; 
@@ -406,7 +402,7 @@ left: 47%;}
 
 
 @media only screen and (min-width: 1112px){ 
-  .CardInfo{min-width: 1080px;}
+ 
 }
 
 /*Tablet Sized*/
@@ -441,7 +437,6 @@ padding-bottom: 4%;}
 
 }
   
-.holo, .reverseholo {margin-bottom: 300px;}
 
 .officialImg {width: 200px;
 margin-left: 25%;
@@ -449,14 +444,8 @@ position: relative;
 right: 30%;}
   
 .PokeInfo {width: 70%;}
-  #priceRow { 
-  position: absolute;
-  top: 100%;
-  right: -108%}
 
-        .HoloPrices, .ReverseHoloPrices {position: absolute;
-        right: 8%;
-    }
+
 
 
         .height, .weight {
@@ -624,10 +613,6 @@ font-size: 20pt;
 left: -75px;}
         
 
-
-        .HoloPrices, .ReverseHoloPrices {position: relative;
-          top: 25px;
-        left: -75px;}
 
         .weightRow, .heightRow {
         position: relative;
