@@ -563,9 +563,23 @@ right: 30%;}
 /*Mobile Sized*/
 @media only screen and (max-width: 500px){
 
-  #firstHeaderlink, #breakLink, #lastHeaderLink {
-    
-    display: none;}
+  #firstHeaderlink, #breakLink, #lastHeaderLink, .lowColumn, .midColumn, .regDropDown, .highColumn 
+  { display: none;}
+
+  #currentDisplayRow {left: 0;
+    flex-direction: column;
+    padding-bottom: 15px;
+  width: 95%;}
+
+  #currentDisplayRow h2 {font-size: 14pt;}
+
+  .setLength {position: absolute;
+    top: 40px;
+  left: -25%;}
+
+
+  .artist {top: 95px;
+  left: -15px;}
 
     .backdropBreak {
       padding: 1px 0 10px 0;
@@ -578,8 +592,6 @@ right: 30%;}
         width: 100%;
   }
     
-  
-      
 
     .Breaks li {font-size: 12pt;
       min-width: 150px;
@@ -609,26 +621,31 @@ top: -20px;}
       max-width: 280px;}
 
   
-  .cardInfoColumn {position: absolute;
-  left: -30px;}
+      .cardInfoColumn {position: absolute;
+        left: -30px;}
+      
+        .cardInfoColumn ul {margin-top: 15px;}
+      
+        .cardInfoColumn ul li {margin-top: 12px; margin-bottom: 12px;}
 
-  .cardInfoColumn ul {margin-top: 15px;}
-
-  .cardInfoColumn ul li {margin-top: 30px; margin-bottom: 30px;}
-
-  .cardPriceColumn h2 {color: #63f337; }
+        .cardPriceColumn {padding-top: 400px;
+        right: 1px;}
+      
+        .cardPriceColumn h2 {color: #63f337; }
   
   .cardImage {min-width: 23%;
     position: relative;
-    top: 50px;
+    top: 100px;
     right: 15px;
     max-width: 150px;}
 
   
     .cardimageColumn {position: relative;
-    right: -24%;}
+  width: 58%;
+left: 40%;}
 
     .CardInfo{min-width: 97%;
+      min-height: 580px;
       width: 97%;
       padding-bottom: 25px;
     margin-left: 1%;}
@@ -683,10 +700,11 @@ padding-left: 1%;
 font-size: 20pt;
 }
 
+.loading {margin-top: 32%;
+  font-size: 16px;}
 
-.lowColumn {display: none;}
-.midColumn {display: none;}
-.highColumn {display: none;}
+.lowColumn, .midColumn, .regDropDown, .highColumn {display: none;}
+
 
     .searchBar {width: 65%;
       font-size: 14pt;}
@@ -709,7 +727,7 @@ font-size: 20pt;
         margin-left: auto;
       margin-right: auto;}
 
-.regDropDown {display: none;}
+
     .row {display: flex;
           flex-direction: column;}
 
@@ -725,6 +743,7 @@ font-size: 20pt;
           }
 
           .weightDetails, .heightDetails {font-size: 17pt;}
+
           .content-wrap {
           width: 100%
          }
@@ -737,9 +756,10 @@ font-size: 20pt;
         top: -15px;}
 
 #pokeName {font-size: 20pt;
+  width: 78%;
   position: absolute;
   top: -5px;
-  right: 9%;
+right: 15%;
 }
 
 .headerLinks:hover {
