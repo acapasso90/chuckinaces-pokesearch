@@ -578,7 +578,8 @@ right: 30%;}
 
   .setLength {position: absolute;
     top: 40px;
-  left: -25%;}
+  text-align: left;
+  left: 19px;}
 
 
   .artist {top: 95px;
@@ -631,7 +632,9 @@ top: -20px;}
       
         .cardInfoColumn ul li {margin-top: 12px; margin-bottom: 12px;}
 
-        .cardPriceColumn {padding-top: 400px;
+        .cardPriceColumn {
+          position: relative;
+          padding-top: 400px;
         right: 1px;}
       
         .cardPriceColumn h2 {color: #63f337; }
@@ -643,14 +646,13 @@ top: -20px;}
     max-width: 150px;}
 
   
-    .cardimageColumn {position: relative;
-  width: 58%;
-left: 40%;}
+    .cardimageColumn {position: absolute;
+  width: 55%;
+right: 0;}
 
     .CardInfo{min-width: 97%;
-      min-height: 580px;
       width: 97%;
-      padding-bottom: 25px;
+      padding-bottom: 2px;
     margin-left: 1%;}
 
 
@@ -684,7 +686,7 @@ margin-top: 6px;
       left: 0;}
 
     .header h1 {position: absolute;
-      font-size: 20pt;
+      font-size: 18pt;
 padding-left: 1%;
       width: 100%;
       top: -14%;
@@ -721,6 +723,7 @@ font-size: 20pt;
       right: 3.8%;}
       
       .submitButton {width: 20.5%;
+        top: 0px;
         font-size: 14pt;}
 
         .PokeInfo {width: 96%;
@@ -776,9 +779,8 @@ left: -75px;}
   top: -120px;
 max-height: 250px;}
 
-
-        .weightRow, .heightRow {
-        position: relative;
-        }
+.weightRow, .heightRow {
+position: relative;
+}
 
                 }

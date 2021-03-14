@@ -69,7 +69,7 @@ className="searchBar" />
 <div className="priceInstructions"><span className="pink"> <p>Card prices only includes Lightly Played condition or better </p> </span></div> 
 <div className="row" id="currentDisplayRow">
 <h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemonDisplay} </span></div>
-<div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
+<div className="setLength">Number of cards:  <span className="pink">{setLength} </span></div></h2> 
 </div>
 
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNum){
