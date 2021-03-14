@@ -26,7 +26,7 @@ const length = set.length;
 </h3>
 <img src={squirtle} alt="squirtleSquad" className="squirtleGif"/>
 <div className="backdropBreak">
-<div className="row">
+<div className="row" id="breaksRow">
 <div className="sets">
 <ul>
 <li className="liHeader">
@@ -38,7 +38,7 @@ const length = set.length;
     </div>
     <div className="cardNumberPull">
         <ul>
-            <li className="liHeader">
+            <li className="liHeader" id="liHeaderNumber">
 <h3 ># to Move from Back</h3></li>
 {cardNumbers.slice(0, length).map(function(cardNumber){
     return(<li className="breakSetNumber" > {cardNumber}  </li>)})}

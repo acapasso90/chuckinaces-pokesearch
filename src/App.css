@@ -154,7 +154,7 @@ width: 250px;
     color: #5ee7ff;
   text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
     white-space: nowrap;
-    font-family: 'Broadway', cursive;
+    font-family: 'Broadway', serif;
   width: 100%;
   margin-left: auto;
   margin-right: auto;}
@@ -174,14 +174,30 @@ width: 50%;
 margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;}
+
 .Breaks li {border: 2px solid #ff68d9;
   font-weight: bold;
-  min-width: 20vw;
+  height: 40px;
+  max-width: 17vw;
   border-radius: 2px;
   background-image: url(./chartBackground.png);
-padding: 10px 5px;
-white-space: nowrap;}
+padding: 2px 5px 18px 5px;
+}
 
+#liHeaderNumber {position: relative;
+  height: 10px;
+  padding-top: 0;
+padding-bottom: 100px;}
+
+#liHeaderNumber h3 {
+  top: -5px;}
+  
+
+.Breaks .liHeader {padding-bottom: 68px;
+align-items: center;}
+
+.Breaks .liHeader h3 {position: relative;
+top: 5px;}
 .Breaks li:hover {  background-image: url(./chartBackgroundNeg.png);
   color: #0b028a;}
 
@@ -208,14 +224,15 @@ font-size: 11pt;}
   margin-right: auto;}
 
   .backdropPokeSearch {background-image: url(./backgrounds/neon.jpg);
-    width: 86%;
+    background-color: #181b2a;
+    width: 81.5%;
     margin-left: auto;
     margin-bottom: 20px;
     margin-right: auto;
     border-radius: 14px;
-    padding: 5px 0 5px 0;}
+    padding: 5px 0 22px 0;}
 
-.Breaks .row {width: 60.89%;
+.Breaks .row {width: 45%;
   margin-top: 15px;
 margin-left: auto;
 margin-right: auto;}
@@ -226,7 +243,7 @@ margin-right: auto;}
 
   .Breaks .liHeader {  color: #5ee7ff;
     text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
-    font-family: 'broadway', cursive;
+    font-family: 'broadway', serif;
     font-size: 17.5pt;
     background-image: url(./background2.jpg);}
   
@@ -301,7 +318,7 @@ margin-right: auto;
     text-shadow:     -4px 0 #e630d3, 0 4px #ff00e6, 4px 0 #ff00e6, 0 -4px #ff00e6,
      -5.5px 0 #2b2a2b, 0 5.5px #2b2a2b, 5.5px 0 #2b2a2b, 0 -5.5px #2b2a2b;
     letter-spacing: 10px;
-  font-family: 'broadway', cursive;}
+  font-family: 'broadway', serif;}
   
   .headerLinks {position: fixed;
     left: 541px;
@@ -356,7 +373,7 @@ margin-right: auto;
     width: 346px;
     color: #5ee7ff;
     text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
-    font-family: 'broadway', cursive;
+    font-family: 'broadway', serif;
   font-size: 29pt;}
   
   .pokeName2 {font-size: 25pt;}
@@ -367,7 +384,6 @@ margin-right: auto;
     padding-top: 1%;
     border: 3px solid #27a3b3;
     height: 375px;
-    margin-bottom: 30px;
     min-height: 305px;
     border-radius: 2px;
     background-color: #000313;
@@ -556,19 +572,35 @@ right: 30%;}
       max-width: 100%;
       width: 100%;
       min-width: 40%;
-      border-radius: 14px;
-      margin-left: auto;
-      margin-right: auto;}
+      }
 
+      .backdropPokeSearch {
+        width: 100%;
+  }
+    
   
       
 
     .Breaks li {font-size: 12pt;
-      max-width: 270px;
+      min-width: 150px;
     padding: 10px 5px;
     }
+
+    
+#liHeaderNumber {
+  height: 18px;
+  padding-top: 0;
+padding-bottom: 100px;}
+
+#liHeaderNumber h3 {position: relative;
+top: -20px;}
+
+    #breaksRow {display: flex;
+    flex-direction: row;}
+
+    .sets, .cardNumberPull {width: 164px;}
   
-  .Breaks .row {width: 100%;
+  .Breaks .row {width: 75%;
     margin-top: 15px;
   margin-left: auto;
   margin-right: auto;}
@@ -632,7 +664,8 @@ margin-top: 6px;
       left: 0;}
 
     .header h1 {position: absolute;
-      left: -0.5%;
+      font-size: 21pt;
+padding-left: 1%;
       width: 100%;
       top: -17%;
       white-space: normal;}
@@ -658,17 +691,23 @@ font-size: 20pt;
     .searchBar {width: 65%;
       font-size: 14pt;}
 
+      
+  .squirtleGif {
+    width: 20%;}
+
 .stats {        font-size: 14pt;}
 
       .statsColumn {position: absolute;
-        top: 755px;
-      right: 2.75%;}
+        top: 625px;
+      right: 3.8%;}
       
       .submitButton {width: 20.5%;
         font-size: 14pt;}
 
-        .PokeInfo {width: 98%;
-        margin-left: 0.7%;}
+        .PokeInfo {width: 96%;
+          height: 90%;
+        margin-left: auto;
+      margin-right: auto;}
 
 .regDropDown {display: none;}
     .row {display: flex;
@@ -693,7 +732,7 @@ font-size: 20pt;
           margin-left: auto;
         margin-right: auto;}
 
-          .pokeName {margin-left: 3.5%;
+        .pokeName {margin-left: 5%;
           position: relative;
         top: -15px;}
 
@@ -711,6 +750,10 @@ font-size: 20pt;
   top: 100px;
 left: -75px;}
         
+.weightColumn {right: 11.5%;
+  margin-top: 0;
+  top: -120px;
+max-height: 250px;}
 
 
         .weightRow, .heightRow {
