@@ -197,6 +197,7 @@ font-size: 11pt;}
   margin-left: auto;
   margin-right: auto;}
 
+
 .Breaks .row {width: 60.89%;
   margin-top: 15px;
 margin-left: auto;
@@ -344,6 +345,7 @@ margin-right: auto;
     border: 3px solid #27a3b3;
     margin-bottom: 30px;
     min-height: 355px;
+    border-radius: 2px;
     background-color: #000313;
     background-image: url(./background.jpg);
   margin-left: auto;
@@ -518,9 +520,8 @@ right: 30%;}
 /*Mobile Sized*/
 @media only screen and (max-width: 500px){
 
-  #firstHeaderlink {
+  #firstHeaderlink, #breakLink, #lastHeaderLink {
     display: none;}
-
 
   .cardInfoColumn {position: absolute;
   left: -30px;}
@@ -543,7 +544,6 @@ right: 30%;}
 
     .CardInfo{min-width: 97%;
       width: 97%;
-      
       padding-bottom: 25px;
     margin-left: 1%;}
 
@@ -551,19 +551,17 @@ right: 30%;}
   .column {margin-left: 0;}
 
   .dropdownColumn {
-    left: 2.5px;
-    border-radius: 2px;
+        border-radius: 2px;
     padding-left: 0px;
     text-align: right;
-    left: 70px;
-  width: 41.5%;}
+    left: -8px;
+  width: 255px;}
 
-  .dropdownColumn a {position: relative;
-    font-size: 20pt;
-  left: -180px;}
+
 
   .hamburgerDropdown {display: inherit;
 position: absolute;
+left: 20px;
 }
 
 
@@ -573,7 +571,7 @@ position: absolute;
     margin-bottom: 0px;}
     
 
-    .CardSearch .header, .SubTypeCardCardSearch .header, .CardSetSearch .header, .RaritySearch .header {width: 100%;
+    .header {max-width: 100%;
       left: 0;}
 
     .header h1 {position: absolute;
@@ -582,6 +580,7 @@ position: absolute;
       white-space: normal;}
     
       .headerLinks {
+        padding-top: 0;
         left: 15.9%;
         font-size: 20pt;
         width: 150px;

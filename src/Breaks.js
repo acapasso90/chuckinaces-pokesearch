@@ -18,10 +18,10 @@ const cardNumbers = ["3", "3", "3", "2", "3", "4", "4", "1", "0", "3", "3", "0",
 const length = set.length;
     return(<div className="Breaks">
            <div className="content-wrap">
-               <ScrollTop />
            <div className="header">
         <h1>The ChuckinAces PokéSearch</h1>
         </div>
+               <ScrollTop />
 <div className="credit"> Displays number of cards to move from the back of a pack when breaking based on Set Name. 
 </div>
 <img src={squirtle} alt="squirtleSquad" className="squirtleGif"/>

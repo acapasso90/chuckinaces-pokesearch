@@ -62,7 +62,7 @@ if(loaded){return(
                    Pumpkaboo needs sizes "-small/-average/-large/-super" <span className="pink">(ex: Pumpkaboo-super)</span>. 
                    Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>.
                     </p>
-    <PokeInfo data={pokeinfo} loading={loadedStatus} />
+    <PokeInfo data={pokeinfo} loading={loadedStatus} />  
     <footer>💀scent was here</footer>
         </div>)}
 //  searches default pokemon and shows loading pokeball gif
