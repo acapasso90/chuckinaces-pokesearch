@@ -8,6 +8,7 @@ import ScrollTop from "./ScrollTop.js";
 export default function RaritySearch(){
     const [instructions, setInstructions] = useState("");
     const [pokemon, Setpokemon] = useState("rare*rainbow");
+    const [pokemonDisplay, setPokemonDisplay] = useState(" ");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
@@ -18,6 +19,7 @@ const [pokemonLowercase, setPokemonLowercase] = useState("")
 function setInfo(response){
     setPokeinfo(response.data.data);
     setArrayLength(response.data.length);
+    setPokemonDisplay(pokemon.replace('*', '  '));
 setLoaded(true);
 setSetLength(response.data.count);
 setLoadedStatus("loaded");}
@@ -73,7 +75,7 @@ className="searchBar" />
 <div className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></div>
 <div className="priceInstructions"><span className="pink"> <p>Card prices only includes Lightly Played condition or better </p></span></div> 
 <div className="row" id="currentDisplayRow">
-<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
+<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemonDisplay} </span></div>
 <div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
 </div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){
@@ -87,7 +89,7 @@ else{
     return(
 <div className="loading">
 <div className="header">
-        <h1>The ChuckinAces PokéSearch App</h1>
+        <h1>The ChuckinAces PokéSearch </h1>
         </div>
 <h1>Loading Pokés</h1>
     <img src={loading} alt="loading" />

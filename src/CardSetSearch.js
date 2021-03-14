@@ -8,6 +8,7 @@ import ScrollTop from "./ScrollTop.js";
 
 export default function CardSearch(){
     const [pokemon, Setpokemon] = useState("Detective*Pikachu");
+    const [pokemonDisplay, setPokemonDisplay] = useState(" ");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
@@ -21,6 +22,7 @@ const [instructions, setInstructions] = useState("");
 function setInfo(response){
     setPokeinfo(response.data.data);
     setArrayLength(response.data.length);
+    setPokemonDisplay(pokemon.replace('*', '  '));
 setLoaded(true);
 setSetLength(response.data.count);
 setLoadedStatus("loaded");}
@@ -76,7 +78,7 @@ className="searchBar" />
 <CardSetInstructions data={instructions} />
 <div className="priceInstructions"><p><span className="pink"> Card prices only includes Lightly Played condition or better </span></p></div> 
 <div className="row" id="currentDisplayRow">
-<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
+<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemonDisplay} </span></div>
 <div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
 </div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){

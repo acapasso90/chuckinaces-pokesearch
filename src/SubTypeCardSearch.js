@@ -8,6 +8,7 @@ import ScrollTop from "./ScrollTop.js";
 export default function SubTypeCardCardSearch(){
     const [instructions, setInstructions] = useState("");
     const [pokemon, Setpokemon] = useState("tag*team");
+    const [pokemonDisplay, setPokemonDisplay] = useState(" ");
 const [pokeinfo, setPokeinfo] = useState("");
 const [loaded, setLoaded] = useState(false);
 const [loadedStatus, setLoadedStatus] = useState(" ");
@@ -18,6 +19,7 @@ const [pokemonLowercase, setPokemonLowercase] = useState("")
 function setInfo(response){
     setPokeinfo(response.data.data);
     setArrayLength(response.data.length);
+    setPokemonDisplay(pokemon.replace('*', '  '));
 setLoaded(true);
 setSetLength(response.data.count);
 setLoadedStatus("loaded");}
@@ -69,11 +71,11 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p className="pink">use * between multi-word search terms <br /> </p>
+<p className="pink">use * between multi-word search terms. Can use one word with * after (ex. Tag* for tag team) <br /> </p>
 <div className="pokeSearchInstructions"><SubTypeInstructions data={instructions} /></div>
 <div className="priceInstructions"><span className="pink"><p> Card prices only includes Lightly Played condition or better</p> </span></div>
 <div className="row" id="currentDisplayRow">
-<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemon} </span></div>
+<h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemonDisplay} </span></div>
 <div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
 </div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumeral){

@@ -7,7 +7,6 @@ import FirstEditionHoloPrices from "./FirstEditionHoloPrices.js";
 export default function CardInfo(props){
     let loaded = props.loading;
     let data = props.data
-    console.log(props.data)
     let id = props.data.id;
     let name = props.data.name;
     let artist = props.data.artist;

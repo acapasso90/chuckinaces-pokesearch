@@ -42,7 +42,7 @@ function App() {
         <NavLink to="/cards.rarity" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By Rarity </NavLink>  <br/>
         <NavLink to="/cards.id" style={{ textDecoration: 'none' }} className="dropdownLink" id="dropdownLinkTwo" href="#/action-2">Cards By ID </NavLink> <br />
       <a href="https://www.twitch.tv/chuckinaces" target="_blank" className="dropdownLink" id="dropdownLinkTwo" >Twitch</a>
-  </div>
+      </div>
 </DropdownButton>
    </div>
    <NavLink to="/breaks" style={{ textDecoration: 'none'} } className="headerLinks" id="breakLink"> &hearts; Breaks &spades;</NavLink>

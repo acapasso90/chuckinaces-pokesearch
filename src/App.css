@@ -103,7 +103,7 @@ width: 250px;
     .dropdownColumn {background-image: url(./dropdown.jpg);
       background-color: #ABA8ED;
       position: relative;
-      border: 13px solid #130d18;
+      border: 14px solid #130d18;
       border-top: 0;
       padding-bottom: 10px;
       padding-top: 5px;
@@ -155,7 +155,7 @@ width: 250px;
   text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
     white-space: nowrap;
     font-family: 'Broadway', cursive;
-  width: 280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;}
 
@@ -182,6 +182,13 @@ margin-right: auto;}
 padding: 10px 5px;
 white-space: nowrap;}
 
+.Breaks li:hover {  background-image: url(./chartBackgroundNeg.png);
+  color: #0b028a;}
+
+.Breaks .liHeader:hover { 
+  color: #5ee7ff;
+  background-image: url(./background2.jpg);}
+
 .Breaks ul {padding-left: 0;
 }
 
@@ -191,6 +198,7 @@ font-size: 11pt;}
 .scent {margin-top: 5px;}
 
 .backdropBreak {background-image: url(./backgrounds/ghosts.jpg);
+  background-color: #29182A;
   margin-top: 20px;
   padding: 1px 0 10px 0;
   width: 1135px;
@@ -198,10 +206,20 @@ font-size: 11pt;}
   margin-left: auto;
   margin-right: auto;}
 
+  .backdropPokeSearch {background-image: url(./backgrounds/neon.jpg);
+    width: 86%;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+    border-radius: 14px;
+    padding: 5px 0 5px 0;}
+
 .Breaks .row {width: 60.89%;
   margin-top: 15px;
 margin-left: auto;
 margin-right: auto;}
+
+
   .cardImage {min-width: 23%;
     max-width: 280px;}
 
@@ -288,6 +306,7 @@ margin-right: auto;
     left: 541px;
     top: 72px;
   z-index: 9999;
+  user-select: none;
   width: 250px;
   font-weight: bold;
   padding-top: 4px;
@@ -322,7 +341,9 @@ margin-right: auto;
     .instructions{margin-left: 3px;
     margin-right: 3px;}
   .officialImg {
-   max-width: 310px;
+    margin-top: 8px;
+    max-height: 275px;
+   max-width: 300px;
    min-width: 200px;
    background-image: url(./pexels-luis-quintero-2471234.jpg);
    background-size: 360px 330px;
@@ -339,13 +360,14 @@ margin-right: auto;
   
   .pokeName2 {font-size: 25pt;}
   
-  .PokeInfo {width: 65%;
+  .PokeInfo {width: 86%;
+    max-width: 1000px;
     margin-top: 1.5%;
     padding-top: 1%;
     border: 3px solid #27a3b3;
-    height: 405px;
+    height: 375px;
     margin-bottom: 30px;
-    min-height: 355px;
+    min-height: 305px;
     border-radius: 2px;
     background-color: #000313;
     background-image: url(./background.jpg);
@@ -364,6 +386,7 @@ margin-right: auto;
   margin-right: auto;}
   
   .PokeSearch p li {font-size: 14pt;}
+
 
   .row {display: flex;
   width: 100%;}
@@ -407,7 +430,7 @@ top: -1px;}
   .statsColumn {white-space: nowrap;
   margin-top: 1.5%;
 position: absolute;
-right: 19%;}
+right: 22%;}
 
 
   .submitButton {width: 60px;
@@ -421,7 +444,9 @@ right: 19%;}
   width: 25%;
   max-width: 400px;
   text-align: left;
-justify-content: center;}
+justify-content: center;
+position: relative;
+right: 9%;}
   
   .height { 
     font-size: 23px;
@@ -532,6 +557,8 @@ right: 30%;}
       border-radius: 14px;
       margin-left: auto;
       margin-right: auto;}
+
+      
 
     .Breaks li {font-size: 12pt;
       max-width: 270px;
