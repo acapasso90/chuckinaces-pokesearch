@@ -201,7 +201,8 @@ font-size: 11pt;}
   background-color: #29182A;
   margin-top: 20px;
   padding: 1px 0 10px 0;
-  width: 1135px;
+  width: 72%;
+  min-width: 1110px;
   border-radius: 14px;
   margin-left: auto;
   margin-right: auto;}
@@ -551,13 +552,15 @@ right: 30%;}
     display: none;}
 
     .backdropBreak {
-      margin-top: 20px;
       padding: 1px 0 10px 0;
+      max-width: 100%;
       width: 100%;
+      min-width: 40%;
       border-radius: 14px;
       margin-left: auto;
       margin-right: auto;}
 
+  
       
 
     .Breaks li {font-size: 12pt;
@@ -605,14 +608,17 @@ right: 30%;}
         border-radius: 2px;
     padding-left: 0px;
     text-align: right;
-    left: -8px;
+    border: 12px solid  #130d18;
+    border-top: none;
+    left: -24px;
   width: 255px;}
 
 
 
   .hamburgerDropdown {display: inherit;
 position: absolute;
-left: 20px;
+left: -50px;
+margin-top: 6px;
 }
 
 
