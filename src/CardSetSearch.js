@@ -70,7 +70,7 @@ if(loaded){return(
         </div>
         <h3 className="searchInstructions">Search by Set Name </h3>
 <form onSubmit={handleSubmit}>
-<input type="text" onChange={setPokemon} placeholder="Enter a set name" 
+<input type="search" onChange={setPokemon} placeholder="Enter a set name" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>

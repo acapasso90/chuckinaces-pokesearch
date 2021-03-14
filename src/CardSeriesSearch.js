@@ -64,7 +64,7 @@ if(loaded){return(
         </div>
         <h3 className="searchInstructions">Search by Card Series</h3>
 <form onSubmit={handleSubmit}>
-<input type="text" onChange={setPokemon} placeholder="Enter series name" 
+<input type="search" onChange={setPokemon} placeholder="Enter series name" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>

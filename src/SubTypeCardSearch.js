@@ -67,7 +67,7 @@ if(loaded){return(
         </div>
         <h3 className="searchInstructions">Search by Subtype</h3>
 <form onSubmit={handleSubmit}>
-<input type="text" onChange={setPokemon} placeholder="Enter a Subtype" 
+<input type="search" onChange={setPokemon} placeholder="Enter a Subtype" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>

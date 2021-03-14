@@ -194,12 +194,20 @@ padding-bottom: 100px;}
   
 
 .Breaks .liHeader {padding-bottom: 68px;
+  color: #5ee7ff;
+  text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
+  font-family: 'broadway', serif;
+  font-size: 17.5pt;
+  background-image: url(./background2.jpg);
+  background-color: #090911;
 align-items: center;}
 
 .Breaks .liHeader h3 {position: relative;
 top: 5px;}
 .Breaks li:hover {  background-image: url(./chartBackgroundNeg.png);
+  background-color: #b29bb7;
   color: #0b028a;}
+  
 
 .Breaks .liHeader:hover { 
   color: #5ee7ff;
@@ -241,11 +249,6 @@ margin-right: auto;}
   .cardImage {min-width: 23%;
     max-width: 280px;}
 
-  .Breaks .liHeader {  color: #5ee7ff;
-    text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
-    font-family: 'broadway', serif;
-    font-size: 17.5pt;
-    background-image: url(./background2.jpg);}
   
     .cardimageColumn {margin-left: 2%;
   }
@@ -452,8 +455,8 @@ right: 22%;}
 
   .submitButton {width: 60px;
     position: relative;
-    top: -1.2px;
-    height: 47px;}
+    top: -2.3px;
+    height: 40px;}
   
     .SubTypeInstructions {margin-bottom: 1.5%;}
   
@@ -612,7 +615,7 @@ top: -20px;}
 
     .sets, .cardNumberPull {width: 164px;}
   
-  .Breaks .row {width: 75%;
+  .Breaks .row {width: 82%;
     margin-top: 15px;
   margin-left: auto;
   margin-right: auto;}
@@ -681,10 +684,10 @@ margin-top: 6px;
       left: 0;}
 
     .header h1 {position: absolute;
-      font-size: 21pt;
+      font-size: 20pt;
 padding-left: 1%;
       width: 100%;
-      top: -17%;
+      top: -14%;
       white-space: normal;}
     
       .headerLinks {
@@ -703,8 +706,6 @@ font-size: 20pt;
 .loading {margin-top: 32%;
   font-size: 16px;}
 
-.lowColumn, .midColumn, .regDropDown, .highColumn {display: none;}
-
 
     .searchBar {width: 65%;
       font-size: 14pt;}
@@ -716,7 +717,7 @@ font-size: 20pt;
 .stats {        font-size: 14pt;}
 
       .statsColumn {position: absolute;
-        top: 625px;
+        top: 660px;
       right: 3.8%;}
       
       .submitButton {width: 20.5%;

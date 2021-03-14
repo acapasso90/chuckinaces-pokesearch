@@ -60,7 +60,7 @@ if(loaded){return(
         </div>
         <h3 className="searchInstructions">Search by Pokémon Name </h3>
 <form onSubmit={handleSubmit}>
-<input type="text" onChange={setPokemon} placeholder="Enter Pokémon name" 
+<input type="search" onChange={setPokemon} placeholder="Enter Pokémon name" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>

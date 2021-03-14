@@ -53,7 +53,7 @@ if(loaded){return(
         </div>
         <h3 className="searchInstructions">Search by Card ID</h3>
 <form onSubmit={handleSubmit}>
-<input type="text" onChange={setPokemon} placeholder="Enter card ID# (ex: ex9-65)" 
+<input type="search" onChange={setPokemon} placeholder="Enter card ID# (ex: ex9-65)" 
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
