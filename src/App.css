@@ -103,20 +103,21 @@ width: 250px;
     .dropdownColumn {background-image: url(./dropdown.jpg);
       background-color: #ABA8ED;
       position: relative;
+      border: 13px solid #130d18;
+      border-top: 0;
       padding-bottom: 10px;
       padding-top: 5px;
       top: 1px;
-      left: -2px;
+      left: -15px;
       overflow-x: hidden;
       border-radius: 2px;
-    width: 253px;}
+    width: 252px;}
 
   
     .hamburgerDropdown {display: none;}
 
     .dropdownColumn a {color: #fefdff!important;
-      text-shadow: -3px 0 #8b0785, 0 3px #f133de, 3px 0 #f133de, 0 -3px #f133de;
-      background-color:rgba(194, 106, 253, 0.3);
+      text-shadow: -3px 0 #f133de, 0 3px #f133de, 3px 0 #f133de, 0 -3px #f133de;
       white-space: nowrap;
       font-weight: bold;
       font-size: 22pt;}
@@ -133,7 +134,7 @@ width: 250px;
   
   .PokeSearch, .CardSearch, .SubTypeCardCardSearch, .CardSetSearch, .RaritySearch, .CardSeriesSearch, .CardIdSearch, .Breaks {
     position: relative;
-    top: 142px;
+    top: 135px;
   width: 100%;
 }
 
@@ -196,7 +197,6 @@ font-size: 11pt;}
   border-radius: 14px;
   margin-left: auto;
   margin-right: auto;}
-
 
 .Breaks .row {width: 60.89%;
   margin-top: 15px;
@@ -341,8 +341,9 @@ margin-right: auto;
   
   .PokeInfo {width: 65%;
     margin-top: 1.5%;
-    padding-top: 2%;
+    padding-top: 1%;
     border: 3px solid #27a3b3;
+    height: 405px;
     margin-bottom: 30px;
     min-height: 355px;
     border-radius: 2px;
@@ -521,8 +522,31 @@ right: 30%;}
 @media only screen and (max-width: 500px){
 
   #firstHeaderlink, #breakLink, #lastHeaderLink {
+    
     display: none;}
 
+    .backdropBreak {
+      margin-top: 20px;
+      padding: 1px 0 10px 0;
+      width: 100%;
+      border-radius: 14px;
+      margin-left: auto;
+      margin-right: auto;}
+
+    .Breaks li {font-size: 12pt;
+      max-width: 270px;
+    padding: 10px 5px;
+    }
+  
+  .Breaks .row {width: 100%;
+    margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;}
+
+    .cardImage {min-width: 23%;
+      max-width: 280px;}
+
+  
   .cardInfoColumn {position: absolute;
   left: -30px;}
 
@@ -571,11 +595,12 @@ left: 20px;
     margin-bottom: 0px;}
     
 
-    .header {max-width: 100%;
+    .header {width: 100%;
       left: 0;}
 
     .header h1 {position: absolute;
       left: -0.5%;
+      width: 100%;
       top: -17%;
       white-space: normal;}
     

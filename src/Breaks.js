@@ -22,8 +22,8 @@ const length = set.length;
         <h1>The ChuckinAces PokéSearch</h1>
         </div>
                <ScrollTop />
-<div className="credit"> Displays number of cards to move from the back of a pack when breaking based on Set Name. 
-</div>
+               <h3 className="searchInstructions">Displays number of cards to move from the back of a pack when breaking based on Set Name. 
+</h3>
 <img src={squirtle} alt="squirtleSquad" className="squirtleGif"/>
 <div className="backdropBreak">
 <div className="row">
