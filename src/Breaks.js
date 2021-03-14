@@ -22,10 +22,10 @@ const length = set.length;
            <div className="header">
         <h1>The ChuckinAces PokéSearch</h1>
         </div>
-<div className="credit"> Displays number of cards to move from the back of a pack when breaking based on Set Name. All information used is taken from 
-<a href="http://thepokegeeks.com/booster-card-tricks/" target="_blank"> The PokeGeeks</a>. (They've also made a video <a href="https://www.youtube.com/watch?v=XjXTdrXyUY8" target="_blank">here</a>)
+<div className="credit"> Displays number of cards to move from the back of a pack when breaking based on Set Name. 
 </div>
 <img src={squirtle} alt="squirtleSquad" className="squirtleGif"/>
+<div className="backdropBreak">
 <div className="row">
 <div className="sets">
 <ul>
@@ -45,7 +45,13 @@ const length = set.length;
 </ul>
     </div>
 </div>
-<footer>💀scent was here</footer>
+</div>
+<footer>
+All information used is taken from 
+
+<a href="http://thepokegeeks.com/booster-card-tricks/" target="_blank"> The PokeGeeks</a>. (They've also made a video <a href="https://www.youtube.com/watch?v=XjXTdrXyUY8" target="_blank">here</a>.)
+Ghost-type backdrop art by Ethan Walker. <br/>
+<div className="scent"> 💀scent was here </div></footer> 
 </div>
 </div>)
 }

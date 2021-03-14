@@ -25,7 +25,7 @@ a, a:active {color:#ee65a9!important;
   top: 1px;
   }
 
-  .checkPriceButton {width: 180px;
+  .checkPriceButton {width: 182px;
     margin-top: 15px;
     height: 38px;}
 
@@ -57,6 +57,7 @@ z-index: 9999;
 width: 250px;
   padding-top: 4px;
   height: 46px;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff!important;
   text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
   font-size: 26pt;}
@@ -85,6 +86,7 @@ width: 250px;
   #dropdown-button-drop-down {background-color: transparent;
     color: #ffffff!important;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
     width: 250px;
   text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
   font-size: 26pt;
@@ -116,10 +118,7 @@ width: 250px;
       text-shadow: -3px 0 #8b0785, 0 3px #f133de, 3px 0 #f133de, 0 -3px #f133de;
       background-color:rgba(194, 106, 253, 0.3);
       white-space: nowrap;
-      position: relative;
-      max-width: 300px;
       font-weight: bold;
-
       font-size: 22pt;}
   
   
@@ -168,6 +167,7 @@ width: 250px;
   .priceColumn{margin-left: 5%;
     margin-right: 5%;}
   
+
 .Breaks .credit {margin-top: 10px;
 width: 50%;
 margin-bottom: 20px;
@@ -175,6 +175,7 @@ margin-left: auto;
 margin-right: auto;}
 .Breaks li {border: 2px solid #ff68d9;
   font-weight: bold;
+  min-width: 20vw;
   border-radius: 2px;
   background-image: url(./chartBackground.png);
 padding: 10px 5px;
@@ -183,7 +184,21 @@ white-space: nowrap;}
 .Breaks ul {padding-left: 0;
 }
 
-.Breaks .row {width: 41.8%;
+.Breaks footer {margin-top: 10px;
+font-size: 11pt;}
+
+.scent {margin-top: 5px;}
+
+.backdropBreak {background-image: url(./backgrounds/ghosts.jpg);
+  margin-top: 20px;
+  padding: 1px 0 10px 0;
+  width: 65vw;
+  opacity: 100%;
+  border-radius: 14px;
+  margin-left: auto;
+  margin-right: auto;}
+
+.Breaks .row {width: 66.89%;
   margin-top: 15px;
 margin-left: auto;
 margin-right: auto;}
@@ -193,7 +208,7 @@ margin-right: auto;}
   .Breaks .liHeader {  color: #5ee7ff;
     text-shadow: -3px 0 #e630d3, 0 3px #ff00e6, 3px 0 #ff00e6, 0 -3px #ff00e6;
     font-family: 'broadway', cursive;
-    font-size: 17pt;
+    font-size: 17.5pt;
     background-image: url(./background2.jpg);}
   
     .cardimageColumn {margin-left: 2%;
@@ -261,7 +276,7 @@ margin-right: auto;}
   
   .header h1 {position: absolute;
     top: -2.7vw;
-width: 100%;
+width: 101.5%;
 margin-left: auto;
 margin-right: auto;
     text-shadow:     -4px 0 #e630d3, 0 4px #ff00e6, 4px 0 #ff00e6, 0 -4px #ff00e6,
@@ -276,15 +291,17 @@ margin-right: auto;
   width: 250px;
   font-weight: bold;
   padding-top: 4px;
-  height: 44px;
+  height: 46px;
   color: #ffffff!important;
   text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
   font-size: 26pt;}
   
-  .headerLinks:hover, #lastHeaderLink:hover, .dropdownColumn a:hover  {color: #ff00b3!important;
+  .headerLinks:hover, #lastHeaderLink:hover {color: #ff00b3!important;
     background-color: rgba(22, 255, 138, 0.50);
     text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
+    .dropdownColumn a:hover {color: #ff00b3!important;
+      text-shadow: -3px 0 2px #fff7fe, 0 3px 1px #fff, 3px 0 1px #fff, 0 -3px 1px #fff;}
   
   #firstHeaderlink {
    position: fixed; 
