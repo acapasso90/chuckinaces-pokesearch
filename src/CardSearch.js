@@ -71,9 +71,9 @@ className="searchBar" />
 <h2><div className="currentlyShowing">Currently displaying: <span className="pink">{pokemonDisplay} </span></div>
 <div className="setLength">Number of cards:  <span className="pink">{setLength} </span></div></h2> 
 </div>
-
+<div className="backdropCards">
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNum){
-            return(<CardInfo data={pokemonNum} loading={loadedStatus} />)})} 
+            return(<CardInfo data={pokemonNum} loading={loadedStatus} />)})} </div>
                  <footer>💀scent was here</footer>
         </div>
     </div>

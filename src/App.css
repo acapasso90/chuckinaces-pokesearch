@@ -233,12 +233,19 @@ font-size: 11pt;}
 
   .backdropPokeSearch {background-image: url(./backgrounds/neon.jpg);
     background-color: #181b2a;
-    width: 81.5%;
+    width: 80.5%;
     margin-left: auto;
     margin-bottom: 20px;
     margin-right: auto;
     border-radius: 14px;
     padding: 5px 0 22px 0;}
+
+.backdropCards {background-image: url(./backgrounds/ghosts2.png);
+  width: 84.5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 14px;
+  padding: 25px 0 2px 0;}
 
 .Breaks .row {width: 45%;
   margin-top: 15px;
@@ -264,16 +271,16 @@ margin-right: auto;}
   
   .cardInfoColumn ul li {margin-top: 30px; margin-bottom: 30px; white-space: nowrap;}
   
-  .CardInfo {border: 3px solid #27a3b3;
+  .CardInfo {border: 4px solid #27a3b3;
     padding-bottom: 2.5%;
     background-color: #000313;
     background-image: url(./background.jpg);
   border-radius: 2px;
   min-height: 540px;
-  width: 76%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;}
+  margin-bottom: 30px;}
 
   .cardPriceColumn {position: absolute;
   right: 13%;}
@@ -592,10 +599,15 @@ right: 30%;}
       min-width: 40%;
       }
 
+      .backdropCards {
+        width: 100%;
+        padding: 25px 0 2px 0;}
+
       .backdropPokeSearch {
         width: 100%;
   }
     
+
 
     .Breaks li {font-size: 12pt;
       min-width: 150px;
@@ -626,7 +638,7 @@ top: -20px;}
 
   
       .cardInfoColumn {position: absolute;
-        left: -30px;}
+        left: -26px;}
       
         .cardInfoColumn ul {margin-top: 15px;}
       
@@ -650,10 +662,11 @@ top: -20px;}
   width: 55%;
 right: 0;}
 
-    .CardInfo{min-width: 97%;
-      width: 97%;
+    .CardInfo{min-width: 94%;
+      width: 94%;
       padding-bottom: 2px;
-    margin-left: 1%;}
+    margin-left: auto;
+  margin-right: auto;}
 
 
   .column {margin-left: 0;}

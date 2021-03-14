@@ -57,12 +57,13 @@ if(loaded){return(
 className="searchBar" />
  <button type="submit" className="submitButton"> <i className="fas fa-search"></i></button>
 </form>
-<p><div className="priceInstructions"><span className="pink"> Card prices only includes Lightly Played condition or better</span></div> </p>
+<div className="priceInstructions"><span className="pink"><p>Card prices only includes Lightly Played condition or better </p></span></div>
 <div className="row" id="currentDisplayRow">
 <h2><div>Currently Displaying: <span className="pink">{pokemon} </span></div>
 </h2> 
 </div>
-<CardInfo data={pokeinfo}   loading={loadedStatus}/>
+<div className="backdropCards">
+<CardInfo data={pokeinfo}   loading={loadedStatus}/></div>
                  <footer>💀scent was here</footer>
         </div>
     </div>

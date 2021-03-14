@@ -63,6 +63,7 @@ if(loaded){return(
                    Mimikyu needs -disguised <span className="pink">(ex: Mimikyu-Disguised)</span>.
                     </p>
                     <div className="backdropPokeSearch">
+                        
     <PokeInfo data={pokeinfo} loading={loadedStatus} />  </div>
     <footer>💀scent was here</footer>
         </div>)}
