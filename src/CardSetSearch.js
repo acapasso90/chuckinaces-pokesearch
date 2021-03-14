@@ -80,7 +80,7 @@ className="searchBar" />
 <div className="setLength">Number of cards:  <span className="pink">{setLength}  </span></div> </h2> 
 </div>
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNumber){
-            return(<CardInfo data={pokemonNumber}  loading={loadedStatus}/>)})}
+            return(<CardInfo data={pokemonNumber} loading={loadedStatus}/>)})}
                  <footer>💀scent was here</footer>
         </div>
     </div>

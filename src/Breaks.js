@@ -33,7 +33,7 @@ const length = set.length;
 <h3 > Set Name</h3></li>
 
 {set.slice(0, length).map(function(setName){
-    return(<li className="breakSetName" key={setName.toString()}> {setName}  </li>)})}
+    return(<li className="breakSetName" key={setName.toString()} > {setName}  </li>)})}
     </ul>
     </div>
     <div className="cardNumberPull">
@@ -41,7 +41,7 @@ const length = set.length;
             <li className="liHeader">
 <h3 ># to Move from Back</h3></li>
 {cardNumbers.slice(0, length).map(function(cardNumber){
-    return(<li className="breakSetNumber" key={cardNumber.toString()}> {cardNumber}  </li>)})}
+    return(<li className="breakSetNumber" > {cardNumber}  </li>)})}
 </ul>
     </div>
 </div>

@@ -7,6 +7,7 @@ import FirstEditionHoloPrices from "./FirstEditionHoloPrices.js";
 export default function CardInfo(props){
     let loaded = props.loading;
     let data = props.data
+    console.log(props.data)
     let id = props.data.id;
     let name = props.data.name;
     let artist = props.data.artist;
@@ -170,16 +171,16 @@ else{setPriceData("null");}}
 </div>
 <div className="cardInfoColumn">
 <ul>
-    <li className="id" id="liHeader">ID#</li>
+    <li className="id" id="liHeader" key="id">ID#</li>
     <li>{id}</li>
-    <li className="rarity" id="liHeader">Rarity</li>
+    <li className="rarity" id="liHeader" key="rarity">Rarity</li>
     <li>{rarity}</li>
-    <li className="set" id="liHeader">Set</li>
+    <li className="set" id="liHeader" key="setname">Set</li>
     <li>{set}</li>
-    <li className="series" id="liHeader">Series</li>
+    <li className="series" id="liHeader" key="series">Series</li>
     <li>{series}</li>
-    <li className="released" id="liHeader">Released on</li>
-    <li>{release}</li>
+    <li className="released" id="liHeader" key="releaseDate">Released on</li>
+    <li key="releaseDateDate">{release}</li>
 </ul>
     </div>
 <div className="cardPriceColumn">

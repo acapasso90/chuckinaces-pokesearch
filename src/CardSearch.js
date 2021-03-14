@@ -71,7 +71,7 @@ className="searchBar" />
 </div>
 
 {pokeinfo.slice(0, arrayLength).map(function(pokemonNum){
-            return(<CardInfo data={pokemonNum} loading={loadedStatus}/>)})}
+            return(<CardInfo data={pokemonNum} loading={loadedStatus} />)})} 
                  <footer>💀scent was here</footer>
         </div>
     </div>

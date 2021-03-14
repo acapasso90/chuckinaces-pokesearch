@@ -29,13 +29,9 @@ a, a:active {color:#ee65a9!important;
     margin-top: 15px;
     height: 38px;}
 
-  .topButton {min-height: 45px;
-    background-color: #8be9fd;
-    color: #b737df;
-  min-width: 70px;}
-
-  .topButton:hover {background-color: #090911;
-    color: #a3eeff;}
+  .topButton {min-height: 49px;
+    text-align: right;
+  min-width: 84px;}
 
 
   form {margin-bottom: 1%;}
@@ -379,6 +375,11 @@ font-size: 30pt;}
     .setInstructions {width: 78%;
     margin-left: auto;
   margin-right: auto;}
+
+  .spoink {width: 45px;
+  position: absolute;
+right: 35px;
+top: -1px;}
 
   .squirtleGif {border-radius: 50%;
   width: 10%;}

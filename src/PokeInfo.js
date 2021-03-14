@@ -68,7 +68,7 @@ if (loaded === "loaded"){return(
         {props.data.stats.slice(0, 6).map(function(stats){
     let statName = stats.stat.name;
 let stat = stats.base_stat;
-return(<div className="stats">
+return(<div className="stats" key={statName.toString()}>
     {statName} : {stat}
     
     </div>);})}

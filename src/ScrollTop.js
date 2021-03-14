@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Spoink from "./spoink.gif"
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,7 +33,7 @@ export default function ScrollToTop() {
     <div className="scroll-to-top">
       {isVisible && 
         <div onClick={scrollToTop}>
-     <button className="topButton"> <i className="fas fa-chevron-up"></i> TOP</button> 
+     <button className="topButton"> <i className="fas fa-chevron-up"></i> TOP           <img src={Spoink} alt="Spoink" className="spoink"/></button> 
         </div>}
     </div>
   );
