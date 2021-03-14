@@ -31,6 +31,7 @@ a, a:active {color:#ee65a9!important;
 
   .topButton {min-height: 49px;
     text-align: right;
+    font-size: 14pt;
   min-width: 84px;}
 
 
@@ -49,13 +50,13 @@ a, a:active {color:#ee65a9!important;
   }
   
   #lastHeaderLink {position: fixed;
-  top: 75px;
+  top: 72px;
   font-weight: bold;
-left: 875px;
+left: 1073px;
 z-index: 9999;
 width: 250px;
   padding-top: 4px;
-  height: 42px;
+  height: 46px;
   color: #ffffff!important;
   text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
   font-size: 26pt;}
@@ -106,7 +107,7 @@ width: 250px;
       left: -2px;
       overflow-x: hidden;
       border-radius: 2px;
-    width: 255px;}
+    width: 253px;}
 
   
     .hamburgerDropdown {display: none;}
@@ -244,7 +245,6 @@ margin-right: auto;}
 
   .header {min-height: 122.5px;
     max-height: 15%;
-    background-size: (100vw);
     width: 100%;
     max-width: 100%;
     white-space: nowrap;
@@ -270,13 +270,13 @@ margin-right: auto;
   font-family: 'broadway', cursive;}
   
   .headerLinks {position: fixed;
-    left: 339px;
-    top: 75px;
+    left: 541px;
+    top: 72px;
   z-index: 9999;
   width: 250px;
   font-weight: bold;
   padding-top: 4px;
-  height: 42px;
+  height: 44px;
   color: #ffffff!important;
   text-shadow: -4px 0 #8b0785, 0 4px #f133de, 4px 0 #f133de, 0 -4px #f133de;
   font-size: 26pt;}
@@ -288,13 +288,13 @@ margin-right: auto;
   
   #firstHeaderlink {
    position: fixed; 
-   width: 256px;
-   top: 73.5px;
-   height: 44px;
-    left: 70px;}
+   width: 252px;
+   top: 71.5px;
+   height: 46px;
+    left: 274px;}
 
     #breakLink {position: fixed;
-    left: 605px;}
+    left: 807px;}
   
 
   .footer {position: absolute;
